@@ -481,10 +481,77 @@ a {
   color: var(--white);
 }
 
+.home_content { 
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top:  -10px; 
+  padding-top: 50px;
+  padding-bottom: 50px;
+} 
+.home_text{
+  color: #4b4b60;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px;
+  padding: 0px 160px;
+  padding-bottom: 100px;
+}
+
 /* About Section Css Strat */
 
+.about_card { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;  
+  width: 250px;  
+  padding: 10px;  
+  box-sizing: border-box; 
+  overflow: hidden;   
+  color: #4b4b60;
+  font-weight: 500 px;
+  font-size: 17px; 
+  
+}
+ 
+
+.background-text span {
+  font-size: 70px; 
+  padding-right: 10px;
+  color: #000; 
+  opacity: 0.1;
+}
+
+.about_card:nth-child(odd) {
+  background-color: #d8e7f6;  
+  color: #4b4b60;
+}
+
+.about_card:nth-child(even) {
+  background-color: #0162C8;  
+  color: #ffffff;  
+}
+
+.about_card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: 30px;
+  column-gap: 1px;
+}
+
+.about_text{
+  color: #4b4b60;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px; 
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+
 .about_section,
-.home_banner_slider,
+/* .home_banner_slider, */
 .services_section,
 .technology_section,
 .our_techstack_section,
@@ -504,6 +571,7 @@ a {
   max-width: 650px;
   width: 100%;
 }
+ 
 
 .about_section .auout_inner_box .about_fist_sec .main_title {
   font-size: 60px;

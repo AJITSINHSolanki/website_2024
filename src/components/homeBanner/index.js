@@ -5,9 +5,11 @@ import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay, Navigation } from 'swiper/modules';
 import Image from 'next/image';
+import HomeMain from "../home";
 
 const HomeBanner = () => {
     return (
+        <div>
         <Swiper
             spaceBetween={0}
             centeredSlides={true}
@@ -39,7 +41,14 @@ const HomeBanner = () => {
                     {/* </div> */}
                 </SwiperSlide>
             ))}
+            
         </Swiper>
+        <div>
+            <HomeMain/>
+        </div>
+        
+        </div>
+        
     );
 }
 
