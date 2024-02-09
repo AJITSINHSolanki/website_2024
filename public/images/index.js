@@ -28,13 +28,22 @@ import RedisImg from "./technology/redis.png"
 import MicrosftDotnetImg from "./technology/microsftdotnet.png"
 import FlutterImg from "./technology/flutter.png"
 import Service1 from "./service-1.jpg"
+import AzureAndGCP from "./azureandgcp.png"
+import NetCore from "./netcore.png"
+import Postgres from "./postgres.png"
 import Service2 from "./service-2.jpg"
 import Service3 from "./service-3.jpg"
 import Service4 from "./service-4.jpg"
 import Service5 from "./service-5.jpg"
 import Service6 from "./service-6.jpg"
 import Service7 from "./service-7.jpg"
-import Service8 from "./service-8.jpg"
+import Service8 from "./service-8.jpg" 
+import Service9 from "./service-9.jpg"
+import Service10 from "./service-10.png"
+import Service11 from "./service-11.png"
+import Service12 from "./service-12.jpg"
+import Service13 from "./service-13.png"
+import Service14 from "./service-14.png"
 import PCloseImg from "./close.svg"
 import PRightImg from "./right.svg"
 import QuorteImg from "./quorte.png"
@@ -81,6 +90,7 @@ export {
     FlaskImg,
     PaythonImg,
     ReactImg,
+    AzureAndGCP,
     RedisImg,
     MicrosftDotnetImg,
     FlutterImg,
@@ -92,11 +102,19 @@ export {
     Service6,
     Service7,
     Service8,
+    Service9,
+    Service10,
+    Service11,
+    Service12,
+    Service13,
+    Service14,
     PCloseImg,
     PRightImg,
     QuorteImg,
     BlogImg1,
     BlogImg2,
+    NetCore,
+    Postgres,
     ServiceDetails,
     NewHome1,
     NewHome2,

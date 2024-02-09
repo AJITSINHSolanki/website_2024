@@ -37,7 +37,7 @@ const Technology = () => {
         <div ref={myRef} id="technology" className={`technology_section fade-in ${isVisible ? 'active' : ''}`}>
             <div className="container">
                 <div className='technology_section_pri'>
-                    <p className="main_title">Business Use Case And <span>Technology</span></p>
+                    <p className="main_title">Technology And <span>DBMS</span></p>
                 </div>
                 <Swiper
                     spaceBetween={30}

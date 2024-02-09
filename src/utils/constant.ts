@@ -59,6 +59,15 @@ import {
   Testimonial2,
   Testimonial3,
   BlogImg3,
+  Service9,
+  Service10,
+  Service11,
+  Service12,
+  Service13,
+  Service14,
+  AzureAndGCP,
+  NetCore,
+  Postgres,
 } from '../../public/images';
 import LinkedinIcon from '@/components/icon/linkedinIcon';
 
@@ -389,6 +398,27 @@ export const TechnologyCon = [
     description:
       "Embrace the future with our cloud computing solutions. Whether you're venturing into AWS, Azure, or Google Cloud, we provide expertise in cloud computing to ensure seamless scalability, security, and performance for your applications.",
   },
+  {
+    id: '12',
+    images: AzureAndGCP,
+    title: 'Azure and GCP Cloud',
+    description:
+      "My ERP project utilizes the dynamic features of Azure and GCP Cloud platforms, fostering a scalable and secure environment. Leveraging Azure's robust services and GCP's advanced capabilities, it ensures optimal performance, innovation, and streamlined business operations.",
+  },
+  {
+    id: '12',
+    images: NetCore,
+    title: 'Net core',
+    description:
+      "My ERP project utilizes the dynamic features of Azure and GCP Cloud platforms, fostering a scalable and secure environment. Leveraging Azure's robust services and GCP's advanced capabilities, it ensures optimal performance, innovation, and streamlined business operations.",
+  },
+  {
+    id: '12',
+    images: Postgres,
+    title: 'PostgresSQL',
+    description:
+      "Strategically blending database solutions, my project integrates PostgreSQL, SQL Server, and Oracle. This approach harmonizes robust data management, scalability, and compatibility, catering to diverse enterprise requirements with a comprehensive and versatile database infrastructure.",
+  },
 ];
 
 export const ServicesInfo = [
@@ -452,9 +482,57 @@ export const ServicesInfo = [
     icon: LearningIcon,
     img: Service8,
     link: '/al-and-machine-learning-applications',
-    title: 'AI and Machine Learning Applications',
+    title: 'AI and Machine Learning Apps',
     description:
       'We design and develop AI and machine learning applications that leverage the latest technologies to deliver exceptional results.',
+  },
+  {
+    icon: LearningIcon,
+    img: Service9,
+    link: '/erp-applications',
+    title: 'ERP For Healthcare',
+    description:
+      'Healthcare ERP integrates inventory and invoice management, enhancing efficiency and organization in healthcare administration.',
+  },
+  {
+    icon: LearningIcon,
+    img: Service10,
+    link: '/patient-applications',
+    title: 'Website and Apps For Patients',
+    description:
+      'Seamless website and application for patients, providing easy access to medical information and appointment scheduling for enhanced healthcare experience.',
+  },
+  {
+    icon: LearningIcon,
+    img: Service11,
+    link: '/doctor-application',
+    title: 'Website and Apps For Doctors',
+    description:
+      'Comprehensive website and application tailored for doctors, facilitating efficient patient management, appointment scheduling, and seamless communication for enhanced medical practice.',
+  },
+  {
+    icon: LearningIcon,
+    img: Service12,
+    link: '/clinic-applications',
+    title: 'Clinical Trial System',
+    description:
+      'Advanced clinical trial system streamlining protocol management, patient recruitment, data collection, and analysis for efficient and reliable research outcomes.',
+  },
+  {
+    icon: LearningIcon,
+    img: Service13,
+    link: '/outsources-Dedicated-Software-Team',
+    title: 'Outsources Dedicated Software Team',
+    description:
+      "Experience top-tier expertise with our outsourced dedicated software team, delivering tailored solutions and innovative development services for your project's success.",
+  },
+  {
+    icon: LearningIcon,
+    img: Service14,
+    link: '/outsources-Project-And-Product-Development',
+    title: 'Outsources Project And Product Development',
+    description:
+      'Explore our outsourcing expertise: Tailored solutions for project development and comprehensive services spanning ideation to deployment for product development excellence.',
   },
 ];
 
