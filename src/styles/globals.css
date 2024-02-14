@@ -506,6 +506,47 @@ a {
   /* padding-bottom: 100px; */
 }
 
+
+/* ERP  */
+ 
+.erp_card { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;  
+  width: 250px;  
+  padding: 10px;  
+  box-sizing: border-box; 
+  overflow: hidden;   
+  color: #4b4b60;
+  font-weight: 500 px;
+  font-size: 17px;  
+  
+}
+ 
+ 
+.erp_card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  row-gap: 10px;
+  column-gap: 1px;
+}
+
+.erp_text{
+  color: #4b4b60;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px; 
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.background-text-erp span {
+  font-size: 70px; 
+  padding-right: 10px;
+  color: #3f3d3d;   
+}
+ 
 /* About Section Css Strat */
 
 .about_card { 
@@ -519,7 +560,7 @@ a {
   overflow: hidden;   
   color: #4b4b60;
   font-weight: 500 px;
-  font-size: 17px; 
+  font-size: 17px;  
   
 }
  
@@ -1458,7 +1499,7 @@ a {
   padding: 20px 0 0;
   height: 250px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 .services_section .services_list .services_item .content-box .title,

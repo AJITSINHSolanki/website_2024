@@ -38,6 +38,9 @@ import Service5 from "./service-5.jpg"
 import Service6 from "./service-6.jpg"
 import Service7 from "./service-7.jpg"
 import Service8 from "./service-8.jpg" 
+import MultipleBusiness from "./multiple-business.jpeg" 
+import HospitalSector from "./hospital-sector.jpg" 
+import PharmaSector from "./pharma-sector.jpg" 
 import Service9 from "./service-9.jpg"
 import Service10 from "./service-10.png"
 import Service11 from "./service-11.png"
@@ -128,4 +131,7 @@ export {
     Testimonial3,
     BlogImg3,
     Certificate,
+    MultipleBusiness,
+    PharmaSector,
+    HospitalSector
 }

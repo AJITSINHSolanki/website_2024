@@ -68,6 +68,9 @@ import {
   AzureAndGCP,
   NetCore,
   Postgres,
+  MultipleBusiness,
+  PharmaSector,
+  HospitalSector,
 } from '../../public/images';
 import LinkedinIcon from '@/components/icon/linkedinIcon';
 
@@ -133,6 +136,64 @@ export const HomeBannerCo = [
     // buttonName: 'Get Started',
     buttonUrl: '/#about-us',
   },
+];
+
+export const ERPCapabilities = [
+  {
+    id: '1',
+    title : 'Multiple Businesses', 
+    image : MultipleBusiness,
+    features : [
+       'Streamlined Processes',
+       'Lower Operational Costs',
+       'Automation for Efficiency',
+       'Lower Operational Costs',
+       'User-Friendly Dashboard',
+       '360° Patient Safety',
+       'Improved Inventory Management',
+       'Patient Safety Measures',
+       'Inventory Optimization',
+       'Enhanced Data Security'
+    ]
+
+  },
+  {
+    id: '2',
+    title : 'Pharma Sector', 
+    image : PharmaSector,
+    features : [
+      'Inventory Management',
+      'MPS/MRP',
+      'Sales & Purchase',
+      'Warehouse Management',
+      'Production Management',
+      'Lot Traceability',
+      'Formulation Management',
+      'Regulatory Compliance',
+      'Costing Analysis',
+      'QC/QA'
+    ]
+
+  },
+  {
+    id: '2',
+    title : 'Hospitals', 
+    image : HospitalSector  ,
+    features : [
+      'Appointment',
+      'Certificate',
+      'Reports',
+      'Cloud database',
+      'Inventory',
+      'File manager',
+      'Prescription',
+      'Nursing Notes',
+      'OPD/IPD',
+      'Billing & Accounting',
+      'Bed Status'
+    ]
+
+  }
 ];
 
 export const HomePara = [
