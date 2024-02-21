@@ -11,6 +11,7 @@ import ContactUs from '@/components/contactUs'
 import Testimonials from '@/components/testimonials'
 import Blog from '@/components/blog'
 import BlogSlider from '@/components/blogSlider'
+import Features from "@/components/features"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function Home() {
       <Layout>
         <HomeBanner />
         <AboutUs />
+        <Features/>
         <Services />
         <Technology />
         <OurTechStack />

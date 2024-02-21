@@ -102,6 +102,13 @@ const ERPApplications = () => {
             <p className="main_title">
               MyAlgoSoft ERP Capabilities & <span> Features</span>
             </p>
+            <div>
+              <p className="erp_text">
+                With ERP Healthcare you will have refined processes, lesser
+                operational cost, also ensures 360° patient safety and provides
+                better data management.
+              </p>
+            </div>
 
             <div className="services_list">
               {ERPCapabilities.map((item, key) => (
@@ -644,7 +651,11 @@ const ERPApplications = () => {
               Why Choose MyAlgoSoft ERP<span>?</span>
             </p>
           </div>
-          <div
+
+
+
+          <div className="container">
+            <div
             style={{
               marginBottom: '50px',
               marginTop: '50px',
@@ -716,6 +727,8 @@ const ERPApplications = () => {
             </div>
             </div> */}
           </div>
+          </div>
+          
         </div>
       </Layout>
     </>

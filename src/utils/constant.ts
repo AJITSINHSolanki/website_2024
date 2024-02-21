@@ -89,6 +89,10 @@ export const HeaderMenu = [
     id: 3,
     name: 'Services',
     url: '/#services',
+  },{
+    id: 7,
+    name: 'ERP',
+    url: '/erp-applications',
   },
   {
     id: 4,

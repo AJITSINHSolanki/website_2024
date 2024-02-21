@@ -508,7 +508,19 @@ a {
 
 
 /* ERP  */
- 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;  
+}
+
+.grid-container span {
+  border: 1px solid #ccc;  
+  padding: 10px;  
+  text-align: center;  
+}
+
 .erp_card { 
   display: flex;
   align-items: center;
@@ -523,7 +535,12 @@ a {
   font-size: 17px;  
   
 }
- 
+.erp_text{
+  color: #4b4b60;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px; 
+}
  
 .erp_card_container {
   display: grid;
