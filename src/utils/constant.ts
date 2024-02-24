@@ -89,7 +89,8 @@ export const HeaderMenu = [
     id: 3,
     name: 'Services',
     url: '/#services',
-  },{
+  },
+  {
     id: 7,
     name: 'ERP',
     url: '/erp-applications',
@@ -145,27 +146,26 @@ export const HomeBannerCo = [
 export const ERPCapabilities = [
   {
     id: '1',
-    title : 'Multiple Businesses', 
-    image : MultipleBusiness,
-    features : [
-       'Streamlined Processes',
-       'Lower Operational Costs',
-       'Automation for Efficiency',
-       'Lower Operational Costs',
-       'User-Friendly Dashboard',
-       '360° Patient Safety',
-       'Improved Inventory Management',
-       'Patient Safety Measures',
-       'Inventory Optimization',
-       'Enhanced Data Security'
-    ]
-
+    title: 'Multiple Businesses',
+    image: MultipleBusiness,
+    features: [
+      'Streamlined Processes',
+      'Lower Operational Costs',
+      'Automation for Efficiency',
+      'Lower Operational Costs',
+      'User-Friendly Dashboard',
+      '360° Patient Safety',
+      'Improved Inventory Management',
+      'Patient Safety Measures',
+      'Inventory Optimization',
+      'Enhanced Data Security',
+    ],
   },
   {
     id: '2',
-    title : 'Pharma Sector', 
-    image : PharmaSector,
-    features : [
+    title: 'Pharma Sector',
+    image: PharmaSector,
+    features: [
       'Inventory Management',
       'MPS/MRP',
       'Sales & Purchase',
@@ -175,15 +175,14 @@ export const ERPCapabilities = [
       'Formulation Management',
       'Regulatory Compliance',
       'Costing Analysis',
-      'QC/QA'
-    ]
-
+      'QC/QA',
+    ],
   },
   {
     id: '2',
-    title : 'Hospitals', 
-    image : HospitalSector  ,
-    features : [
+    title: 'Hospitals',
+    image: HospitalSector,
+    features: [
       'Appointment',
       'Certificate',
       'Reports',
@@ -194,10 +193,9 @@ export const ERPCapabilities = [
       'Nursing Notes',
       'OPD/IPD',
       'Billing & Accounting',
-      'Bed Status'
-    ]
-
-  }
+      'Bed Status',
+    ],
+  },
 ];
 
 export const HomePara = [
@@ -482,7 +480,7 @@ export const TechnologyCon = [
     images: Postgres,
     title: 'PostgresSQL',
     description:
-      "Strategically blending database solutions, my project integrates PostgreSQL, SQL Server, and Oracle. This approach harmonizes robust data management, scalability, and compatibility, catering to diverse enterprise requirements with a comprehensive and versatile database infrastructure.",
+      'Strategically blending database solutions, my project integrates PostgreSQL, SQL Server, and Oracle. This approach harmonizes robust data management, scalability, and compatibility, catering to diverse enterprise requirements with a comprehensive and versatile database infrastructure.',
   },
 ];
 
@@ -601,46 +599,141 @@ export const ServicesInfo = [
   },
 ];
 
+export const PricingInfo = [
+  { text: '₹ 0 for 1 Month' },
+  { text: '₹ 7999 / Year' },
+  { text: '₹ 14999 / Year' },
+];
+
+export const UserLimits = [
+  {
+    title: 'Free',
+    Inventory: ' 3000',
+    Transaction: ' 3000',
+    Notification: ' 300',
+  },
+  {
+    title: 'Small Business',
+    Inventory: ' 3000',
+    Transaction: ' 3000',
+    Notification: ' 300',
+  },
+  {
+    title: 'Enterprise',
+    Inventory: ' 3000',
+    Transaction: ' 3000',
+    Notification: ' 300',
+  },
+];
+
 export const ComparePlansInfo = [
   {
-    title: 'Inventory management and tracking',
+    title: 'Inventory management',
     stapeOne: true,
     stapeTwo: true,
+    stapeThree: true,
   },
   {
-    title: 'Billing – Bill/Invoice, Tax and smooth quick billing',
+    title: 'Automated workflows',
     stapeOne: true,
     stapeTwo: true,
+    stapeThree: true,
   },
   {
-    title: 'Analytics Report',
+    title: 'Customizable templates',
     stapeOne: true,
     stapeTwo: true,
+    stapeThree: true,
   },
   {
-    title: 'Centralize user / feature management',
+    title: 'Role-based access control',
     stapeOne: true,
     stapeTwo: true,
+    stapeThree: true,
   },
   {
-    title: 'Subscription model and cost effective',
+    title: 'Historical analytics',
     stapeOne: true,
     stapeTwo: true,
+    stapeThree: true,
   },
   {
-    title: 'Always available features and centralized database',
+    title: ' Integration with 3rd party systems',
     stapeOne: true,
     stapeTwo: true,
+    stapeThree: true,
   },
   {
-    title: 'Cloud based scalable product',
+    title: 'Bill Template and Recent Product list',
     stapeOne: true,
     stapeTwo: true,
+    stapeThree: true,
   },
   {
-    title: 'Unlimited Usage and Advanced features of scanning the document',
-    stapeOne: false,
+    title: 'Multi-location access (Cloud)',
+    stapeOne: true,
     stapeTwo: true,
+    stapeThree: true,
+  },
+  {
+    title: 'Cloud web and  Mobile App (Android and Ios)',
+    stapeOne: true,
+    stapeTwo: true,
+    stapeThree: true,
+  },
+  {
+    title: 'Advanced perissions',
+    stapeOne: true,
+    stapeTwo: true,
+    stapeThree: true,
+  },
+  {
+    title: 'Payment reports and payment status',
+    stapeOne: true,
+    stapeTwo: true,
+    stapeThree: true,
+  },
+  {
+    title: 'Analytics',
+    stapeOne: true,
+    stapeTwo: true,
+    stapeThree: true,
+  },
+  {
+    title: 'Unlimited storage for Product Images',
+    stapeOne: true,
+    stapeTwo: true,
+    stapeThree: true,
+  },
+  {
+    title: 'Re-Order and demand prediction',
+    stapeOne: true,
+    stapeTwo: true,
+    stapeThree: true,
+  },
+  {
+    title: '99.9% uptime SLA',
+    stapeOne: true,
+    stapeTwo: true,
+    stapeThree: true,
+  },
+  {
+    title: 'Premium support (Standard hours)',
+    stapeOne: true,
+    stapeTwo: true,
+    stapeThree: true,
+  },
+  {
+    title: 'Core EMR/EHR functionality) * ',
+    stapeOne: true,
+    stapeTwo: true,
+    stapeThree: true,
+  },
+  {
+    title: ' Patient scheduling & billing *',
+    stapeOne: true,
+    stapeTwo: true,
+    stapeThree: true,
   },
 ];
 
