@@ -606,10 +606,7 @@ export const PricingInfo = [
 ];
 
 export const FreeBenefits = [
-  "Trail, for 1 month. ",
-  "Inventory: 3000",
-  "Transaction: 3000",
-  "Notification: 300",
+  "Trail, for 1 month. ", 
   "Inventory  Management",
   "Automated workflows",
   "Customizable templates",
@@ -631,10 +628,7 @@ export const FreeBenefits = [
 ];
 
 export const SmallBusinessBenifits = [
-  "7999 per Year",
-  "Inventory: 3000",
-  "Transaction: 3000",
-  "Notification: 300",
+  "7999 per Year", 
   "Inventory  Management",
   "Automated workflows",
   "Customizable templates",
@@ -656,10 +650,7 @@ export const SmallBusinessBenifits = [
 ];
 
 export const EnterpriseBenifits = [
-  "14999 per Year",
-  "Inventory: 3000",
-  "Transaction: 3000",
-  "Notification: 300",
+  "14999 per Year", 
   "Inventory  Management",
   "Automated workflows",
   "Customizable templates",
