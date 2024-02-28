@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { PCloseImg, PRightImg } from '../../../public/images';
 import Image from 'next/image';
-import { EnterpriseBenifits, FreeBenefits, SmallBusinessBenifits } from "@/utils/constant";
+import {
+  EnterpriseBenifits,
+  FreeBenefits,
+  SmallBusinessBenifits,
+} from '@/utils/constant';
 
 const PriceBox = () => {
   const [selectedPlan, setSelectedPlan] = useState('Free');
@@ -11,26 +15,10 @@ const PriceBox = () => {
   };
   return (
     <>
-    <div className="container">
-
-      <div className="price_box_section">
-        <div className="uk-margin">
-          <div
-            className={`button_tab ${selectedPlan === 'Free' ? 'active' : ''}`}
-           
-          >
-            Free
-          </div>
-          <div
-            className={`button_tab ${
-              selectedPlan === 'Small Business' ? 'active' : ''
-            }`}
-           
-          >
-            Business
-          </div>
-        </div>
-        <div className="price_box_inner" style={{ gap: '20px' }}>
+      <div className="container">
+        <div className="price_box_section">
+          
+          <div className="price_box_inner" style={{ gap: '20px' }}>
             <div className={`item_box_section  `}>
               <div>
                 <div className="item_box">
@@ -53,10 +41,9 @@ const PriceBox = () => {
                         <li>3000 Inventory count</li>
                         <li>3000 Maximum Invoice/Bill count</li>
                         <li>300 SMS, Email and WhatsApp notification count</li>
-                        
                       </ul>
                       <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
-                        { FreeBenefits.map((item, index) => (
+                        {FreeBenefits.map((item, index) => (
                           <li
                             key={index}
                             style={{ listStyleImage: `url(${PRightImg.src})` }}
@@ -94,7 +81,7 @@ const PriceBox = () => {
                         <li>2000 SMS, Email and WhatsApp notification count</li>
                       </ul>
                       <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
-                        { SmallBusinessBenifits.map((item, index) => (
+                        {SmallBusinessBenifits.map((item, index) => (
                           <li
                             key={index}
                             style={{ listStyleImage: `url(${PRightImg.src})` }}
@@ -134,7 +121,7 @@ const PriceBox = () => {
                         </li>
                       </ul>
                       <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
-                        { EnterpriseBenifits.map((item, index) => (
+                        {EnterpriseBenifits.map((item, index) => (
                           <li
                             key={index}
                             style={{ listStyleImage: `url(${PRightImg.src})` }}
@@ -149,8 +136,8 @@ const PriceBox = () => {
               </div>
             </div>
           </div>
+        </div>
       </div>
-    </div>
     </>
   );
 };

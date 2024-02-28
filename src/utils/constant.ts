@@ -680,15 +680,15 @@ export const UserLimits = [
   },
   {
     title: 'Small Business',
-    Inventory: ' 3000',
-    Transaction: ' 3000',
-    Notification: ' 300',
+    Inventory: ' 100000 ',
+    Transaction: ' 50000 ',
+    Notification: ' 2000 ',
   },
   {
     title: 'Enterprise',
-    Inventory: ' 3000',
-    Transaction: ' 3000',
-    Notification: ' 300',
+    Inventory: ' 300000 ',
+    Transaction: ' 300000 ',
+    Notification: ' 300000 ',
   },
 ];
 
