@@ -364,8 +364,8 @@ export const ContactUsinfo = [
   },
   {
     icon: PhoneIcon,
-    description: '(+91) 8758297625',
-    url: 'tal:+918758297625',
+    description: '(+91) 7434000130 ',
+    url: 'tal:+917434000130 ',
   },
   {
     icon: EmailIcon,
