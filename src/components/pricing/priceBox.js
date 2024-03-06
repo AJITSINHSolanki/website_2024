@@ -6,18 +6,13 @@ import {
   FreeBenefits,
   SmallBusinessBenifits,
 } from '@/utils/constant';
+import PageLoader from '../Loader/PageLoader';
 
 const PriceBox = () => {
-  const [selectedPlan, setSelectedPlan] = useState('Free');
-
-  const handleTabClick = (tab) => {
-    setSelectedPlan(tab);
-  };
   return (
     <>
       <div className="container">
         <div className="price_box_section">
-          
           <div className="price_box_inner" style={{ gap: '20px' }}>
             <div className={`item_box_section  `}>
               <div>
@@ -43,14 +38,26 @@ const PriceBox = () => {
                         <li>300 SMS, Email and WhatsApp notification count</li>
                       </ul>
                       <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
-                        {FreeBenefits.map((item, index) => (
-                          <li
-                            key={index}
-                            style={{ listStyleImage: `url(${PRightImg.src})` }}
+                        {FreeBenefits.length > 0 ? (
+                          FreeBenefits.map((item, index) => (
+                            <li
+                              key={index}
+                              style={{
+                                listStyleImage: `url(${PRightImg.src})`,
+                              }}
+                            >
+                              {item}
+                            </li>
+                          ))
+                        ) : (
+                          <div
+                            className="cio-plan-card__details"
+                            style={{ padding: '15px' }}
                           >
-                            {item}
-                          </li>
-                        ))}
+                            {' '}
+                            <PageLoader />
+                          </div>
+                        )}
                       </ul>
                     </div>
                   </div>
@@ -81,14 +88,26 @@ const PriceBox = () => {
                         <li>2000 SMS, Email and WhatsApp notification count</li>
                       </ul>
                       <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
-                        {SmallBusinessBenifits.map((item, index) => (
-                          <li
-                            key={index}
-                            style={{ listStyleImage: `url(${PRightImg.src})` }}
+                        {SmallBusinessBenifits.length > 0 ? (
+                          SmallBusinessBenifits.map((item, index) => (
+                            <li
+                              key={index}
+                              style={{
+                                listStyleImage: `url(${PRightImg.src})`,
+                              }}
+                            >
+                              {item}
+                            </li>
+                          ))
+                        ) : (
+                          <div
+                            className="cio-plan-card__details"
+                            style={{ padding: '15px' }}
                           >
-                            {item}
-                          </li>
-                        ))}
+                            {' '}
+                            <PageLoader />
+                          </div>
+                        )}
                       </ul>
                     </div>
                   </div>
@@ -121,14 +140,26 @@ const PriceBox = () => {
                         </li>
                       </ul>
                       <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
-                        {EnterpriseBenifits.map((item, index) => (
-                          <li
-                            key={index}
-                            style={{ listStyleImage: `url(${PRightImg.src})` }}
+                        {EnterpriseBenifits.length > 0 ? (
+                          EnterpriseBenifits.map((item, index) => (
+                            <li
+                              key={index}
+                              style={{
+                                listStyleImage: `url(${PRightImg.src})`,
+                              }}
+                            >
+                              {item}
+                            </li>
+                          ))
+                        ) : (
+                          <div
+                            className="cio-plan-card__details"
+                            style={{ padding: '15px' }}
                           >
-                            {item}
-                          </li>
-                        ))}
+                            {' '}
+                            <PageLoader />
+                          </div>
+                        )}
                       </ul>
                     </div>
                   </div>
