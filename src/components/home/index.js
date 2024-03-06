@@ -4,7 +4,23 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GithubIcon, LinkedinBoxIcon } from '../icon';
 import { HomePara } from '@/utils/constant';
+import PageLoader from '../Loader/PageLoader';
+import { BeatLoader  } from 'react-spinners';
 
+const PageLoading = () => {
+  return (
+    <>
+      <div style={{ textAlign: 'center', padding:'30px' }}>
+        <BeatLoader 
+          color="#0162C8"
+          cssOverride={{}}
+          size={30}
+          speedMultiplier={1}
+        />
+      </div>
+    </>
+  );
+};
 const HomeMain = () => {
   const myRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -43,13 +59,17 @@ const HomeMain = () => {
           We Manage Your Health Data <span>Digitally</span>
         </p>
       </div>
-      <div  className="home_text"  >
-        {HomePara.map((item, key) => (
+      <div className="home_text">
+        {HomePara.length > 0 ? (
+          HomePara.map((item, key) => (
             <p key={key}>
-              <span>{item.text}</span> <br/> <br/>
+              <span>{item.text}</span> <br /> <br />
             </p>
-        ))}
-         
+          ))
+        ) : (
+          <PageLoading />
+        )}
+      
       </div>
     </div>
   );

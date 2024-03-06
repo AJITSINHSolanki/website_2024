@@ -1,6 +1,24 @@
 import { useRef, useEffect, useState } from 'react';
 import { OurTechStackItem } from "@/utils/constant";
 import Image from 'next/image';
+import { BeatLoader } from "react-spinners";
+
+
+const PageLoading = () => {
+    return (
+      <>
+  <div style={{ textAlign: 'center', marginRight:'-40px'}}>
+          <BeatLoader
+            color="#0162C8"
+            cssOverride={{}}
+            size={30}
+            speedMultiplier={1}
+            
+          />
+        </div>
+      </>
+    );
+  };
 
 const OurTechStack = () => {
 
@@ -35,14 +53,24 @@ const OurTechStack = () => {
             <div className="container">
                 <p className="main_title">Our Tech <span>Stack</span></p>
                 <div className="our_techstack_list">
-                    {OurTechStackItem?.map((item, key) => (<div key={key} className="our_techstack_item">
+                    {
+                        OurTechStackItem.length > 0 ? (OurTechStackItem?.map((item, key) => (<div key={key} className="our_techstack_item">
                         <div className="images_box">
                             <Image src={item.images} alt={item.title} />
                         </div>
                         <p className="title_box">{item.title}</p>
                         <div className="progress">
                         </div>
-                    </div>))}
+                    </div>))) : (<PageLoading/>)
+                    }
+                    {/* {OurTechStackItem?.map((item, key) => (<div key={key} className="our_techstack_item">
+                        <div className="images_box">
+                            <Image src={item.images} alt={item.title} />
+                        </div>
+                        <p className="title_box">{item.title}</p>
+                        <div className="progress">
+                        </div>
+                    </div>))} */}
                 </div>
             </div>
         </div>

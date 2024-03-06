@@ -5,6 +5,25 @@ import { TestimonialsInfo } from '@/utils/constant';
 import { StarIcon } from '../icon';
 import { QuorteImg } from '../../../public/images';
 import Image from 'next/image';
+import { BeatLoader } from "react-spinners";
+
+
+const PageLoading = () => {
+    return (
+      <>
+  <div style={{ textAlign: 'center',marginLeft:'370px',width:'100%'}}>
+          <BeatLoader
+            color="#0162C8"
+            cssOverride={{}}
+            size={30}
+            speedMultiplier={1} 
+            
+          />
+        </div>
+      </>
+    );
+  };
+
 
 const Testimonials = () => {
     const myRef = useRef(null);
@@ -40,16 +59,30 @@ const Testimonials = () => {
                     <p className="main_title">What Our Clients <span>Say</span></p>
                 </div>
                 <div className="testimonial_list">
-                    {TestimonialsInfo?.map((item, key) => (
+                    {
+                        TestimonialsInfo.length > 0 ? (TestimonialsInfo?.map((item, key) => (
+                            <div key={key} className="testimonial-item">
+                                <div className="testimonial_inner">
+                                    <p className="description">“{item.content}”</p>
+                                    <div className='author-box'>
+                                        <div className="img_box">
+                                            <Image src={item.images} alt={item.name} />
+                                        </div>
+                                        <div className="author-content">
+                                            <p className='name'>{item.name}</p>
+                                            <p className='dissertation'>{item.dissertation}</p>
+                                        </div>
+                                    </div>
+                                    <div className='quote-icon'>
+                                        <Image src={QuorteImg} alt="QuorteImg" />
+                                    </div>
+                                </div>
+                            </div>
+                        ))) : (<PageLoading/>)
+                    }
+                    {/* {TestimonialsInfo?.map((item, key) => (
                         <div key={key} className="testimonial-item">
                             <div className="testimonial_inner">
-                                {/* <div className="rating">
-                                <span className='icon'><StarIcon /></span>
-                                <span className='icon'><StarIcon /></span>
-                                <span className='icon'><StarIcon /></span>
-                                <span className='icon'><StarIcon /></span>
-                                <span className='icon'><StarIcon /></span>
-                            </div> */}
                                 <p className="description">“{item.content}”</p>
                                 <div className='author-box'>
                                     <div className="img_box">
@@ -65,7 +98,7 @@ const Testimonials = () => {
                                 </div>
                             </div>
                         </div>
-                    ))}
+                    ))} */}
                 </div>
                 {/* <Swiper
                     spaceBetween={20}

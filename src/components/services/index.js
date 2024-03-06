@@ -3,6 +3,24 @@ import { ServicesInfo } from '@/utils/constant';
 import Image from 'next/image';
 import Link from 'next/link';
 import { RightArrowIcon } from '../icon';
+import PageLoader from "../Loader/PageLoader";
+import { BeatLoader } from "react-spinners";
+
+const PageLoading = () => {
+  return (
+    <>
+<div style={{ textAlign: 'center', marginRight:'-85px'}}>
+        <BeatLoader
+          color="#0162C8"
+          cssOverride={{}}
+          size={30}
+          speedMultiplier={1}
+          
+        />
+      </div>
+    </>
+  );
+};
 
 const Services = () => {
   const myRef = useRef(null);
@@ -46,30 +64,35 @@ const Services = () => {
           Our products and services are categorized as:
         </p>
         <div className="services_list">
-          {ServicesInfo?.map((item, key) => (
-            <div key={key} className="services_item">
-              <div className="images_box">
-                <Link href={item.link} className="img">
-                  <Image src={item.img} alt={item.title} />
-                </Link>
-                {/* <div className="icon-box">
-                                <span className="icon">{<item.icon />}</span>
-                            </div> */}
+          {
+            ServicesInfo.length > 0 ? (ServicesInfo?.map((item, key) => (
+              <div key={key} className="services_item">
+                <div className="images_box">
+                  <Link href={item.link} className="img">
+                    <Image src={item.img} alt={item.title} />
+                  </Link>
+                 
+                </div>
+                <div className="content-box">
+                  <Link href={item.link} className="title">
+                    {item.title}
+                  </Link>
+                  <p className="description">{item.description}</p>
+                  <Link href={item.link} className="read_more_button">
+                    Read More{' '}
+                    <span className="icon">
+                      <RightArrowIcon />
+                    </span>
+                  </Link>
+                </div>
               </div>
-              <div className="content-box">
-                <Link href={item.link} className="title">
-                  {item.title}
-                </Link>
-                <p className="description">{item.description}</p>
-                <Link href={item.link} className="read_more_button">
-                  Read More{' '}
-                  <span className="icon">
-                    <RightArrowIcon />
-                  </span>
-                </Link>
-              </div>
-            </div>
-          ))}
+            ))) : (
+              
+                // <PageLoader/> 
+                <PageLoading/> 
+            )
+          }
+           
         </div>
       </div>
     </div>

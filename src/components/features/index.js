@@ -39,8 +39,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div style={{ marginTop: '50px', marginBottom: '50px' }}>
-          {/* <marquee> */}
+        <div style={{ marginTop: '50px', marginBottom: '50px' }}> 
           <div style={{ display: 'flex', gap: '50px' }}>
             <div style={{ alignItems: 'center' }}>
               <div style={{ width: '200px', textAlign: 'center' }}>
@@ -152,8 +151,7 @@ const Features = () => {
                 <p>Management </p>
               </div>
             </div>
-          </div>
-          {/* </marquee> */}
+          </div> 
         </div>
       </div>
     </div>

@@ -1,6 +1,25 @@
 import { useRef, useEffect, useState } from 'react';
 import { OurTeam } from "@/utils/constant";
 import Image from 'next/image';
+import { BeatLoader } from "react-spinners";
+
+
+const PageLoading = () => {
+    return (
+      <>
+  <div style={{ textAlign: 'center', marginRight:'-60px'}}>
+          <BeatLoader
+            color="#0162C8"
+            cssOverride={{}}
+            size={30}
+            speedMultiplier={1}
+            
+          />
+        </div>
+      </>
+    );
+  };
+
 
 const Team = () => {
 
@@ -37,17 +56,20 @@ const Team = () => {
                     <p className='sub_text'>We are a group of passionate professionals who are dedicated to making a difference in our industry.</p>
                 </div>
                 <div className="our_team_list">
-                    {OurTeam?.map((item, key) => (
-                        <div key={key} className="our_team_item">
-                            <div className="images_box">
-                                <Image src={item.images} alt={item.name} />
-                            </div>
-                            <div className="our_teans_detail">
-                                <p className="team-name">{item.dissertation}</p>
-                                {/* <p className="team_dissertation">{item.dissertation}</p> */}
-                                <p className="content">{item.description}</p>
-                            </div>
-                        </div>))}
+                    {
+                        OurTeam.length > 0 ? (OurTeam?.map((item, key) => (
+                            <div key={key} className="our_team_item">
+                                <div className="images_box">
+                                    <Image src={item.images} alt={item.name} />
+                                </div>
+                                <div className="our_teans_detail">
+                                    <p className="team-name">{item.dissertation}</p>
+                                    {/* <p className="team_dissertation">{item.dissertation}</p> */}
+                                    <p className="content">{item.description}</p>
+                                </div>
+                            </div>))) : (<PageLoading/>)
+                    }
+                   
                 </div>
             </div>
         </div>
