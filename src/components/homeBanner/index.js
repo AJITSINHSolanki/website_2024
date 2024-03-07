@@ -27,7 +27,7 @@ const HomeBanner = () => {
                             <Image
                                 src={item.images}
                                 alt="slider1"
-                                style={{ height: `${imageHeight}px` }}
+                                style={{ height: `${imageHeight}px`, width:'1600px' }}
                             />
                         </Link>
                     </SwiperSlide>

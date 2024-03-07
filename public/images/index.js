@@ -65,8 +65,18 @@ import Testimonial1 from "./testimonial-1.jpg"
 import Testimonial2 from "./testimonial-2.jpg"
 import Testimonial3 from "./testimonial-3.jpg"
 import Certificate from "./certificate.jpg"
+import ERPMain from "./newImages/ERP_Main_Page.jpg"
+import ERPHomeMain from "./newImages/ERP_Home_Page.jpg"
+import HospitalClientTarget from "./newImages/Hospital_client_Target_Audience.jpg"
+import PharmacyClientTarget from "./newImages/Pharmacy_client_Target_Audience.jpg"
+import Inventory from "./newImages/Inventory.jpg"
 
 export {
+    ERPMain,
+    Inventory,
+    HospitalClientTarget,
+    PharmacyClientTarget,
+    ERPHomeMain,
     SliderImage,
     SliderImage1,
     SliderImage2,

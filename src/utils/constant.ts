@@ -71,6 +71,10 @@ import {
   MultipleBusiness,
   PharmaSector,
   HospitalSector,
+  ERPMain,
+  ERPHomeMain,
+  HospitalClientTarget,
+  PharmacyClientTarget,
 } from '../../public/images';
 import LinkedinIcon from '@/components/icon/linkedinIcon';
 
@@ -114,28 +118,28 @@ export const HeaderMenu = [
 
 export const HomeBannerCo = [
   {
-    images: NewHome1,
+    images: ERPHomeMain,
     // title: 'We Build Software and Web Apps for Businesses',
     // content: 'Fast, reliable and modern solutions for businesses',
     // buttonName: 'Get Started',
     buttonUrl: '/web-applications',
   },
   {
-    images: NewHome2,
+    images: ERPMain,
     // title: 'Product and offshore software services',
     // content: "We build custom software solutions tailored to your unique business needs.",
     // buttonName: 'Learn More',
     buttonUrl: '/custom-software-solutions',
   },
   {
-    images: NewHome3,
+    images: HospitalClientTarget,
     // title: 'Web Application Development',
     // content: 'We develop web applications that are secure, scalable, and easy to maintain.',
     // buttonName: 'Get Started',
     buttonUrl: '/product-and-web-development',
   },
   {
-    images: NewHome4,
+    images: PharmacyClientTarget,
     // title: 'Web Application Development',
     // content: 'We develop web applications that are secure, scalable, and easy to maintain.',
     // buttonName: 'Get Started',
