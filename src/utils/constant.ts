@@ -378,14 +378,14 @@ export const AboutContent = [
   //     subText: 'At MyAlgoSoft, we have years of experience in developing applications that meet the highest industry standards. We strive to provide our clients with the best possible service and customer satisfaction.',
   // },
   {
-    title: 'On-demand product development',
+    title: 'Services',
     subText:
-      "We understand how important it is to have a product that meets all your requirements and works perfectly across different platforms. That's why we offer on-demand product development services, so you can get the exact results you want in no time.",
+      "Product development, Cloud Software, DevbOps",
   },
   {
     title: 'Unlock Your True Potential',
     subText:
-      'Our team is equipped with the latest tools and technology to ensure that we create the most effective solutions for your business needs. Our process combines excellence with execution, giving you an edge against your competition.',
+      'React and Next Js as well .NET Core Expert Team.',
   },
   {
     title: 'Endless Possibilities',
