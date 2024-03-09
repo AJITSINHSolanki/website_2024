@@ -72,7 +72,7 @@ const PriceBox = () => {
                     <div className="plan-card__pricing">
                       <p className="stat">Starts at</p>
                       <p className="model__value">₹ 7999/ Year</p>
-                      <p className="model__below">Billed annually </p>
+                      <p className="model__below">Billed annually (Price does not include Tax [GST-18%]) </p>
                     </div>
                     <a
                       href="https://erphome.azurewebsites.net/auth/login"
@@ -122,7 +122,7 @@ const PriceBox = () => {
                     <div className="plan-card__pricing">
                       <p className="stat">Starts at</p>
                       <p className="model__value">₹ 14999/ Year</p>
-                      <p className="model__below">Billed annually </p>
+                      <p className="model__below">Billed annually (Price does not include Tax [GST-18%]) </p>
                     </div>
                     <a
                       href="https://erphome.azurewebsites.net/auth/login"
