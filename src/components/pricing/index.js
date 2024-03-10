@@ -19,7 +19,7 @@ const Pricing = () => {
         </p>
       </div>
       <PriceBox />
-      <ComparePlans />
+      {/* <ComparePlans /> */}
       <FAQ />
     </>
   );

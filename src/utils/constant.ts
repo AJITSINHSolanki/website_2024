@@ -742,35 +742,26 @@ export const PricingInfo = [
 ];
 
 export const FreeBenefits = [
-  "Trail, for 1 month. ", 
   "Inventory  Management",
-  "Automated workflows",
   "Customizable templates",
-  "Role-based access control",
   "Historical analytics",
-  "Integration with 3rd party systems",
   "Bill Template and Recent Product list",
   "Multi-location access (Cloud)",
   "Cloud web and  Mobile App  (Android and Ios)",
   "Advanced permissions",
-  "Payment reports and payment status",
-  "Analytics",
-  "Unlimited storage for Product Images",
+  "Payment reports and payment status",  
+  "Limited storage for Product Images",
   "Re-Order and demand prediction",
   "99.9% uptime SLA",
-  "Premium support (Standard hours)",
- " Core EMR/EHR functionality",
- "Patient scheduling &  billing"
+  "N/A",
+  "N/A",
+  "N/A",
 ];
 
 export const SmallBusinessBenifits = [
-  "7999 per Year", 
   "Inventory  Management",
-  "Automated workflows",
   "Customizable templates",
-  "Role-based access control",
   "Historical analytics",
-  "Integration with 3rd party systems",
   "Bill Template and Recent Product list",
   "Multi-location access (Cloud)",
   "Cloud web and  Mobile App  (Android and Ios)",
@@ -780,19 +771,15 @@ export const SmallBusinessBenifits = [
   "Unlimited storage for Product Images",
   "Re-Order and demand prediction",
   "99.9% uptime SLA",
-  "Premium support (Standard hours)",
- " Core EMR/EHR functionality",
- "Patient scheduling &  billing"
+  "N/A",
+  "N/A",
+  "N/A",
 ];
 
 export const EnterpriseBenifits = [
-  "14999 per Year", 
   "Inventory  Management",
-  "Automated workflows",
   "Customizable templates",
-  "Role-based access control",
   "Historical analytics",
-  "Integration with 3rd party systems",
   "Bill Template and Recent Product list",
   "Multi-location access (Cloud)",
   "Cloud web and  Mobile App  (Android and Ios)",
@@ -803,8 +790,8 @@ export const EnterpriseBenifits = [
   "Re-Order and demand prediction",
   "99.9% uptime SLA",
   "Premium support (Standard hours)",
- " Core EMR/EHR functionality",
- "Patient scheduling &  billing"
+  "Core EMR/EHR functionality",
+  "Patient scheduling &  billing"
 ]
 
 export const UserLimits = [

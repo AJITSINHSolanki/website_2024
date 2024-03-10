@@ -35,7 +35,7 @@ const PriceBox = () => {
                       <ul>
                         <li>3000 Inventory count</li>
                         <li>3000 Maximum Invoice/Bill count</li>
-                        <li>300 SMS, Email and WhatsApp notification count</li>
+                        <li>300 SMS, Email and WhatsApp Limit</li>
                       </ul>
                       <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
                         {FreeBenefits.length > 0 ? (
@@ -85,7 +85,7 @@ const PriceBox = () => {
                       <ul>
                         <li>100000 Inventory count</li>
                         <li>50000 Maximum Invoice/Bill count</li>
-                        <li>2000 SMS, Email and WhatsApp notification count</li>
+                        <li>2000 SMS, Email and WhatsApp Limit</li>
                       </ul>
                       <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
                         {SmallBusinessBenifits.length > 0 ? (
@@ -136,7 +136,7 @@ const PriceBox = () => {
                         <li>300000 Inventory count</li>
                         <li>300000 Maximum Invoice/Bill count</li>
                         <li>
-                          300000 SMS, Email and WhatsApp notification count
+                          300000 SMS, Email and WhatsApp Limit
                         </li>
                       </ul>
                       <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
