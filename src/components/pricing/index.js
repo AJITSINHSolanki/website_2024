@@ -6,13 +6,13 @@ const Pricing = () => {
   return (
     <>
       <div className="main_title_box">
-        <p className="sub_title">Pricing</p>
+        {/* <p className="sub_title">Pricing</p> */}
         <h1 className="main_title">
-          Pricing - Affordable Healthcare ERP <span> Solutions.</span>
+           ERP - <span> simple, transparent pricing.</span>
         </h1>
         <p className="content">
           We understand that every healthcare organization hospital,
-          pharmaceuticals, pharmaceutical companies, laboratories, and medical
+          pharmaceuticals, R&D companies, laboratories, and medical
           stores, has unique needs and budgets when it comes to managing
           operations. That's why we offer flexible and affordable ERP software
           pricing models to meet different requirements.

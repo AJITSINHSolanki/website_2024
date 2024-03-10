@@ -25,7 +25,7 @@ const PriceBox = () => {
                       <p className="model__below">No monthly, bill </p>
                     </div>
                     <a
-                      href="https://erphome.azurewebsites.net/auth/login"
+                      href="https://myerphome.com/auth/signup"
                       target="_blank"
                       className="button_strat_get"
                     >
@@ -75,7 +75,7 @@ const PriceBox = () => {
                       <p className="model__below">Billed annually (Price does not include Tax [GST-18%]) </p>
                     </div>
                     <a
-                      href="https://erphome.azurewebsites.net/auth/login"
+                      href="https://myerphome.com/auth/signup"
                       target="_blank"
                       className="button_strat_get"
                     >
@@ -125,7 +125,7 @@ const PriceBox = () => {
                       <p className="model__below">Billed annually (Price does not include Tax [GST-18%]) </p>
                     </div>
                     <a
-                      href="https://erphome.azurewebsites.net/auth/login"
+                      href="https://myerphome.com/auth/signup"
                       target="_blank"
                       className="button_strat_get"
                     >
