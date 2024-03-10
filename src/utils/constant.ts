@@ -750,6 +750,7 @@ export const FreeBenefits = [
   "Cloud web and  Mobile App  (Android and Ios)",
   "Advanced permissions",
   "Payment reports and payment status",  
+  "Analytics",
   "Limited storage for Product Images",
   "Re-Order and demand prediction",
   "99.9% uptime SLA",
