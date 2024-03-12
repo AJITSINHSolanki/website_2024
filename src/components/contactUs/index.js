@@ -83,9 +83,9 @@ const ContactUs = () => {
   };
 
   return (
-    <div id="contact" className="contact_section">
-      <div className="container">
-        <div className="title_contact">
+    <div className="container">
+        <div id="contact" className="contact_section">
+        <div className="title_contact"  style={{ paddingTop: '40px' }}>
           <p className="sub_title">Stay Connected</p>
           <p className="main_title">
             <span>Contact Us</span>

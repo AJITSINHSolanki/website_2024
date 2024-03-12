@@ -8,7 +8,7 @@ const Pricing = () => {
       <div className="main_title_box">
         {/* <p className="sub_title">Pricing</p> */}
         <h1 className="main_title">
-           ERP - <span> simple, transparent pricing.</span>
+           ERP - <span> Simple, Transparent Pricing.</span>
         </h1>
         <p className="content">
           We understand that every healthcare organization hospital,

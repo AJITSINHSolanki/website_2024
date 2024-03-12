@@ -400,34 +400,34 @@ export const AboutContent = [
 ];
 
 export const OurTechStackItem = [
-  // {
-  //     images: AIImg,
-  //     title: 'Artificial Intelligence',
-  // },
-  // {
-  //     images: DataScience,
-  //     title: 'Data Science',
-  // },
-  // {
-  //     images: MLImg,
-  //     title: 'Machine Learning',
-  // },
-  // {
-  //     images: DeepLearning,
-  //     title: 'Deep Learning',
-  // },
-  // {
-  //     images: NeuralNetwork,
-  //     title: 'Neural Network',
-  // },
-  // {
-  //     images: NLPImg,
-  //     title: 'Natural Language Processing',
-  // },
-  // {
-  //     images: ComputerVision,
-  //     title: 'Computer Vision',
-  // },
+  {
+      images: AIImg,
+      title: 'Artificial Intelligence',
+  },
+  {
+      images: DataScience,
+      title: 'Data Science',
+  },
+  {
+      images: MLImg,
+      title: 'Machine Learning',
+  },
+  {
+      images: DeepLearning,
+      title: 'Deep Learning',
+  },
+  {
+      images: NeuralNetwork,
+      title: 'Neural Network',
+  },
+  {
+      images: NLPImg,
+      title: 'Natural Language Processing',
+  },
+  {
+      images: ComputerVision,
+      title: 'Computer Vision',
+  },
 
   {
     images: kubernetes,

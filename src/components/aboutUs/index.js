@@ -32,22 +32,24 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div
-      id="about-us"
-      ref={myRef}
-      className={`about_section fade-in ${isVisible ? 'active' : ''}`}
-    >
-      <div className="container">
-        <p className="sub_title">ABOUT</p>
-        <p className="about_text">
-          <span>
-            MyAlgoSoft team builds the cutting edge technology that compels the
-            most effective solutions for your business needs.
-            <br /> Our modus operandi combines the excellence with execution and
-            stand head and shoulders above your competitors.
-          </span>{' '}
-          <br />
-        </p>
+    <div className="container">
+      <div
+        id="about-us"
+        ref={myRef}
+        className={`about_section fade-in ${isVisible ? 'active' : ''}`}
+      >
+        <div style={{ paddingTop: '40px' }}>
+          <p className="sub_title">ABOUT</p>
+          <p className="about_text">
+            <span>
+              MyAlgoSoft team builds the cutting edge technology that compels
+              the most effective solutions for your business needs.
+              <br /> Our modus operandi combines the excellence with execution
+              and stand head and shoulders above your competitors.
+            </span>{' '}
+            <br />
+          </p>
+        </div>
 
         <div className="auout_inner_box">
           <div className="about_fist_sec">
@@ -155,7 +157,8 @@ const AboutUs = () => {
               <span>⩸</span>
             </div>
             <p>
-            Healthcare App for Patients & Doctors: Manage tasks, appointments and schedules more efficiently.
+              Healthcare App for Patients & Doctors: Manage tasks, appointments
+              and schedules more efficiently.
             </p>
           </div>
         </div>
