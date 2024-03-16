@@ -86,7 +86,7 @@ export const HeaderMenu = [
   },
   {
     id: 2,
-    name: 'About Us',
+    name: 'About',
     url: '/#about-us',
   },
   {
@@ -505,8 +505,8 @@ export const ContactUsinfo = [
   },
   {
     icon: EmailIcon,
-    description: 'admin@myalgosoft.com',
-    url: 'mailto:admin@myalgosoft.com',
+    description: 'contact@myalgosoft.com',
+    url: 'mailto:contact@myalgosoft.com',
   },
 ];
 

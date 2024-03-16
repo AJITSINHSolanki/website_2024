@@ -36,7 +36,7 @@ const Footer = () => {
                         </div>
                         <div className="footer_box-col-3">
                             <div className="footer_button">
-                                <Link href="mailto:admin@myalgosoft.com" className="button_p"><span>Get Started</span></Link>
+                                <Link href="mailto:contact@myalgosoft.com" className="button_p"><span>Get Started</span></Link>
                             </div>
                         </div>
                     </div>
