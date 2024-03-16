@@ -264,11 +264,21 @@ a {
   padding: 20px 0;
 }
 
+.companyname
+{
+  display: flex;
+  align-items: center;
+  color: #AA6E99;
+  background: #FFFFFF;
+  font-size: medium;
+  font-weight: bold;
+}
+
 .header .inner_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 3px;
 }
 
 .header .inner_header .logo {
@@ -287,7 +297,7 @@ a {
 .menu_bar .menu_list {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 7px;
 }
 
 .menu_bar .menu_list .menu_destop {

@@ -6,7 +6,7 @@ const Navigation = ({ closeMenu, activeSection }) => {
     const router = useRouter();
 
     return (
-        <div className='menu_list'>
+        <div className='menu_list'>            
             <div className="menu_destop">
                 {HeaderMenu?.map((item, key) => (
                     <Link
@@ -20,7 +20,7 @@ const Navigation = ({ closeMenu, activeSection }) => {
                 ))}
             </div>
             <Link href="tel:7434000130" className='button_p'><span>+91 7434000130</span></Link>
-            <Link href="mailto:admin@myalgosoft.com" className='button_p'><span>Enquire</span></Link>
+            <Link href="mailto:contact@myalgosoft.com" className='button_p'><span>Enquire</span></Link>
         </div>
     );
 }

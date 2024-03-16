@@ -62,6 +62,7 @@ const Header = () => {
                         <Logo />
                         <span className="text-hide">Logo</span>
                     </Link>
+                    <div className="companyname">APS THREEAI LLP</div>
                     <div className="menu_icon" onClick={toggleMenu}>
                         <MenuIcon />
                     </div>

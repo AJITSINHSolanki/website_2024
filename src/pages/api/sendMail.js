@@ -78,7 +78,7 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: "admin@myalgosoft.com",
-        pass: "Hadala@15",
+        pass: "Hadala@101",
       },
     });
 
