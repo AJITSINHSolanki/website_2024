@@ -494,7 +494,7 @@ a {
   font-weight: 500;
   font-size: 17px;
   line-height: 28px;
-  padding: 0px 160px;
+  /* padding: 0px 160px; */
   padding-bottom: 100px;
 }
 .service_text{
@@ -1250,7 +1250,20 @@ a {
   cursor: pointer;
 }
 
-
+.pricingbannerText{
+  font-size: 60px;
+  font-weight: bold;
+  max-width: 50%;
+  line-height: 60px;
+}
+.pricingBanner{
+  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  background-color: #d8e7f6;
+  border-radius: 20px;
+  margin-top: 30px;
+}
 /* Technology Section Css Start */
 
 .technology_section,
@@ -2884,6 +2897,11 @@ ul.team_points li::before {
     font-weight: 700;
   }
 
+  .pricingbanner {
+    background-color: '#d8e7f6';
+    padding: '20px';
+    text-align: 'center';
+  }
   .faq_section {
     flex-direction: column;
     gap: 30px;

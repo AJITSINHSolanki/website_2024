@@ -5,13 +5,13 @@ import Link from 'next/link';
 import { GithubIcon, LinkedinBoxIcon } from '../icon';
 import { HomePara } from '@/utils/constant';
 import PageLoader from '../Loader/PageLoader';
-import { BeatLoader  } from 'react-spinners';
+import { BeatLoader } from 'react-spinners';
 
 const PageLoading = () => {
   return (
     <>
-      <div style={{ textAlign: 'center', padding:'30px' }}>
-        <BeatLoader 
+      <div style={{ textAlign: 'center', padding: '30px' }}>
+        <BeatLoader
           color="#0162C8"
           cssOverride={{}}
           size={30}
@@ -48,28 +48,24 @@ const HomeMain = () => {
   }, []);
 
   return (
-    <div
-      id="home"
-      ref={myRef}
-      className={`about_section fade-in ${isVisible ? 'active' : ''}`}
-      style={{ backgroundColor: '#d8e7f6' }}
-    >
-      <div className="container home_content">
+    <div id="home" ref={myRef} style={{ backgroundColor: '#d8e7f6' }}>
+      <div className=" home_content">
         <p className="main_title">
           We Manage Your Health Data <span>Digitally</span>
         </p>
-      </div>
-      <div className="home_text">
-        {HomePara.length > 0 ? (
-          HomePara.map((item, key) => (
-            <p key={key}>
-              <span>{item.text}</span> <br /> <br />
-            </p>
-          ))
-        ) : (
-          <PageLoading />
-        )}
-      
+      </div>{' '}
+      <div className="container">
+        <div className="home_text">
+          {HomePara.length > 0 ? (
+            HomePara.map((item, key) => (
+              <p key={key}>
+                <span>{item.text}</span> <br /> <br />
+              </p>
+            ))
+          ) : (
+            <PageLoading />
+          )}
+        </div>
       </div>
     </div>
   );

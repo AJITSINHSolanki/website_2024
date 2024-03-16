@@ -119,8 +119,7 @@ const AboutUs = () => {
         </div>
         <div className="about_card_container">
           <div className="about_card">
-            <div className="background-text">
-              {/* <span>24 <span>*</span> 7</span> */}
+            <div className="background-text"> 
               <span>☎</span>
             </div>
             <p>
