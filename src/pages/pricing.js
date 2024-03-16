@@ -2,9 +2,32 @@
 import Layout from '@/components/layout';
 import Pricing from '@/components/pricing';
 import Head from 'next/head';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const PricingPage = () => {
+  const myRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    const checkVisibility = () => {
+      if (myRef.current) {
+        const top = myRef.current.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (top < windowHeight) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+
+    return () => {
+      window.removeEventListener('scroll', checkVisibility);
+    };
+  }, []);
   return (
     <>
       <Head>
@@ -13,9 +36,14 @@ const PricingPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
+      <div ref={myRef}
+          id="pricing"
+          className={`  fade-in ${isVisible ? 'active' : ''}`}>
+        <Layout>
         <Pricing />
       </Layout>
+      </div>
+      
     </>
   );
 };
