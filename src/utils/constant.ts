@@ -519,100 +519,100 @@ export const SocialIcon = [
 ];
 
 export const TechnologyCon = [
+  // {
+  //   id: '01',
+  //   images: ReactImg,
+  //   title: 'React JS',
+  //   description:
+  //     'We are the best react development company that you can trust for your project idea. We offer custom react development, React Native MVP Development, React UI development, React Native Cross-Platform Development, and a lot more. ',
+  // },
+  // {
+  //   id: '02',
+  //   images: AngularImg,
+  //   title: 'Angular',
+  //   // title: "My AlgoSoft",
+  //   description:
+  //     'My AlgoSoft is a leading Angular development company to develop high-performing solutions. We offer custom applications, web applications, enterprise applications, eCommerce portal development, UI/UX development, AJAX development, and the list goes on.',
+  // },
+  // {
+  //   id: '03',
+  //   images: FlutterImg,
+  //   title: 'Flutter',
+  //   description:
+  //     "We excel in crafting customized Flutter applications tailored to your unique project requirements. Whether you need Flutter MVP Development, Flutter UI Development, Cross-Platform Flutter App Development, or more, we've got you covered.",
+  // },
   {
     id: '01',
-    images: ReactImg,
-    title: 'React JS',
-    description:
-      'We are the best react development company that you can trust for your project idea. We offer custom react development, React Native MVP Development, React UI development, React Native Cross-Platform Development, and a lot more. ',
-  },
-  {
-    id: '02',
-    images: AngularImg,
-    title: 'Angular',
-    // title: "My AlgoSoft",
-    description:
-      'My AlgoSoft is a leading Angular development company to develop high-performing solutions. We offer custom applications, web applications, enterprise applications, eCommerce portal development, UI/UX development, AJAX development, and the list goes on.',
-  },
-  {
-    id: '03',
-    images: FlutterImg,
-    title: 'Flutter',
-    description:
-      "We excel in crafting customized Flutter applications tailored to your unique project requirements. Whether you need Flutter MVP Development, Flutter UI Development, Cross-Platform Flutter App Development, or more, we've got you covered.",
-  },
-  {
-    id: '04',
     images: MicrosftDotnetImg,
     title: 'ASP.NET MVC/Razor Pages',
     description:
       'Our expertise lies in delivering top-notch solutions, be it ASP.NET MVC development, Razor Pages customization, or seamless integration of these technologies into your projects.',
   },
   {
-    id: '05',
+    id: '02',
     images: PaythonImg,
     title: 'Python',
     description:
       'You need an engineering partner who can help you achieve the technological transformation you aim for without any do-overs. Your customers deserve a consistent, quality, and addictive experience, and so do you.',
   },
   {
-    id: '06',
+    id: '03',
     images: FlaskImg,
     title: 'Flask API',
     description:
       'Looking for Flask API development? Your search ends here. We specialize in building robust and scalable Flask APIs that cater to your specific needs. Trust us for Flask API customization, optimization, and seamless integration into your applications.',
   },
   {
-    id: '07',
+    id: '04',
     images: FlaskImg,
     title: 'Flask Admin',
     description:
       'For Flask Admin solutions, count on us to provide comprehensive development services. We are committed to delivering user-friendly Flask Admin interfaces, ensuring smooth administration and management of your applications.',
   },
   {
-    id: '08',
+    id: '05',
     images: AzureImg,
     title: 'Azure SQL database',
     description:
       'Explore the power of Azure SQL Database with our expert development services. We help you leverage the full potential of Azure SQL, offering seamless integration, optimization, and customization based on your project requirements.',
   },
   {
-    id: '09',
+    id: '06',
     images: RedisImg,
     title: 'Azure cache for Redis',
     description:
       "Optimize your application's performance with Azure Cache for Redis. As your development partner, we ensure smooth integration and utilization of Azure Cache for Redis, enhancing the speed and efficiency of your applications.",
   },
   {
-    id: '10',
+    id: '07',
     images: MicrosftDotnetImg,
     title: '.NET Core API',
     description:
       'Unlock the potential of .NET Core API with our specialized development services. We are your trusted partner for crafting scalable and secure APIs using .NET Core, meeting the demands of modern application development.',
   },
   {
-    id: '11',
+    id: '08',
     images: CloudImg,
     title: 'Cloud Computing',
     description:
       "Embrace the future with our cloud computing solutions. Whether you're venturing into AWS, Azure, or Google Cloud, we provide expertise in cloud computing to ensure seamless scalability, security, and performance for your applications.",
   },
   {
-    id: '12',
+    id: '09',
     images: AzureAndGCP,
     title: 'Azure and GCP Cloud',
     description:
       "My ERP project utilizes the dynamic features of Azure and GCP Cloud platforms, fostering a scalable and secure environment. Leveraging Azure's robust services and GCP's advanced capabilities, it ensures optimal performance, innovation, and streamlined business operations.",
   },
   {
-    id: '12',
+    id: '10',
     images: NetCore,
     title: 'Net core',
     description:
       "My ERP project utilizes the dynamic features of Azure and GCP Cloud platforms, fostering a scalable and secure environment. Leveraging Azure's robust services and GCP's advanced capabilities, it ensures optimal performance, innovation, and streamlined business operations.",
   },
   {
-    id: '12',
+    id: '11',
     images: Postgres,
     title: 'PostgresSQL',
     description:
