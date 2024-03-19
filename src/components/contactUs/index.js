@@ -1,6 +1,29 @@
 import { useState } from "react";
+import { BeatLoader } from "react-spinners";
+
+const PageLoading = () => {
+  return (
+    <>
+<div style={{ textAlign: 'center', marginRight:'-60px'}}>
+        <BeatLoader
+          color="#0162C8"
+          cssOverride={{}}
+          size={30}
+          speedMultiplier={1}
+          
+        />
+      </div>
+    </>
+  );
+};
 
 const ContactUs = () => {
+  const [mapLoaded, setMapLoaded] = useState(false);
+
+  const handleMapLoad = () => {
+    setMapLoaded(true);
+  };
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -53,8 +76,7 @@ const ContactUs = () => {
     return Object.keys(newErrors).length === 0;
   };
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    // console.log(e, "eeeeeee");
+    e.preventDefault(); 
     if (validateForm()) {
       console.log("Form data:", formData);
       return await fetch("/api/sendMail", {
@@ -93,15 +115,21 @@ const ContactUs = () => {
         </div>
 
         <div className="contact_box">
-          <div className="map_box">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.0682003862453!2d72.5426400243274!3d23.094599117517316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83182ca2717f%3A0xf8eb0fb8aa61b3c1!2sSHUKAN%20PLATINUM%2C%20Gota%2C%20Ahmedabad%2C%20Gujarat%20382481!5e0!3m2!1sen!2sin!4v1699288887709!5m2!1sen!2sin"
-              border="0"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+          {!mapLoaded && (
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+          <PageLoading  />
+        </div>
+      )}
+      <div className="map_box">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.0682003862453!2d72.5426400243274!3d23.094599117517316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83182ca2717f%3A0xf8eb0fb8aa61b3c1!2sSHUKAN%20PLATINUM%2C%20Gota%2C%20Ahmedabad%2C%20Gujarat%20382481!5e0!3m2!1sen!2sin!4v1699288887709!5m2!1sen!2sin"
+          border="0"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          onLoad={handleMapLoad} // Call handleMapLoad when the map finishes loading
+        ></iframe>
+      </div>
           <form className="contact_form" onSubmit={handleSubmit}>
             <div className="form_group">
               <label htmlFor="name" className="text-hide">

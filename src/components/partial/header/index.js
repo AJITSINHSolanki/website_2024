@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { CloseIcon, MenuIcon } from "@/components/icon";
 import Logo from "../logo";
 import Navigation from "./navigation";
-import Link from "next/link";   
+import Link from "next/link"; 
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,21 +23,15 @@ const Header = () => {
             const scrollTop = window.scrollY;
             if (scrollTop < 600) {
                 setActiveSection('Home');
-              } else if (scrollTop < 2000) {
+            } else if (scrollTop < 2000) {
                 setActiveSection('About Us');
-              } else if (scrollTop < 4300) {
+            } else if (scrollTop < 4300) {
                 setActiveSection('Services');
-              } else if (scrollTop < 6000) {
+            } else if (scrollTop < 6000) {
                 setActiveSection('Blog');
-              } 
-            //   else if (scrollTop < 4000) {
-            //     setActiveSection('Pricing');
-            //   } 
-              else {
+            } else {
                 setActiveSection('Contact');
-              }
-         
-
+            }
 
             if (scrollTop > 120) {
                 setIsSticky(true);
@@ -53,9 +47,8 @@ const Header = () => {
         };
     }, []);
 
-
     return (
-        <div className={`header ${isSticky ? "is-sticky" : ""}`} >
+        <div className={`header ${isSticky ? "is-sticky" : ""}`}>
             <div className="container">
                 <div className="inner_header">
                     <Link href="/" className="logo">
@@ -66,17 +59,15 @@ const Header = () => {
                     <div className="menu_icon" onClick={toggleMenu}>
                         <MenuIcon />
                     </div>
-                    {/* <div className={`overlay ${isMenuOpen ? 'active' : ''}`}></div> */}
                     <div className={`menu_bar ${isMenuOpen ? 'active' : ''}`}>
                         <div className='title_close_icon'>
                             <div className='mobile_title'>Menus</div>
                             <div className="close_icon" onClick={toggleMenu}><CloseIcon /></div>
                         </div>
-                        {/* <Navigation closeMenu={toggleMenu} /> */}
                         <Navigation closeMenu={toggleMenu} activeSection={activeSection} />
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
     );
 };

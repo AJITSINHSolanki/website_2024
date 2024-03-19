@@ -2,11 +2,35 @@ import FAQ from '../faq';
 import ComparePlans from './comparePlans';
 import PriceBox from './priceBox';
 import Pricingbanner from './pricingbanner';
+import React, { useEffect, useRef, useState } from 'react';
 
 const Pricing = () => {
+  const myRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    const checkVisibility = () => {
+      if (myRef.current) {
+        const top = myRef.current.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (top < windowHeight) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+
+    return () => {
+      window.removeEventListener('scroll', checkVisibility);
+    };
+  }, []);
   return (
     <>
-      <div>
+      <div >
         <Pricingbanner />
         <div className="main_title_box">
           {/* <p className="sub_title">Pricing</p> */}

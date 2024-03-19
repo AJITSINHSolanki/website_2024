@@ -36,8 +36,7 @@ const PricingPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div ref={myRef}
-          id="pricing"
+      <div ref={myRef} 
           className={`  fade-in ${isVisible ? 'active' : ''}`}>
         <Layout>
         <Pricing />
