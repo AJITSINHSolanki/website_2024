@@ -33,7 +33,7 @@ const Blog = () => {
     };
 
     window.addEventListener('scroll', checkVisibility);
-    checkVisibility(); // Check initial visibility
+    checkVisibility(); 
 
     return () => {
       window.removeEventListener('scroll', checkVisibility);
@@ -41,8 +41,8 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="container"> 
-      <div className="blog_section" id="blog"  ref={myRef}>
+    <div className="container">  
+      <div className={`blog_section fade-in ${isVisible ? 'active' : ''}`} id="blog"  ref={myRef}>
       <div style={{ paddingTop: '40px', minHeight: '40px',  }}> 
 </div>
 

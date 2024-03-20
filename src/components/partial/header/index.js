@@ -49,8 +49,7 @@ const Header = () => {
 
     return (
         <div className={`header ${isSticky ? "is-sticky" : ""}`}>
-            <div className="header_container">
-            {/* <div style={{padding:'0px 30px'}}> */}
+            <div className="header_container"> 
                 <div className="inner_header">
                     <Link href="/" className="logo">
                         <Logo />
