@@ -42,7 +42,7 @@ const Blog = () => {
 
   return (
     <div className="container"> 
-      <div className="blog_section" id="blog">
+      <div className="blog_section" id="blog"  ref={myRef}>
       <div style={{ paddingTop: '40px', minHeight: '40px',  }}> 
 </div>
 

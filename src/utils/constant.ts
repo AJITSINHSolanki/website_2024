@@ -100,6 +100,11 @@ export const HeaderMenu = [
     url: '/erp-applications',
   },
   {
+    id: 7,
+    name: 'Technology',
+    url: '/#our-tech-stack',
+  },
+  {
     id: 4,
     name: 'Blog',
     url: '/#blog',

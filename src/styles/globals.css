@@ -263,7 +263,9 @@ a {
   box-shadow: 0 8px 20px rgba(41, 99, 112, .06);
   padding: 20px 0;
 }
-
+.header_container {
+  padding: 0px 30px;
+}
 .companyname
 {
   display: flex;
