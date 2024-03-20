@@ -33,12 +33,14 @@ const AboutUs = () => {
 
   return (
     <div className="container">
+       
       <div
         id="about-us"
         ref={myRef}
         className={`about_section fade-in ${isVisible ? 'active' : ''}`}
       >
-        <div style={{ paddingTop: '40px' }}>
+         {/* <div style={{ paddingTop: '40px', minHeight: '40px' }}></div> */}
+        <div style={{ paddingTop: '80px' }}>
           <p className="sub_title">ABOUT</p>
           <p className="about_text">
             <span>

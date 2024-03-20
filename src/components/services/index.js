@@ -54,6 +54,7 @@ const Services = () => {
       id="services"
       className={`services_section fade-in ${isVisible ? 'active' : ''}`}
     >
+      <div style={{ paddingTop: '40px', minHeight: '40px' }}></div>
       <div className="container">
         <p className="main_title">
           Our Services & <span>Products</span>
