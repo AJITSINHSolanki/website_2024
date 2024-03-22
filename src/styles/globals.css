@@ -1192,11 +1192,11 @@ a {
 }
 
 .footer-widget-menu .footer-widget-title {
-  text-align: center;
+  text-align: left; 
 }
 
 .footer-widget-menu ul li {
-  text-align: center;
+  text-align: left; 
 }
 
 .social_icon {

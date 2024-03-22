@@ -56,7 +56,7 @@ const Footer = () => {
                         <div className="footer_box-col-4">
                             <div className="footer-widget-menu">
                                 <p className="footer-widget-title">Useful Link</p>
-                                <ul>
+                                <ul  > 
                                     {HeaderMenu.slice(1)?.map((item, key) => (
                                         <li key={key}>
                                             <Link href={item.url}>{item.name}</Link>
