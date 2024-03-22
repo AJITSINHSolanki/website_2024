@@ -2295,6 +2295,7 @@ a {
 .blog_section .blog_list .item--featured a {
   overflow: hidden;
   border-radius: 12px;
+  height: 350px;
   display: block;
   padding-top: 60%;
   position: relative;

@@ -84,8 +84,9 @@ const ERPApplications = () => {
             <img src={Service9.src} alt="Product and Web Development" />
           </div>
         </div>
+        
 
-        <div className="home_text">
+        <div className="container home_text">
           {ERPdescription.length > 0 ? (
             ERPdescription.map((item, key) => (
               <p key={key}>

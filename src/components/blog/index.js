@@ -51,7 +51,8 @@ const Blog = () => {
             Our <span>Blog</span>
           </p>
         </div>
-        <div className="blog_list blog_list_not_slider" style={{ paddingBottom: '120px' }}>
+        {/* <div className="blog_list blog_list_not_slider" style={{ paddingBottom: '120px' }}> */}
+        <div className="blog_list blog_list_not_slider"  >
           {BlogInfo.length > 0 ? (
             BlogInfo?.map((item, key) => (
               <div key={key} className="blog_item">
