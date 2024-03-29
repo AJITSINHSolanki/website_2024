@@ -1609,7 +1609,7 @@ a {
 
 .contact_section .contact_box {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   margin: 0 -15px;
 }
 
@@ -3154,6 +3154,7 @@ ul.team_points li::before {
 
   .contact_section .contact_box .map_box,
   .contact_section .contact_box .contact_form {
+    flex-direction: column;
     width: 100%;
     padding: 0 15px;
   }
