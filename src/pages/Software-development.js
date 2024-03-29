@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Layout from "@/components/layout";
-import { ServiceDetails, Services16 } from "../../public/images";
+import { ServiceDetails, Services20 } from "../../public/images";
 
 const SoftwareDevelopment = () => {
   return (
@@ -23,7 +23,7 @@ const SoftwareDevelopment = () => {
 
         <div className="container">
           <div className="detail_s_box">
-            <img src={Services16.src} alt="Product and Web Development" />
+            <img src={Services20.src} alt="Product and Web Development" />
           </div>
         </div>
         <div className="container">

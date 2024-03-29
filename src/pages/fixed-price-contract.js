@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Layout from "@/components/layout";
-import { ServiceDetails, Services15 } from "../../public/images";
+import { ServiceDetails, Services25 } from "../../public/images";
 
 const FixedPriceContract = () => {
   return (
@@ -23,7 +23,7 @@ const FixedPriceContract = () => {
 
         <div className="container">
           <div className="detail_s_box">
-            <img src={Services15.src} alt="Product and Web Development" />
+            <img src={Services25.src} alt="Product and Web Development" />
           </div>
         </div>
         <div className="container">

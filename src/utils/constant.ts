@@ -40,14 +40,6 @@ import {
   RedisImg,
   MicrosftDotnetImg,
   FlutterImg,
-  Service1,
-  Service2,
-  Service3,
-  Service4,
-  Service5,
-  Service6,
-  Service7,
-  Service8,
   BlogImg2,
   BlogImg1,
   NewHome1,
@@ -59,14 +51,6 @@ import {
   Testimonial2,
   Testimonial3,
   BlogImg3,
-  Service9,
-  Service10,
-  Service11,
-  Service12,
-  Service13,
-  Service14,
-  Services15,
-  Services16,
   AzureAndGCP,
   NetCore,
   Postgres,
@@ -77,7 +61,10 @@ import {
   ERPHomeMain,
   HospitalClientTarget,
   PharmacyClientTarget,
-  Services17,
+  Services19,
+  Services20,
+  Services25,
+  Services14,
 } from "../../public/images";
 
 import LinkedinIcon from "@/components/icon/linkedinIcon";
@@ -404,6 +391,11 @@ export const AboutContent = [
     subText:
       "Our team is always on the lookout for new technologies, techniques, and trends so that we can stay ahead of the curve when it comes to creating innovative solutions for our clients. Get in touch with us today to get started on your digital journey!",
   },
+  {
+    title: "Software Development Company",
+    subText:
+      "Software development companies design, develop and maintain applications, frameworks or other software components for businesses or consumers",
+  },
 ];
 
 export const OurTechStackItem = [
@@ -628,129 +620,122 @@ export const TechnologyCon = [
 ];
 
 export const ServicesInfo = [
-  {
-    icon: MobileAppIcon,
-    img: Service1,
-    link: "/product-and-web-development",
-    title: "Product and Web Development",
-    description:
-      "We create scalable and responsive websites with modern designs.",
-  },
-  {
-    icon: MobileAppIcon,
-    img: Service2,
-    link: "/mobile-app-development",
-    title: "Mobile App Development",
-    description:
-      "We create native and cross-platform mobile apps with engaging designs and seamless user experiences.",
-  },
-  {
-    icon: CloudIcon,
-    img: Service3,
-    link: "/cloud-platforms",
-    title: "Cloud Platforms",
-    description:
-      "We provide cloud platform solutions for AWS, Azure, and GCP that are reliable, scalable and secure.",
-  },
-  {
-    icon: EcommerceIcon,
-    img: Service4,
-    link: "/e-commerce-websites",
-    title: "E-commerce Websites",
-    description:
-      "We design and develop e-commerce websites with secure payment gateway integrations and user-friendly interfaces.",
-  },
-  {
-    icon: CustomIcon,
-    img: Service5,
-    link: "/custom-software-solutions",
-    title: "Custom Software Solutions",
-    description:
-      "We provide custom software solutions for various industries with scalable architecture and efficient workflows.",
-  },
-  {
-    icon: ApplicationsIcon,
-    img: Service6,
-    link: "/web-applications",
-    title: "Web Applications",
-    description:
-      "We create web applications with scalable architecture and engaging designs that deliver seamless user experiences.",
-  },
-  {
-    icon: LearningIcon,
-    img: Service7,
-    link: "/healthcare-apps",
-    title: "Healthcare Apps",
-    description:
-      "We design and develop healthcare apps that deliver seamless user experiences and secure data management.",
-  },
-  {
-    icon: LearningIcon,
-    img: Service8,
-    link: "/al-and-machine-learning-applications",
-    title: "AI and Machine Learning Apps",
-    description:
-      "We design and develop AI and machine learning applications that leverage the latest technologies to deliver exceptional results.",
-  },
-  {
-    icon: LearningIcon,
-    img: Service9,
-    link: "/erp-applications",
-    title: "ERP For Healthcare",
-    description:
-      "Healthcare ERP integrates inventory and invoice management, enhancing efficiency and organization in healthcare administration.",
-  },
-  {
-    icon: LearningIcon,
-    img: Service10,
-    link: "/patient-applications",
-    title: "Website and Apps For Patients",
-    description:
-      "Seamless website and application for patients, providing easy access to medical information and appointment scheduling for enhanced healthcare experience.",
-  },
-  {
-    icon: LearningIcon,
-    img: Service11,
-    link: "/doctor-application",
-    title: "Website and Apps For Doctors",
-    description:
-      "Comprehensive website and application tailored for doctors, facilitating efficient patient management, appointment scheduling, and seamless communication for enhanced medical practice.",
-  },
-  {
-    icon: LearningIcon,
-    img: Service12,
-    link: "/clinic-applications",
-    title: "Clinical Trial System",
-    description:
-      "Advanced clinical trial system streamlining protocol management, patient recruitment, data collection, and analysis for efficient and reliable research outcomes.",
-  },
-  {
-    icon: LearningIcon,
-    img: Service13,
-    link: "/outsources-Dedicated-Software-Team",
-    title: "Outsources Dedicated Software Team",
-    description:
-      "Experience top-tier expertise with our outsourced dedicated software team, delivering tailored solutions and innovative development services for your project's success.",
-  },
-  {
-    icon: LearningIcon,
-    img: Service14,
-    link: "/outsources-Project-And-Product-Development",
-    title: "Outsources Project And Product Development",
-    description:
-      "Explore our outsourcing expertise: Tailored solutions for project development and comprehensive services spanning ideation to deployment for product development excellence.",
-  },
-  {
-    // icon: CloudIcon,
-    img: Services15,
-    link: "/fixed-price-contract",
-    title: "Fixed Price - Outsourcing contract ",
-    description:
-      "We provide cloud platform solutions for AWS, Azure, and GCP that are reliable, scalable and secure.",
-  },
+  // {
+  //   icon: MobileAppIcon,
+  //   img: Service1,
+  //   link: "/product-and-web-development",
+  //   title: "Product and Web Development",
+  //   description:
+  //     "We create scalable and responsive websites with modern designs.",
+  // },
+  // {
+  //   icon: MobileAppIcon,
+  //   img: Service2,
+  //   link: "/mobile-app-development",
+  //   title: "Mobile App Development",
+  //   description:
+  //     "We create native and cross-platform mobile apps with engaging designs and seamless user experiences.",
+  // },
+  // {
+  //   icon: CloudIcon,
+  //   img: Service3,
+  //   link: "/cloud-platforms",
+  //   title: "Cloud Platforms",
+  //   description:
+  //     "We provide cloud platform solutions for AWS, Azure, and GCP that are reliable, scalable and secure.",
+  // },
+  // {
+  //   icon: EcommerceIcon,
+  //   img: Service4,
+  //   link: "/e-commerce-websites",
+  //   title: "E-commerce Websites",
+  //   description:
+  //     "We design and develop e-commerce websites with secure payment gateway integrations and user-friendly interfaces.",
+  // },
+  // {
+  //   icon: CustomIcon,
+  //   img: Service5,
+  //   link: "/custom-software-solutions",
+  //   title: "Custom Software Solutions",
+  //   description:
+  //     "We provide custom software solutions for various industries with scalable architecture and efficient workflows.",
+  // },
+  // {
+  //   icon: ApplicationsIcon,
+  //   img: Service6,
+  //   link: "/web-applications",
+  //   title: "Web Applications",
+  //   description:
+  //     "We create web applications with scalable architecture and engaging designs that deliver seamless user experiences.",
+  // },
+  // {
+  //   icon: LearningIcon,
+  //   img: Service7,
+  //   link: "/healthcare-apps",
+  //   title: "Healthcare Apps",
+  //   description:
+  //     "We design and develop healthcare apps that deliver seamless user experiences and secure data management.",
+  // },
+  // {
+  //   icon: LearningIcon,
+  //   img: Service8,
+  //   link: "/al-and-machine-learning-applications",
+  //   title: "AI and Machine Learning Apps",
+  //   description:
+  //     "We design and develop AI and machine learning applications that leverage the latest technologies to deliver exceptional results.",
+  // },
+  // {
+  //   icon: LearningIcon,
+  //   img: Service9,
+  //   link: "/erp-applications",
+  //   title: "ERP For Healthcare",
+  //   description:
+  //     "Healthcare ERP integrates inventory and invoice management, enhancing efficiency and organization in healthcare administration.",
+  // },
+  // {
+  //   icon: LearningIcon,
+  //   img: Service10,
+  //   link: "/patient-applications",
+  //   title: "Website and Apps For Patients",
+  //   description:
+  //     "Seamless website and application for patients, providing easy access to medical information and appointment scheduling for enhanced healthcare experience.",
+  // },
+  // {
+  //   icon: LearningIcon,
+  //   img: Service11,
+  //   link: "/doctor-application",
+  //   title: "Website and Apps For Doctors",
+  //   description:
+  //     "Comprehensive website and application tailored for doctors, facilitating efficient patient management, appointment scheduling, and seamless communication for enhanced medical practice.",
+  // },
+  // {
+  //   icon: LearningIcon,
+  //   img: Service12,
+  //   link: "/clinic-applications",
+  //   title: "Clinical Trial System",
+  //   description:
+  //     "Advanced clinical trial system streamlining protocol management, patient recruitment, data collection, and analysis for efficient and reliable research outcomes.",
+  // },
+  // {
+  //   icon: LearningIcon,
+  //   img: Service13,
+  //   link: "/outsources-Dedicated-Software-Team",
+  //   title: "Outsources Dedicated Software Team",
+  //   description:
+  //     "Experience top-tier expertise with our outsourced dedicated software team, delivering tailored solutions and innovative development services for your project's success.",
+  // },
+  // {
+  //   icon: LearningIcon,
+  //   img: Services14,
+  //   link: "/outsources-Project-And-Product-Development",
+  //   title: "Outsources Project And Product Development",
+  //   description:
+  //     "Explore our outsourcing expertise: Tailored solutions for project development and comprehensive services spanning ideation to deployment for product development excellence.",
+  // },
+
   {
     // icon: CloudIcon,
-    img: Services16,
+    img: Services20,
     link: "/Software-development",
     title: "Software-development",
     description:
@@ -758,9 +743,17 @@ export const ServicesInfo = [
   },
   {
     // icon: CloudIcon,
-    img: Services17,
+    img: Services19,
     link: "/Product-research-and-development",
     title: "Product research and development",
+    description:
+      "We provide cloud platform solutions for AWS, Azure, and GCP that are reliable, scalable and secure.",
+  },
+  {
+    // icon: CloudIcon,
+    img: Services25,
+    link: "/fixed-price-contract",
+    title: "Fixed Price - Outsourcing contract",
     description:
       "We provide cloud platform solutions for AWS, Azure, and GCP that are reliable, scalable and secure.",
   },
@@ -976,29 +969,29 @@ export const FAQPage = [
   },
 ];
 
-export const TestimonialsInfo = [
-  {
-    images: Testimonial1,
-    name: "Jane Doe",
-    // dissertation: "-Head Of Idea",
-    content:
-      "I had an amazing experience working with this company. They really understood my needs and delivered a high-quality product on time.",
-  },
-  {
-    images: Testimonial2,
-    name: "John Smith",
-    // dissertation: "-Head Of Idea",
-    content:
-      "I highly recommend this company for anyone looking for top-notch web development services. They are knowledgeable, responsive, and a pleasure to work with.",
-  },
-  {
-    images: Testimonial3,
-    name: "Samantha Johnson",
-    // dissertation: "-Head Of Idea",
-    content:
-      "The team at this company is highly skilled and professional. They were able to solve a complex technical problem for us and exceeded our expectations.",
-  },
-];
+// export const TestimonialsInfo = [
+//   {
+//     images: Testimonial1,
+//     name: "Jane Doe",
+//     // dissertation: "-Head Of Idea",
+//     content:
+//       "I had an amazing experience working with this company. They really understood my needs and delivered a high-quality product on time.",
+//   },
+//   {
+//     images: Testimonial2,
+//     name: "John Smith",
+//     // dissertation: "-Head Of Idea",
+//     content:
+//       "I highly recommend this company for anyone looking for top-notch web development services. They are knowledgeable, responsive, and a pleasure to work with.",
+//   },
+//   {
+//     images: Testimonial3,
+//     name: "Samantha Johnson",
+//     // dissertation: "-Head Of Idea",
+//     content:
+//       "The team at this company is highly skilled and professional. They were able to solve a complex technical problem for us and exceeded our expectations.",
+//   },
+// ];
 
 export const BlogInfo = [
   {

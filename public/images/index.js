@@ -27,26 +27,12 @@ import ReactImg from "./technology/react.png";
 import RedisImg from "./technology/redis.png";
 import MicrosftDotnetImg from "./technology/microsftdotnet.png";
 import FlutterImg from "./technology/flutter.png";
-import Service1 from "./service-1.jpg";
 import AzureAndGCP from "./azureandgcp.png";
 import NetCore from "./netcore.png";
 import Postgres from "./postgres.png";
-import Service2 from "./service-2.jpg";
-import Service3 from "./service-3.jpg";
-import Service4 from "./service-4.jpg";
-import Service5 from "./service-5.jpg";
-import Service6 from "./service-6.jpg";
-import Service7 from "./service-7.jpg";
-import Service8 from "./service-8.jpg";
 import MultipleBusiness from "./multiple-business.jpeg";
 import HospitalSector from "./hospital-sector.jpg";
 import PharmaSector from "./pharma-sector.jpg";
-import Service9 from "./service-9.jpg";
-import Service10 from "./service-10.png";
-import Service11 from "./service-11.png";
-import Service12 from "./service-12.jpg";
-import Service13 from "./service-13.png";
-import Service14 from "./service-14.png";
 import PCloseImg from "./close.svg";
 import PRightImg from "./right.svg";
 import QuorteImg from "./quorte.png";
@@ -70,9 +56,11 @@ import ERPHomeMain from "./newImages/ERP_Home_Page.jpg";
 import HospitalClientTarget from "./newImages/Hospital_client_Target_Audience.jpg";
 import PharmacyClientTarget from "./newImages/Pharmacy_client_Target_Audience.jpg";
 import Inventory from "./newImages/Inventory.jpg";
-import Services15 from "../images/service-15.png";
-import Services16 from "../images/service-16.png";
-import Services17 from "../images/service-17.png";
+import Services14 from "../images/service-15.png";
+import Services20 from "../images/service-20.png";
+import Services19 from "../images/service-19.jpg";
+import Services24 from "../images/service-24.jpg";
+import Services25 from "../images/Services25.jpg";
 
 export {
   ERPMain,
@@ -110,23 +98,10 @@ export {
   RedisImg,
   MicrosftDotnetImg,
   FlutterImg,
-  Service1,
-  Service2,
-  Service3,
-  Service4,
-  Service5,
-  Service6,
-  Service7,
-  Service8,
-  Service9,
-  Service10,
-  Service11,
-  Service12,
-  Service13,
-  Service14,
-  Services15,
-  Services16,
-  Services17,
+  Services14,
+  Services20,
+  Services19,
+  Services25,
   PCloseImg,
   PRightImg,
   QuorteImg,
