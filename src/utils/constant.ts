@@ -969,29 +969,29 @@ export const FAQPage = [
   },
 ];
 
-// export const TestimonialsInfo = [
-//   {
-//     images: Testimonial1,
-//     name: "Jane Doe",
-//     // dissertation: "-Head Of Idea",
-//     content:
-//       "I had an amazing experience working with this company. They really understood my needs and delivered a high-quality product on time.",
-//   },
-//   {
-//     images: Testimonial2,
-//     name: "John Smith",
-//     // dissertation: "-Head Of Idea",
-//     content:
-//       "I highly recommend this company for anyone looking for top-notch web development services. They are knowledgeable, responsive, and a pleasure to work with.",
-//   },
-//   {
-//     images: Testimonial3,
-//     name: "Samantha Johnson",
-//     // dissertation: "-Head Of Idea",
-//     content:
-//       "The team at this company is highly skilled and professional. They were able to solve a complex technical problem for us and exceeded our expectations.",
-//   },
-// ];
+export const TestimonialsInfo = [
+  {
+    images: Testimonial1,
+    name: "Jane Doe",
+    // dissertation: "-Head Of Idea",
+    content:
+      "I had an amazing experience working with this company. They really understood my needs and delivered a high-quality product on time.",
+  },
+  {
+    images: Testimonial2,
+    name: "John Smith",
+    // dissertation: "-Head Of Idea",
+    content:
+      "I highly recommend this company for anyone looking for top-notch web development services. They are knowledgeable, responsive, and a pleasure to work with.",
+  },
+  {
+    images: Testimonial3,
+    name: "Samantha Johnson",
+    // dissertation: "-Head Of Idea",
+    content:
+      "The team at this company is highly skilled and professional. They were able to solve a complex technical problem for us and exceeded our expectations.",
+  },
+];
 
 export const BlogInfo = [
   {
