@@ -1609,7 +1609,7 @@ a {
 
 .contact_section .contact_box {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: 0 -15px;
 }
 
@@ -2116,14 +2116,14 @@ a {
   gap: 20px;
 }
 
-.testimonials_ttp {
+/* .testimonials_ttp {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 50px;
-}
+} */
 
 /* .testimonials_section .testimonial_list {
   padding-bottom: 50px;
