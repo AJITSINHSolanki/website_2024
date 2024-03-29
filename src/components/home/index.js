@@ -48,7 +48,7 @@ const HomeMain = () => {
   }, []);
 
   return (
-    <div id="home" ref={myRef} style={{ backgroundColor: '#d8e7f6' }}>
+    <div id="home" ref={myRef} style={{ backgroundColor: '#d8e7f6', marginTop:'5px' }}>
       <div className=" home_content">
         <p className="main_title">
           We Manage Your Health Data <span>Digitally</span>

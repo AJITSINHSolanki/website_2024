@@ -20,6 +20,7 @@ const HomeBanner = () => {
                 loop={true}
                 className="mySwiper home_banner_slider"
                 id='home'
+               
             >
                 {HomeBannerCo?.map((item, key) => (
                     <SwiperSlide key={key}>
