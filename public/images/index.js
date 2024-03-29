@@ -59,7 +59,6 @@ import Inventory from "./newImages/Inventory.jpg";
 import Services14 from "../images/service-15.png";
 import Services20 from "../images/service-20.png";
 import Services19 from "../images/service-19.jpg";
-import Services24 from "../images/service-24.jpg";
 import Services25 from "../images/Services25.jpg";
 
 export {
