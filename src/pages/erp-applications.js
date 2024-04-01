@@ -1,6 +1,6 @@
-import Layout from '@/components/layout';
-import Head from 'next/head';
-import { Service9 } from '../../public/images';
+import Layout from "@/components/layout";
+import Head from "next/head";
+import { Services19 } from "../../public/images";
 import {
   ChooseErp,
   ERPCapabilities,
@@ -9,21 +9,21 @@ import {
   ServicesInfo,
   TechnologyCon,
   data,
-} from '@/utils/constant';
-import Link from 'next/link';
-import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
-import LinkedinIcon from '@/components/icon/linkedinIcon';
-import { LinkedinBoxIcon } from '@/components/icon';
-import Swiper from 'swiper';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import { SwiperSlide } from 'swiper/react';
-import { BeatLoader } from 'react-spinners';
+} from "@/utils/constant";
+import Link from "next/link";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import LinkedinIcon from "@/components/icon/linkedinIcon";
+import { LinkedinBoxIcon } from "@/components/icon";
+import Swiper from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { SwiperSlide } from "swiper/react";
+import { BeatLoader } from "react-spinners";
 
 const PageLoading = () => {
   return (
     <>
-      <div style={{ textAlign: 'center' }}>
+      <div style={{ textAlign: "center" }}>
         <BeatLoader
           color="#0162C8"
           cssOverride={{}}
@@ -52,11 +52,11 @@ const ERPApplications = () => {
       }
     };
 
-    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener("scroll", checkVisibility);
     checkVisibility();
 
     return () => {
-      window.removeEventListener('scroll', checkVisibility);
+      window.removeEventListener("scroll", checkVisibility);
     };
   }, []);
 
@@ -81,10 +81,9 @@ const ERPApplications = () => {
 
         <div className="container">
           <div className="detail_s_box">
-            <img src={Service9.src} alt="Product and Web Development" />
+            <img src={Services19.src} alt="Product and Web Development" />
           </div>
         </div>
-        
 
         <div className="container home_text">
           {ERPdescription.length > 0 ? (
@@ -101,7 +100,7 @@ const ERPApplications = () => {
         <div
           ref={myRef}
           id="erp"
-          className={`services_section fade-in ${isVisible ? 'active' : ''}`}
+          className={`services_section fade-in ${isVisible ? "active" : ""}`}
         >
           <div className="container">
             <p className="main_title">
@@ -121,19 +120,19 @@ const ERPApplications = () => {
                   <div className="services_item">
                     <div key={key}>
                       <div className="images_box">
-                        <Image src={item.image} style={{ height: '190px' }} />
+                        <Image src={item.image} style={{ height: "190px" }} />
                       </div>
 
                       <div
                         className="content-box"
-                        style={{ minHeight: 'min-content', height: '350px' }}
+                        style={{ minHeight: "min-content", height: "350px" }}
                       >
                         <div className="description">
                           <p className="title">{item.title}</p>
                           <ol
                             style={{
-                              listStyleType: 'disc',
-                              paddingLeft: '20px',
+                              listStyleType: "disc",
+                              paddingLeft: "20px",
                             }}
                           >
                             {item.features.map((feature, index) => (
@@ -146,7 +145,7 @@ const ERPApplications = () => {
                   </div>
                 ))
               ) : (
-                <div style={{ marginRight: ' -80px' }}>
+                <div style={{ marginRight: " -80px" }}>
                   <PageLoading />
                 </div>
               )}
@@ -164,9 +163,9 @@ const ERPApplications = () => {
           <marquee scrollamount="10">
             <div
               style={{
-                marginTop: '50px',
-                marginBottom: '50px',
-                whiteSpace: 'nowrap',
+                marginTop: "50px",
+                marginBottom: "50px",
+                whiteSpace: "nowrap",
               }}
             >
               {data.length > 0 ? (
@@ -174,9 +173,9 @@ const ERPApplications = () => {
                   <div
                     key={index}
                     style={{
-                      width: '200px',
-                      textAlign: 'center',
-                      display: 'inline-block',
+                      width: "200px",
+                      textAlign: "center",
+                      display: "inline-block",
                     }}
                   >
                     <span dangerouslySetInnerHTML={{ __html: item.icon }} />
@@ -198,9 +197,9 @@ const ERPApplications = () => {
         <div
           className=" "
           style={{
-            background: '#f0f6fb',
-            padding: '50px',
-            marginBottom: '50px',
+            background: "#f0f6fb",
+            padding: "50px",
+            marginBottom: "50px",
           }}
         >
           <div className="sub_and_title">
@@ -212,24 +211,21 @@ const ERPApplications = () => {
           <div className="container">
             <div
               style={{
-                marginBottom: '50px',
-                marginTop: '50px',
-                textAlign: 'start',
+                marginBottom: "50px",
+                marginTop: "50px",
+                textAlign: "start",
               }}
             >
-              <ol style={{ listStyleType: 'disc' }}>
-                {
-                  ChooseErp.length > 0 ?(
-                    ChooseErp.map((item, index) => (
-                      <li key={index}>
-                        <p>{item}</p>
-                      </li>
-                    ))
-                  ) : (<PageLoading/>)
-                }
-             
-
-                
+              <ol style={{ listStyleType: "disc" }}>
+                {ChooseErp.length > 0 ? (
+                  ChooseErp.map((item, index) => (
+                    <li key={index}>
+                      <p>{item}</p>
+                    </li>
+                  ))
+                ) : (
+                  <PageLoading />
+                )}
               </ol>
             </div>
           </div>

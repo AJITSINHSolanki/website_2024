@@ -8,7 +8,17 @@ import ProfileImg from "./profile.jpeg";
 import AIImg from "./ourstack/ai.webp";
 import ComputerVision from "./ourstack/computer-vision.webp";
 import CustomSoftwareDev from "./ourstack/custom-software-dev.webp";
-import DataScience from "./ourstack/data-science.webp";
+// import DataScience from "./ourstack/data-science.webp";
+import MicrosoftAzure from "../images/ourstack/microsoft-azure-cloud.webp";
+import AzureSQL from "../images/ourstack/Azure SQL.jpg";
+import GCPCloud from "../images/ourstack/GCP - Cloud.png";
+import Logic from "../images/ourstack/Logic App.png";
+import MachineLearningAlgo from "../images/ourstack/Machine Learning - Supervised algorithm.jpg";
+import microsoft from "../images/ourstack/Azure Function.webp";
+import NetCoreImage from "../images/ourstack/NET Core.png";
+import NetFramework from "../images/ourstack/NET Framework.png";
+import OCRPaythone from "../images/ourstack/OCR - Python.jpeg";
+import Pythone from "../images/ourstack/Python Flask.webp";
 import DeepLearning from "./ourstack/deep-learning.webp";
 import ERPImg from "./ourstack/erp.png";
 import kubernetes from "./ourstack/kubernetes.png";
@@ -77,7 +87,16 @@ export {
   AIImg,
   ComputerVision,
   CustomSoftwareDev,
-  DataScience,
+  MicrosoftAzure,
+  AzureSQL,
+  GCPCloud,
+  Logic,
+  MachineLearningAlgo,
+  microsoft,
+  NetCoreImage,
+  NetFramework,
+  OCRPaythone,
+  Pythone,
   DeepLearning,
   ERPImg,
   kubernetes,

@@ -22,7 +22,16 @@ import {
   AIImg,
   ComputerVision,
   CustomSoftwareDev,
-  DataScience,
+  MicrosoftAzure,
+  GCPCloud,
+  Logic,
+  MachineLearningAlgo,
+  microsoft,
+  NetCoreImage,
+  NetFramework,
+  AzureSQL,
+  OCRPaythone,
+  Pythone,
   DeepLearning,
   ERPImg,
   kubernetes,
@@ -68,6 +77,91 @@ import {
 } from "../../public/images";
 
 import LinkedinIcon from "@/components/icon/linkedinIcon";
+
+export const OurTechStackItem = [
+  {
+    images: MicrosoftAzure,
+    title: "Microsoft Azure - Cloud",
+  },
+  {
+    images: microsoft,
+    title: "Azure Function",
+  },
+  {
+    images: NetCoreImage,
+    title: ".NET Core",
+  },
+  {
+    images: NetFramework,
+    title: ".NET Framework",
+  },
+  {
+    images: GCPCloud,
+    title: "GCP - Cloud",
+  },
+  {
+    images: Logic,
+    title: "Logic App",
+  },
+  {
+    images: AzureSQL,
+    title: "Azure SQL,",
+  },
+  {
+    images: OCRPaythone,
+    title: "OCR Paythone",
+  },
+  {
+    images: Pythone,
+    title: "Python Flask",
+  },
+  {
+    images: MachineLearningAlgo,
+    title: "Machine Learning - Supervised algorithm",
+  },
+
+  // {
+  //   images: DataScience,
+  //   title: "Data Science",
+  // },
+  // {
+  //   images: MLImg,
+  //   title: "Machine Learning",
+  // },
+  // {
+  //   images: DeepLearning,
+  //   title: "Deep Learning",
+  // },
+  // {
+  //   images: NeuralNetwork,
+  //   title: "Neural Network",
+  // },
+  // {
+  //   images: NLPImg,
+  //   title: "Natural Language Processing",
+  // },
+  // {
+  //   images: ComputerVision,
+  //   title: "Computer Vision",
+  // },
+
+  // {
+  //   images: kubernetes,
+  //   title: "Azure SQL",
+  // },
+  // {
+  //   images: ERPImg,
+  //   title: "Python",
+  // },
+  // {
+  //   images: NovelAlgo,
+  //   title: "Flask",
+  // },
+  // {
+  //   images: CustomSoftwareDev,
+  //   title: "JavaScript",
+  // },
+];
 
 export const HeaderMenu = [
   {
@@ -395,54 +489,6 @@ export const AboutContent = [
     title: "Software Development Company",
     subText:
       "Software development companies design, develop and maintain applications, frameworks or other software components for businesses or consumers",
-  },
-];
-
-export const OurTechStackItem = [
-  {
-    images: AIImg,
-    title: "Artificial Intelligence",
-  },
-  {
-    images: DataScience,
-    title: "Data Science",
-  },
-  {
-    images: MLImg,
-    title: "Machine Learning",
-  },
-  {
-    images: DeepLearning,
-    title: "Deep Learning",
-  },
-  {
-    images: NeuralNetwork,
-    title: "Neural Network",
-  },
-  {
-    images: NLPImg,
-    title: "Natural Language Processing",
-  },
-  {
-    images: ComputerVision,
-    title: "Computer Vision",
-  },
-
-  {
-    images: kubernetes,
-    title: "Azure SQL",
-  },
-  {
-    images: ERPImg,
-    title: "Python",
-  },
-  {
-    images: NovelAlgo,
-    title: "Flask",
-  },
-  {
-    images: CustomSoftwareDev,
-    title: "JavaScript",
   },
 ];
 

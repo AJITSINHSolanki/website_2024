@@ -1,12 +1,12 @@
-import { useRef, useEffect, useState } from 'react';
-import { OurTechStackItem } from '@/utils/constant';
-import Image from 'next/image';
-import { BeatLoader } from 'react-spinners';
+import { useRef, useEffect, useState } from "react";
+import { OurTechStackItem } from "@/utils/constant";
+import Image from "next/image";
+import { BeatLoader } from "react-spinners";
 
 const PageLoading = () => {
   return (
     <>
-      <div style={{ textAlign: 'center', marginRight: '-40px' }}>
+      <div style={{ textAlign: "center", marginRight: "-40px" }}>
         <BeatLoader
           color="#0162C8"
           cssOverride={{}}
@@ -36,11 +36,11 @@ const OurTechStack = () => {
       }
     };
 
-    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener("scroll", checkVisibility);
     checkVisibility();
 
     return () => {
-      window.removeEventListener('scroll', checkVisibility);
+      window.removeEventListener("scroll", checkVisibility);
     };
   }, []);
 
@@ -48,12 +48,12 @@ const OurTechStack = () => {
     <div
       ref={myRef}
       id="our-tech-stack"
-      className={`our_techstack_section  fade-in ${isVisible ? 'active' : ''}`}
+      className={`our_techstack_section  fade-in ${isVisible ? "active" : ""}`}
     >
-      <div style={{ paddingTop: '50px', minHeight: '50px' }}></div>
+      <div style={{ paddingTop: "50px", minHeight: "50px" }}></div>
       <div className="container">
         <p className="main_title">
-          Our Tech <span>Stack</span>
+          Technology <span>Platform</span>
         </p>
         <div className="our_techstack_list">
           {OurTechStackItem.length > 0 ? (
