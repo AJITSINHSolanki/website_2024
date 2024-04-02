@@ -13,7 +13,7 @@ const PriceBox = () => {
     <>
       <div className="container">
         <div className="price_box_section">
-          <div className="price_box_inner" style={{ gap: '20px' }}>
+          <div className="price_box_inner" style={{ display: 'flex', gap: '20px', overflowX: 'auto', }}>
             <div className={`item_box_section  `}>
               <div>
                 <div className="item_box">
