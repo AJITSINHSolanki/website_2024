@@ -462,6 +462,25 @@ export const data = [
     content: ["English"],
   },
 ];
+export const CardData = [
+  {
+    title: "Endless Possibilities",
+    content: "myalgosoft.com offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come."
+  },
+  {
+    title: "Unlock Your True Potential",
+    content: "React and Next Js as well .NET Core Expert Team"
+  },
+  {
+    title: "Endless Possibilities",
+    content: "myalgosoft.com offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come."
+  },
+  {
+    title: "Stay Ahead of the Curve",
+    content: "Our team is always on the lookout for new technologies, techniques, and trends so that we can stay ahead of the curve when it comes to creating innovative solutions for our clients. Get in touch with us today to get started on your digital journey!"
+  }
+];
+
 export const AboutContent = [
   // {
   //     title: 'Experience you can trust',

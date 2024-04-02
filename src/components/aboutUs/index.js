@@ -4,6 +4,7 @@ import Counter from './counter';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GithubIcon, LinkedinBoxIcon } from '../icon';
+import { CardData } from '@/utils/constant';
 
 const AboutUs = () => {
   const myRef = useRef(null);
@@ -33,15 +34,31 @@ const AboutUs = () => {
 
   return (
     <div className="container">
-       
       <div
         id="about-us"
         ref={myRef}
         className={`about_section fade-in ${isVisible ? 'active' : ''}`}
       >
-         {/* <div style={{ paddingTop: '40px', minHeight: '40px' }}></div> */}
+        {/* <div style={{ paddingTop: '40px', minHeight: '40px' }}></div> */}
         <div style={{ paddingTop: '80px' }}>
-          <p className="sub_title">ABOUT</p>
+          
+        </div>
+
+        {/* <div className="auout_inner_box">
+          <div>
+            <p className="main_title">
+              We empower marketers to create thoughtful <span>messages</span>
+            </p>
+          </div>
+          
+          <div className="images_box">
+            <Image src={AboutImage} alt="about Image" />
+          </div>
+        </div> */}
+        <div className=" home_content">
+          <p className="main_title">
+            We empower marketers to create thoughtful <span>messages</span>
+          </p>
           <p className="about_text">
             <span>
               MyAlgoSoft team builds the cutting edge technology that compels
@@ -52,18 +69,7 @@ const AboutUs = () => {
             <br />
           </p>
         </div>
-
-        <div className="auout_inner_box">
-          <div className="about_fist_sec">
-            <p className="main_title">
-              We empower marketers to create thoughtful <span>messages</span>
-            </p>
-          </div>
-          <div className="images_box">
-            <Image src={AboutImage} alt="about Image" />
-          </div>
-        </div>
-        <Counter />
+        {/* <Counter /> */}
         <div className="ceo_section">
           <div className="img_box">
             <Image src={ProfileImg} alt="ProfileImg" />
@@ -109,6 +115,19 @@ const AboutUs = () => {
           </div>
         </div>
         <div>
+          <div className="cards-container">
+            {CardData.map((card, index) => (
+              <div className="card" key={index}>
+                <div className="card-content">
+                  <p className="card-title">{card.title}</p>
+                  <p className="card-body">{card.content}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* <div>
           <p className="about_text">
             <span>
               Still thinking if you should delve into our product and/or
@@ -118,8 +137,8 @@ const AboutUs = () => {
             <br />
             <br />
           </p>
-        </div>
-        <div className="about_card_container">
+        </div> */}
+        {/* <div className="about_card_container">
           <div className="about_card">
             <div className="background-text"> 
               <span>☎</span>
@@ -162,7 +181,7 @@ const AboutUs = () => {
               and schedules more efficiently.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
