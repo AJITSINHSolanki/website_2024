@@ -109,7 +109,7 @@ export const OurTechStackItem = [
   },
   {
     images: OCRPaythone,
-    title: "OCR Paythone",
+    title: "OCR Python",
   },
   {
     images: Pythone,

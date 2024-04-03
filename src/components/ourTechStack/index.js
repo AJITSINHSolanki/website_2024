@@ -50,7 +50,7 @@ const OurTechStack = () => {
       id="our-tech-stack"
       className={`our_techstack_section  fade-in ${isVisible ? "active" : ""}`}
     >
-      <div style={{ paddingTop: "50px", minHeight: "50px" }}></div>
+      <div style={{ paddingTop: "0px", minHeight: "0px" }}></div>
       <div className="container">
         <p className="main_title">
           Technology <span>Platform</span>

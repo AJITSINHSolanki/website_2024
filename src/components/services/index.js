@@ -1,21 +1,20 @@
-import { useRef, useEffect, useState } from 'react';
-import { ServicesInfo } from '@/utils/constant';
-import Image from 'next/image';
-import Link from 'next/link';
-import { RightArrowIcon } from '../icon';
+import { useRef, useEffect, useState } from "react";
+import { ServicesInfo } from "@/utils/constant";
+import Image from "next/image";
+import Link from "next/link";
+import { RightArrowIcon } from "../icon";
 import PageLoader from "../Loader/PageLoader";
 import { BeatLoader } from "react-spinners";
 
 const PageLoading = () => {
   return (
     <>
-<div style={{ textAlign: 'center', marginRight:'-85px'}}>
+      <div style={{ textAlign: "center", marginRight: "-85px" }}>
         <BeatLoader
           color="#0162C8"
           cssOverride={{}}
           size={30}
           speedMultiplier={1}
-          
         />
       </div>
     </>
@@ -40,11 +39,11 @@ const Services = () => {
       }
     };
 
-    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener("scroll", checkVisibility);
     checkVisibility();
 
     return () => {
-      window.removeEventListener('scroll', checkVisibility);
+      window.removeEventListener("scroll", checkVisibility);
     };
   }, []);
 
@@ -52,9 +51,9 @@ const Services = () => {
     <div
       ref={myRef}
       id="services"
-      className={`services_section fade-in ${isVisible ? 'active' : ''}`}
+      className={`services_section fade-in ${isVisible ? "active" : ""}`}
     >
-      <div style={{ paddingTop: '80px', minHeight: '80px' }}></div>
+      <div style={{ paddingTop: "0px", minHeight: "0px" }}></div>
       <div className="container">
         <p className="main_title">
           Our Services & <span>Products</span>
@@ -65,14 +64,13 @@ const Services = () => {
           Our products and services are categorized as:
         </p>
         <div className="services_list">
-          {
-            ServicesInfo.length > 0 ? (ServicesInfo?.map((item, key) => (
+          {ServicesInfo.length > 0 ? (
+            ServicesInfo?.map((item, key) => (
               <div key={key} className="services_item">
                 <div className="images_box">
                   <Link href={item.link} className="img">
                     <Image src={item.img} alt={item.title} />
                   </Link>
-                 
                 </div>
                 <div className="content-box">
                   <Link href={item.link} className="title">
@@ -80,20 +78,18 @@ const Services = () => {
                   </Link>
                   <p className="description">{item.description}</p>
                   <Link href={item.link} className="read_more_button">
-                    Read More{' '}
+                    Read More{" "}
                     <span className="icon">
                       <RightArrowIcon />
                     </span>
                   </Link>
                 </div>
               </div>
-            ))) : (
-              
-                // <PageLoader/> 
-                <PageLoading/> 
-            )
-          }
-           
+            ))
+          ) : (
+            // <PageLoader/>
+            <PageLoading />
+          )}
         </div>
       </div>
     </div>
