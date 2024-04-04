@@ -1,10 +1,10 @@
-import { useRef, useEffect, useState } from 'react';
-import { AboutImage, ProfileImg } from '../../../public/images';
-import Counter from './counter';
-import Image from 'next/image';
-import Link from 'next/link';
-import { GithubIcon, LinkedinBoxIcon } from '../icon';
-import { CardData } from '@/utils/constant';
+import { useRef, useEffect, useState } from "react";
+import { AboutImage, ProfileImg } from "../../../public/images";
+import Counter from "./counter";
+import Image from "next/image";
+import Link from "next/link";
+import { GithubIcon, LinkedinBoxIcon } from "../icon";
+import { CardData } from "@/utils/constant";
 
 const AboutUs = () => {
   const myRef = useRef(null);
@@ -24,11 +24,11 @@ const AboutUs = () => {
       }
     };
 
-    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener("scroll", checkVisibility);
     checkVisibility(); // Check initial visibility
 
     return () => {
-      window.removeEventListener('scroll', checkVisibility);
+      window.removeEventListener("scroll", checkVisibility);
     };
   }, []);
 
@@ -37,12 +37,10 @@ const AboutUs = () => {
       <div
         id="about-us"
         ref={myRef}
-        className={`about_section fade-in ${isVisible ? 'active' : ''}`}
+        className={`about_section fade-in ${isVisible ? "active" : ""}`}
       >
         {/* <div style={{ paddingTop: '40px', minHeight: '40px' }}></div> */}
-        <div style={{ paddingTop: '80px' }}>
-          
-        </div>
+        <div style={{ paddingTop: "30px" }}></div>
 
         {/* <div className="auout_inner_box">
           <div>
@@ -55,7 +53,7 @@ const AboutUs = () => {
             <Image src={AboutImage} alt="about Image" />
           </div>
         </div> */}
-        <div className=" home_content">
+        <div className=" About_content">
           <p className="main_title">
             We empower marketers to create thoughtful <span>messages</span>
           </p>
@@ -65,7 +63,7 @@ const AboutUs = () => {
               the most effective solutions for your business needs.
               <br /> Our modus operandi combines the excellence with execution
               and stand head and shoulders above your competitors.
-            </span>{' '}
+            </span>{" "}
             <br />
           </p>
         </div>
@@ -77,7 +75,7 @@ const AboutUs = () => {
           <div className="ceo_content">
             <p>
               <q>
-                {' '}
+                {" "}
                 &nbsp; &nbsp; &nbsp; &nbsp;Every business that serves customers
                 has the challenge or goal to make their life better. My Algo
                 Soft <span>helps with edge cases</span> by using intent from
