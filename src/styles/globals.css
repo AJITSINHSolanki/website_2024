@@ -406,6 +406,7 @@ a {
   margin-right: 20px;
   border-radius: 25px;
   overflow: hidden; 
+  transition: .3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
