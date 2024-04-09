@@ -74,6 +74,12 @@ import {
   Services20,
   Services25,
   Services14,
+  ERPImage1,
+  ERPImage2,
+  ERPImage3,
+  ERPImage4,
+  ERPImage5,
+  ERPImage6,
 } from "../../public/images";
 
 import LinkedinIcon from "@/components/icon/linkedinIcon";
@@ -212,6 +218,8 @@ export const HomeBannerCo = [
     // title: 'We Build Software and Web Apps for Businesses',
     // content: 'Fast, reliable and modern solutions for businesses',
     // buttonName: 'Get Started',
+    description:
+      "The website typically offers an overview of ERP solutions, explaining what ERP is and how it can benefit businesses. This section includes information on the key features and functionalities of ERP software.",
     buttonUrl: "/web-applications",
   },
   {
@@ -219,6 +227,8 @@ export const HomeBannerCo = [
     // title: 'Product and offshore software services',
     // content: "We build custom software solutions tailored to your unique business needs.",
     // buttonName: 'Learn More',
+    description:
+      "Enterprise resource planning (ERP) is a software system that helps you run your entire business, supporting automation and processes in finance, human resources, manufacturing, supply chain, services, procurement, and more.",
     buttonUrl: "/custom-software-solutions",
   },
   {
@@ -226,6 +236,8 @@ export const HomeBannerCo = [
     // title: 'Web Application Development',
     // content: 'We develop web applications that are secure, scalable, and easy to maintain.',
     // buttonName: 'Get Started',
+    description:
+      "Electronic Health Records (EHR): Maintain digital records of patient health information, including diagnoses, treatment plans, medications, lab results, and imaging reports. Ensure data integrity, security, and accessibility across departments.",
     buttonUrl: "/product-and-web-development",
   },
   {
@@ -233,6 +245,8 @@ export const HomeBannerCo = [
     // title: 'Web Application Development',
     // content: 'We develop web applications that are secure, scalable, and easy to maintain.',
     // buttonName: 'Get Started',
+    description:
+      "Efficiently manage pharmaceutical inventory, including tracking stock levels, expiration dates, batch numbers, and product recalls. The system should support barcode scanning and integration with suppliers for automated replenishment.",
     buttonUrl: "/#about-us",
   },
 ];
@@ -326,16 +340,39 @@ export const ERPdescription = [
   },
 ];
 export const ChooseErp = [
-  "The most affordable and feature-rich ERP system for healthcare professionals.",
-  " User-centric UI/UX dashboard, analytics, features, and automation.",
-  "User-centric UI/UX dashboard, analytics, features, and automation.",
-  "  24/7 availability and technical assistance from an experienced SaaS team.",
-  "Microsoft Azure scalable product with 0 downtime.",
-  "   Cost-effective subscription model (postpaid and prepaid).",
-  "Quick barcode 1D and 2D reading support.",
-  "  Private-labeled templates and billing system under your brand name.",
-  "100% higher customer satisfaction and revenue boost.",
-  " High-performing Android application for patients and doctors that helps them manage routine tasks, appointments,schedules, and much more.",
+  {
+    image: ERPImage1,
+    title: "User-friendly dashboard",
+    description:
+      "User-friendly dashboard with clear analytics and automation tools:",
+  },
+  {
+    image: ERPImage2,
+    title: "Cost-effective subscription",
+    description: "Cost-effective subscription options (postpaid and prepaid):",
+  },
+  {
+    image: ERPImage3,
+    title: "24/7 availability and support",
+    description:
+      "24/7 availability and support from experienced professionals:",
+  },
+  {
+    image: ERPImage4,
+    title: "Quick and easy ",
+    description: "Quick and easy barcode scanning (1D and 2D):",
+  },
+  {
+    image: ERPImage5,
+    title: "templates and billing system",
+    description: "Private-labeled templates and billing system for your brand:",
+  },
+  {
+    image: ERPImage6,
+    title: "Mobile app for patients and doctors",
+    description:
+      "Mobile app for patients and doctors to manage appointments, schedules, and routine tasks:",
+  },
 ];
 export const AboutConter = [
   {
@@ -465,20 +502,23 @@ export const data = [
 export const CardData = [
   {
     title: "Endless Possibilities",
-    content: "myalgosoft.com offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come."
+    content:
+      "myalgosoft.com offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come.",
   },
   {
     title: "Unlock Your True Potential",
-    content: "React and Next Js as well .NET Core Expert Team"
+    content: "React and Next Js as well .NET Core Expert Team",
   },
   {
     title: "Endless Possibilities",
-    content: "myalgosoft.com offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come."
+    content:
+      "myalgosoft.com offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come.",
   },
   {
     title: "Stay Ahead of the Curve",
-    content: "Our team is always on the lookout for new technologies, techniques, and trends so that we can stay ahead of the curve when it comes to creating innovative solutions for our clients. Get in touch with us today to get started on your digital journey!"
-  }
+    content:
+      "Our team is always on the lookout for new technologies, techniques, and trends so that we can stay ahead of the curve when it comes to creating innovative solutions for our clients. Get in touch with us today to get started on your digital journey!",
+  },
 ];
 
 export const AboutContent = [

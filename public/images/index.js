@@ -70,6 +70,12 @@ import Services14 from "../images/service-15.png";
 import Services20 from "../images/service-20.png";
 import Services19 from "../images/service-19.jpg";
 import Services25 from "../images/Services25.jpg";
+import ERPImage1 from "../../public/images/ERPImage1.jpeg";
+import ERPImage2 from "../../public/images/ERPImage2.jpeg";
+import ERPImage3 from "../../public/images/ERPImage3.jpeg";
+import ERPImage4 from "../../public/images/ERPImage4.jpeg";
+import ERPImage5 from "../../public/images/ERPImage5.jpeg";
+import ERPImage6 from "../../public/images/ERPImage6.jpeg";
 
 export {
   ERPMain,
@@ -143,4 +149,10 @@ export {
   MultipleBusiness,
   PharmaSector,
   HospitalSector,
+  ERPImage1,
+  ERPImage2,
+  ERPImage3,
+  ERPImage4,
+  ERPImage5,
+  ERPImage6,
 };

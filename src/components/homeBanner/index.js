@@ -1,44 +1,51 @@
-import React, { useRef, useState } from 'react';
-import { HomeBannerCo } from '@/utils/constant';
-import Link from 'next/link';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, Autoplay, Navigation } from 'swiper/modules';
-import Image from 'next/image';
-import HomeMain from "../home"; 
+import React, { useRef, useState } from "react";
+import { HomeBannerCo } from "@/utils/constant";
+import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, Autoplay, Navigation } from "swiper/modules";
+import Image from "next/image";
+import HomeMain from "../home";
 
 const HomeBanner = () => {
-    const imageHeight = 600;  
+  const imageHeight = 600;
 
-    return (
-        <div>
-            <Swiper
-                spaceBetween={0}
-                centeredSlides={true}
-                speed={5000}
-                navigation={true}
-                modules={[Autoplay, Navigation, EffectFade]}
-                loop={true}
-                className="mySwiper home_banner_slider"
-                id='home'
-               
-            >
-                {HomeBannerCo?.map((item, key) => (
-                    <SwiperSlide key={key}>
-                        <Link href={item.buttonUrl} className='images_box'>
-                            <Image
-                                src={item.images}
-                                alt="slider1"
-                                style={{ height: `${imageHeight}px`, width:'1200px' }}
-                            />
-                        </Link>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-            <div>
-                <HomeMain />
-            </div>
-        </div>
-    );
-}
+  return (
+    <div>
+      <Swiper
+        spaceBetween={0}
+        centeredSlides={true}
+        speed={5000}
+        navigation={true}
+        modules={[Autoplay, Navigation, EffectFade]}
+        loop={true}
+        className="mySwiper home_banner_slider"
+        id="home"
+      >
+        {HomeBannerCo?.map((item, key) => (
+          <SwiperSlide key={key}>
+            <Link href={item.buttonUrl} className="images_box">
+              <div className="home_image_container">
+                <div className="home_image_all">
+                  <Image
+                    className="home_ima"
+                    src={item.images}
+                    alt="slider1"
+                    style={{ height: `${imageHeight}px`, width: "1200px" }}
+                  />
+                </div>
+                <div className="home_descreption">
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <div>
+        <HomeMain />
+      </div>
+    </div>
+  );
+};
 
 export default HomeBanner;

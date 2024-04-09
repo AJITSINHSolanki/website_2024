@@ -80,21 +80,22 @@ const ERPApplications = () => {
         </div>
 
         <div className="container">
-          <div className="detail_s_box">
-            <img src={Services19.src} alt="Product and Web Development" />
+          <div className="detail_s_box_cont">
+            <div className="detail_s_box">
+              <img src={Services19.src} alt="Product and Web Development" />
+            </div>
+            <div className="container home_text">
+              {ERPdescription.length > 0 ? (
+                ERPdescription.map((item, key) => (
+                  <p key={key}>
+                    <span>{item.text}</span> <br /> <br />
+                  </p>
+                ))
+              ) : (
+                <PageLoading />
+              )}
+            </div>
           </div>
-        </div>
-
-        <div className="container home_text">
-          {ERPdescription.length > 0 ? (
-            ERPdescription.map((item, key) => (
-              <p key={key}>
-                <span>{item.text}</span> <br /> <br />
-              </p>
-            ))
-          ) : (
-            <PageLoading />
-          )}
         </div>
 
         <div
@@ -209,24 +210,29 @@ const ERPApplications = () => {
           </div>
 
           <div className="container">
-            <div
-              style={{
-                marginBottom: "50px",
-                marginTop: "50px",
-                textAlign: "start",
-              }}
-            >
-              <ol style={{ listStyleType: "disc" }}>
-                {ChooseErp.length > 0 ? (
-                  ChooseErp.map((item, index) => (
-                    <li key={index}>
-                      <p>{item}</p>
-                    </li>
-                  ))
-                ) : (
-                  <PageLoading />
-                )}
-              </ol>
+            <div className="erp_main_box">
+              {ChooseErp.length > 0 ? (
+                ChooseErp.map((item) => {
+                  return (
+                    <div className="erp_1_box">
+                      <div className="box1">
+                        <div className="box2">
+                          <Image
+                            className="box_image"
+                            src={item.image}
+                            width={130}
+                            height={130}
+                          />
+                          <p className="box_title">{item.title}</p>
+                          <p className="box_description">{item.description}</p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })
+              ) : (
+                <PageLoading />
+              )}
             </div>
           </div>
         </div>
