@@ -33,14 +33,15 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div  style={{backgroundColor:'#dfecf8', paddingBottom:'50px'}}>
+    <div className="container" >
       <div
         id="about-us"
         ref={myRef}
         className={`about_section fade-in ${isVisible ? "active" : ""}`}
       >
         {/* <div style={{ paddingTop: '40px', minHeight: '40px' }}></div> */}
-        <div style={{ paddingTop: "30px" }}></div>
+        {/* <div style={{ paddingTop: "30px" }}></div> */}
 
         {/* <div className="auout_inner_box">
           <div>
@@ -181,7 +182,7 @@ const AboutUs = () => {
           </div>
         </div> */}
       </div>
-    </div>
+    </div></div>
   );
 };
 

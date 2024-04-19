@@ -174,12 +174,12 @@ export const HeaderMenu = [
     id: 1,
     name: "Home",
     url: "/#home",
-  },
-  {
-    id: 2,
-    name: "About",
-    url: "/#about-us",
-  },
+  }, 
+  // {
+  //   id: 2,
+  //   name: "About",
+  //   url: "/#about-us",
+  // },
   {
     id: 3,
     name: "Services",
@@ -187,19 +187,19 @@ export const HeaderMenu = [
   },
   {
     id: 7,
-    name: "ERP",
+    name: "Product - ERP",
     url: "/erp-applications",
   },
-  {
-    id: 7,
-    name: "Technology",
-    url: "/#our-tech-stack",
-  },
-  {
-    id: 4,
-    name: "Blog",
-    url: "/#blog",
-  },
+  // {
+  //   id: 7,
+  //   name: "Technology",
+  //   url: "/#our-tech-stack",
+  // },Technology
+  // {
+  //   id: 4,
+  //   name: "Blog",
+  //   url: "/#blog",
+  // },
   {
     id: 5,
     name: "Pricing",

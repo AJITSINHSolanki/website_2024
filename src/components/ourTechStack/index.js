@@ -48,7 +48,8 @@ const OurTechStack = () => {
     <div
       ref={myRef}
       id="our-tech-stack"
-      className={`our_techstack_section  fade-in ${isVisible ? "active" : ""}`}
+      style={{backgroundColor:'#dfecf8'}}
+      className={`our_techstack_section  fade-in ${isVisible ? "active" : ""}` }
     >
       <div style={{ paddingTop: "0px", minHeight: "0px" }}></div>
       <div className="container">
