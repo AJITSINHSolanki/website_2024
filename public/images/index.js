@@ -76,8 +76,18 @@ import ERPImage3 from "../../public/images/ERPImage3.jpeg";
 import ERPImage4 from "../../public/images/ERPImage4.jpeg";
 import ERPImage5 from "../../public/images/ERPImage5.jpeg";
 import ERPImage6 from "../../public/images/ERPImage6.jpeg";
+import Analytics from "../../public/images/Analytics.jpg";
+import Inventory_Sample from "../../public/images/Inventory_Sample.jpg";
+import Invoice_Sample from "../../public/images/Invoice_Sample.jpg";
+import Product_Main_Page from "../../public/images/Product_Main_Page.jpg"; 
+import Technology_Section from "../../public/images/Technology_Section.jpg";
 
 export {
+  Analytics,
+  Product_Main_Page,
+  Inventory_Sample,
+  Invoice_Sample,
+  Technology_Section,
   ERPMain,
   Inventory,
   HospitalClientTarget,

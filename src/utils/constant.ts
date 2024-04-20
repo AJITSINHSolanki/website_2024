@@ -80,6 +80,10 @@ import {
   ERPImage4,
   ERPImage5,
   ERPImage6,
+  Analytics,
+  Product_Main_Page,
+  Inventory_Sample,
+  Invoice_Sample,
 } from "../../public/images";
 
 import LinkedinIcon from "@/components/icon/linkedinIcon";
@@ -214,37 +218,25 @@ export const HeaderMenu = [
 
 export const HomeBannerCo = [
   {
-    images: ERPHomeMain,
-    // title: 'We Build Software and Web Apps for Businesses',
-    // content: 'Fast, reliable and modern solutions for businesses',
-    // buttonName: 'Get Started',
+    images: Product_Main_Page, 
     description:
       "The website typically offers an overview of ERP solutions, explaining what ERP is and how it can benefit businesses. This section includes information on the key features and functionalities of ERP software.",
     buttonUrl: "/web-applications",
   },
   {
-    images: ERPMain,
-    // title: 'Product and offshore software services',
-    // content: "We build custom software solutions tailored to your unique business needs.",
-    // buttonName: 'Learn More',
+    images: Analytics, 
     description:
       "Enterprise resource planning (ERP) is a software system that helps you run your entire business, supporting automation and processes in finance, human resources, manufacturing, supply chain, services, procurement, and more.",
     buttonUrl: "/custom-software-solutions",
   },
   {
-    images: HospitalClientTarget,
-    // title: 'Web Application Development',
-    // content: 'We develop web applications that are secure, scalable, and easy to maintain.',
-    // buttonName: 'Get Started',
+    images: Inventory_Sample, 
     description:
       "Electronic Health Records (EHR): Maintain digital records of patient health information, including diagnoses, treatment plans, medications, lab results, and imaging reports. Ensure data integrity, security, and accessibility across departments.",
     buttonUrl: "/product-and-web-development",
   },
   {
-    images: PharmacyClientTarget,
-    // title: 'Web Application Development',
-    // content: 'We develop web applications that are secure, scalable, and easy to maintain.',
-    // buttonName: 'Get Started',
+    images: Invoice_Sample, 
     description:
       "Efficiently manage pharmaceutical inventory, including tracking stock levels, expiration dates, batch numbers, and product recalls. The system should support barcode scanning and integration with suppliers for automated replenishment.",
     buttonUrl: "/#about-us",
