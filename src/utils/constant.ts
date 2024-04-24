@@ -217,18 +217,19 @@ export const HeaderMenu = [
 ];
 
 export const HomeBannerCo = [
+
+  {
+    images: Analytics, 
+    description:
+      "Enterprise resource planning (ERP) with Insights and Analytics helps you run your entire business, supporting automation and processes in finance, human resources, manufacturing, supply chain, services, procurement, and more.",
+    buttonUrl: "/custom-software-solutions",
+  },
   {
     images: Product_Main_Page, 
     description:
       "The company offers an overview of ERP solutions, explaining what ERP is and how it can benefit businesses. This section includes information on the key features and functionalities of ERP software.",
     buttonUrl: "/web-applications",
-  },
-  {
-    images: Analytics, 
-    description:
-      "Enterprise resource planning (ERP) is a software system that helps you run your entire business, supporting automation and processes in finance, human resources, manufacturing, supply chain, services, procurement, and more.",
-    buttonUrl: "/custom-software-solutions",
-  },
+  }, 
   {
     images: Inventory_Sample, 
     description:
