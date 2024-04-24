@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "../logo";
+// import Logo from "../logo";
 import { ContactUsinfo, HeaderMenu, SocialIcon } from "@/utils/constant";
 import { Certificate } from "../../../../public/images";
 import { useState } from "react";
@@ -23,10 +23,10 @@ const Footer = () => {
         <div className="container">
           <div className="footer_row footer_first_se">
             <div className="footer_box-col-3">
-              <Link href="/" className="footer_logo">
+              {/* <Link href="/" className="footer_logo">
                 <Logo />
                 <span className="text-hide">Logo</span>
-              </Link>
+              </Link> */}
             </div>
             <div className="footer_box-col-6">
               <div className="f-heading-text">

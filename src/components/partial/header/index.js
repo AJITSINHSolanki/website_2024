@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { CloseIcon, MenuIcon } from "@/components/icon";
-import Logo from "../logo";
+// import Logo from "../logo";
 import Navigation from "./navigation";
 import Link from "next/link"; 
 
@@ -51,11 +51,11 @@ const Header = () => {
         <div className={`header ${isSticky ? "is-sticky" : ""}`}>
             <div className="header_container"> 
                 <div className="inner_header">
-                    <Link href="/" className="logo">
+                    {/* <Link href="/" className="logo">
                         <Logo />
                         <span className="text-hide">Logo</span>
-                    </Link>
-                    <div className="companyname">APS THREEAI LLP</div>
+                    </Link> */}
+                    <div className="companyname">APS THREEAI LLP</div>&nbps;&nbps;&nbps;
                     <div className="menu_icon" onClick={toggleMenu}>
                         <MenuIcon />
                     </div>

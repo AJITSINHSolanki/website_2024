@@ -186,12 +186,12 @@ export const HeaderMenu = [
   // },
   {
     id: 3,
-    name: "Services",
+    name: "What we do",
     url: "/#services",
   },
   {
     id: 7,
-    name: "Product - ERP",
+    name: "ERP Product",
     url: "/erp-applications",
   },
   // {

@@ -1,7 +1,19 @@
 // import Head from 'next/head'
 import Footer from './partial/footer'
 import Header from './partial/header'
-import HeadTag from './partial/header'
+import HeadTag from './partial/headtag'
+
+import { GoogleAnalytics } from '@next/third-parties/google'
+ 
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en">
+//       <body>{children}</body>
+//       <GoogleAnalytics gaId="G-XYZ" />
+//     </html>
+//   )
+// }
+
 
 
 export default function Layout({ children }) {
@@ -14,10 +26,20 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> Ravi Usadad - Portfolio </title>
       </Head> */}``
-      <HeadTag />
-      <Header />
-      <main>{children}</main>
-      <Footer />
+
+    <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="xFnknY8NHESE0k-Sn3A4Qgr-DjZE2J4Qnwzc5Z4Z8Qs" />
+      </head>
+      <body>          
+          <Header />
+          <main>{children}</main>
+          <Footer />
+      </body>
+      <GoogleAnalytics gaId="G-0B4NF5CK1E" />
+    </html>
+
+      
     </>
   )
 }
