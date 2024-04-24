@@ -53,7 +53,7 @@ const Header = () => {
                 <div className="inner_header">
                     <Link href="/" className="logo">
                         <Logo />
-                        {/* <span className="text-hide">Logo</span> */}
+                        <span className="text-hide">Logo</span>
                     </Link>
                     <div className="companyname">APS THREEAI LLP</div>
                     <div className="menu_icon" onClick={toggleMenu}>
