@@ -220,7 +220,7 @@ export const HomeBannerCo = [
   {
     images: Product_Main_Page, 
     description:
-      "The website typically offers an overview of ERP solutions, explaining what ERP is and how it can benefit businesses. This section includes information on the key features and functionalities of ERP software.",
+      "The company offers an overview of ERP solutions, explaining what ERP is and how it can benefit businesses. This section includes information on the key features and functionalities of ERP software.",
     buttonUrl: "/web-applications",
   },
   {
@@ -495,7 +495,7 @@ export const CardData = [
   {
     title: "Endless Possibilities",
     content:
-      "myalgosoft.com offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come.",
+      "APSThreeAi offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come.",
   },
   {
     title: "Unlock Your True Potential",
@@ -504,7 +504,7 @@ export const CardData = [
   {
     title: "Endless Possibilities",
     content:
-      "myalgosoft.com offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come.",
+      "APSThreeAi offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come.",
   },
   {
     title: "Stay Ahead of the Curve",
@@ -529,7 +529,7 @@ export const AboutContent = [
   {
     title: "Endless Possibilities",
     subText:
-      "myalgosoft.com offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come.",
+      "APSThreeAi offers a wide range of services, from on-demand product development to web and mobile app development. We provide tailored solutions that are cost-effective and reliable, so you can trust in our products for years to come.",
   },
   {
     title: "Stay Ahead of the Curve",
@@ -601,15 +601,15 @@ export const ContactUsinfo = [
   },
   {
     icon: EmailIcon,
-    description: "contact@myalgosoft.com",
-    url: "mailto:contact@myalgosoft.com",
+    description: "admin@apsthreeai.ai",
+    url: "mailto:admin@apsthreeai.ai",
   },
 ];
 
 export const SocialIcon = [
   {
     icon: LinkedinIcon,
-    url: "https://www.linkedin.com/in/admin-myalgosoft-llp-104b7429b",
+    url: "https://www.linkedin.com/in/apsthreeai-ai-05a4a0305",
     target: "_blank",
   },
 ];

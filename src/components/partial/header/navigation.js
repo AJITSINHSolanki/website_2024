@@ -20,7 +20,7 @@ const Navigation = ({ closeMenu, activeSection }) => {
                 ))}
             </div>
             <Link href="tel:7434000130" className='button_p'><span>+91 7434000130</span></Link>
-            <Link href="mailto:contact@myalgosoft.com" className='button_p'><span>Enquire</span></Link>
+            <Link href="mailto:admin@apsthreeai.ai" className='button_p'><span>Enquire</span></Link>
         </div>
     );
 }

@@ -29,6 +29,7 @@ const TermsAndConditions = () => {
                         </div>
                         <div className="blog_in_box">
                             <p className="title">Parts of this Agreement</p>
+                            
                             <div className="content">
                                 <ul>
                                     <li><p><b>"This Agreement":</b>This refers to the document or contract in which these terms and  conditions are stated. It's the agreement between two parties, typically a company or service provider and a user or customer.</p></li>

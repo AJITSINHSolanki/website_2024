@@ -77,14 +77,14 @@ export default async function handler(req, res) {
       port: 465,
       secure: true,
       auth: {
-        user: "admin@myalgosoft.com",
-        pass: "Hadala@101",
+        user: "admin@apsthreeai.ai",
+        pass: "Apsthreeeai@123",
       },
     });
 
     const mailOptions = {
       from: req.body.email,
-      to: "admin@myalgosoft.com",
+      to: "admin@apsthreeai.ai",
       subject: "Contact Us",
       text: "Name : " + req.body.name + " Email: " + req.body.email,
       html: emailBody,

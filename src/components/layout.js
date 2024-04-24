@@ -11,7 +11,7 @@ export default function Layout({ children }) {
         <meta name="author" content="Ravi Usadad" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> Ravi Usadad - Portfolio </title>
-      </Head> */}
+      </Head> */}``
       <Header />
       <main>{children}</main>
       <Footer />
