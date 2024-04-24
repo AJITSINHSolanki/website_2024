@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 
 const Navigation = ({ closeMenu, activeSection }) => {
     const router = useRouter();
-
     return (
         <div className='menu_list'>            
             <div className="menu_destop">
@@ -19,8 +18,7 @@ const Navigation = ({ closeMenu, activeSection }) => {
                     </Link>
                 ))}
             </div>
-            &nbsp;&nbsp;<Link href="tel:7434000130" className='button_p'><span>+91 7434000130</span></Link>
-            {/* &nbsp;&nbsp;<Link href="mailto:admin@apsthreeai.ai" className='button_p'><span>Enquire</span></Link> */}
+            &nbsp;&nbsp;+91 7434000130            
         </div>
     );
 }
