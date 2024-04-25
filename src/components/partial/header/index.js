@@ -57,7 +57,7 @@ const Header = () => {
                     </Link> */}
                     <div className="companyname">APS THREEAI LLP</div>
                     <div className="menu_icon" onClick={toggleMenu}>
-                        &nbps;&nbps;&nbps;<MenuIcon />
+                        <MenuIcon />
                     </div>
                     <div className={`menu_bar ${isMenuOpen ? 'active' : ''}`}>
                         <div className='title_close_icon'>
