@@ -200,7 +200,6 @@ const ERPApplications = () => {
           style={{
             background: "#f0f6fb",
             padding: "50px",
-            marginBottom: "50px",
           }}
         >
           <div className="sub_and_title">
