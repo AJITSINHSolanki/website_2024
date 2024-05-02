@@ -1,8 +1,9 @@
-import FAQ from '../faq';
-import ComparePlans from './comparePlans';
-import PriceBox from './priceBox';
-import Pricingbanner from './pricingbanner';
-import React, { useEffect, useRef, useState } from 'react';
+"use client";
+import FAQ from "../faq";
+import ComparePlans from "./comparePlans";
+import PriceBox from "./priceBox";
+import Pricingbanner from "./pricingbanner";
+import React, { useEffect, useRef, useState } from "react";
 
 const Pricing = () => {
   const myRef = useRef(null);
@@ -21,16 +22,16 @@ const Pricing = () => {
       }
     };
 
-    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener("scroll", checkVisibility);
     checkVisibility();
 
     return () => {
-      window.removeEventListener('scroll', checkVisibility);
+      window.removeEventListener("scroll", checkVisibility);
     };
   }, []);
   return (
     <>
-      <div >
+      <div>
         <Pricingbanner />
         <div className="main_title_box">
           {/* <p className="sub_title">Pricing</p> */}

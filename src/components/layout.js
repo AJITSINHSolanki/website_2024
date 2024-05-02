@@ -2,8 +2,9 @@
 import Footer from "./partial/footer";
 import Header from "./partial/header";
 import HeadTag from "./partial/headtag";
+import Head from "next/head";
 
-// import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 // export default function RootLayout({ children }) {
 //   return (
@@ -25,20 +26,16 @@ export default function Layout({ children }) {
         <title> Ravi Usadad - Portfolio </title>
       </Head> */}
       ``
-      <html lang="en">
-        <head>
-          <meta
-            name="google-site-verification"
-            content="xFnknY8NHESE0k-Sn3A4Qgr-DjZE2J4Qnwzc5Z4Z8Qs"
-          />
-        </head>
-        <body>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </body>
-        {/* <GoogleAnalytics gaId="G-0B4NF5CK1E" /> */}
-      </html>
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="xFnknY8NHESE0k-Sn3A4Qgr-DjZE2J4Qnwzc5Z4Z8Qs"
+        />
+      </Head>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+      <GoogleAnalytics gaId="G-0B4NF5CK1E" />
     </>
   );
 }

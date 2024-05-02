@@ -46,9 +46,10 @@ const Footer = () => {
             <div className="footer_box-col-4">
               <div className="footer-widget-info">
                 <p>
-                  Crafting exceptional experiences through innovation and
-                  reliability. Your success is our mission, and we're here to
-                  make it happen. this line add in footer
+                  Call My Algosoft at (+91) 74340 00130 for ERP software for
+                  healthcare industry, ERP software for pharmaceutical company,
+                  cloud based ERP software for pharmaceutical company, ERP
+                  software for hospitals.
                 </p>
                 <ul className="social_icon">
                   {SocialIcon?.map((item, key) => (
