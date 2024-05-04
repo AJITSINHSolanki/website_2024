@@ -13,7 +13,7 @@ const FixedPriceContract = () => {
         </title>
         <meta
           name="description"
-          content="Call My Algosoft at (+91) 74340 00130 for ERP software. Contact ERP Software Company in
+          content="Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for ERP software. Contact ERP Software Company in
           Ahmedabad, ERP software development company in ahmedabad"
         />
         <meta

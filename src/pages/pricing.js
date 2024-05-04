@@ -41,7 +41,7 @@ const PricingPage = () => {
         </title>
         <meta
           name="description"
-          content="Call My Algosoft at (+91) 74340 00130 for IT consultancy to specific healthcare software, Enterprise
+          content="Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for IT consultancy to specific healthcare software, Enterprise
           Resource Planning Software Solutions. Find Best trusted ERP cloud software for medical store,
           Pharmaceutical erp software provider in Ahmedabad, Hospital erp software provider in ahmedabad,
           Medical store ERP software provider in ahmedabad."

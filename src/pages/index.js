@@ -25,7 +25,7 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="Call My Algosoft at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for
+          content="Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for
           pharmaceutical company, cloud based ERP software for pharmaceutical company, ERP software for
           hospitals."
         />

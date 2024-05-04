@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="footer_box-col-4">
               <div className="footer-widget-info">
                 <p>
-                  Call My Algosoft at (+91) 74340 00130 for ERP software for
+                  Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for ERP software for
                   healthcare industry, ERP software for pharmaceutical company,
                   cloud based ERP software for pharmaceutical company, ERP
                   software for hospitals.
@@ -103,7 +103,10 @@ const Footer = () => {
         <button className="my_algo_soft" onClick={openPopup}>
           APS THREEAI LLP.
         </button>{" "}
-        All Rights Reserved. Powered By MyAlgoSoft
+        All Rights Reserved. Powered By MyAlgoSoft <br/> Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for
+pharmaceutical company, ERP software for hospitals, ERP software for invoice management, ERP
+software for Billing and invoicing, ERP software for drug researcher company, ERP software
+development services
       </div>
 
       <div className={`popup_model ${isPopupOpen ? "open" : ""}`}>

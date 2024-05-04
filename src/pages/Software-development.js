@@ -13,7 +13,7 @@ const SoftwareDevelopment = () => {
         </title>
         <meta
           name="description"
-          content="Call My Algosoft at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for
+          content="Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for
           pharmaceutical company, ERP software for hospitals, ERP software for invoice management, ERP
           software for Billing and invoicing, ERP software for drug researcher company, ERP software
           development services"

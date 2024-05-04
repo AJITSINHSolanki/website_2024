@@ -56,7 +56,7 @@ const ERPApplications = () => {
         </title>
         <meta
           name="description"
-          content="Call My Algosoft at (+91) 74340 00130 for healthcare software solutions, Healthcare IT Solutions,
+          content="Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for healthcare software solutions, Healthcare IT Solutions,
           Healthcare software solutions in Gujarat, Healthcare software solutions in Ahmedabad, Healthcare erp
           software provider in Ahmedabad"
         />
