@@ -2777,8 +2777,8 @@ a {
 
 .blog_info_details .blog_imgbox {
   padding-bottom: 30px;
-  border-bottom: 1px dashed var(--primary);
-  margin-bottom: 30px;
+  /* border-bottom: 1px dashed var(--primary); */
+  margin-bottom: 10px;
 }
 
 .blog_info_details .blog_imgbox .images_box img {
