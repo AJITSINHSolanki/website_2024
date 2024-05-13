@@ -60,6 +60,7 @@ import {
   Testimonial2,
   Testimonial3,
   BlogImg3,
+  BlogImg4,
   AzureAndGCP,
   NetCore,
   Postgres,
@@ -178,7 +179,7 @@ export const HeaderMenu = [
     id: 1,
     name: "Home",
     url: "/#home",
-  }, 
+  },
   // {
   //   id: 2,
   //   name: "About",
@@ -217,27 +218,26 @@ export const HeaderMenu = [
 ];
 
 export const HomeBannerCo = [
-
   {
-    images: Analytics, 
+    images: Analytics,
     description:
       "Enterprise resource planning (ERP) with Insights and Analytics helps you run your entire business, supporting automation and processes in finance, human resources, manufacturing, supply chain, services, procurement, and more.",
     buttonUrl: "/custom-software-solutions",
   },
   {
-    images: Product_Main_Page, 
+    images: Product_Main_Page,
     description:
       "The company offers an overview of ERP solutions, explaining what ERP is and how it can benefit businesses. This section includes information on the key features and functionalities of ERP software.",
     buttonUrl: "/web-applications",
-  }, 
+  },
   {
-    images: Inventory_Sample, 
+    images: Inventory_Sample,
     description:
       "Electronic Health Records (EHR): Maintain digital records of patient health information, including diagnoses, treatment plans, medications, lab results, and imaging reports. Ensure data integrity, security, and accessibility across departments.",
     buttonUrl: "/product-and-web-development",
   },
   {
-    images: Invoice_Sample, 
+    images: Invoice_Sample,
     description:
       "Efficiently manage pharmaceutical inventory, including tracking stock levels, expiration dates, batch numbers, and product recalls. The system should support barcode scanning and integration with suppliers for automated replenishment.",
     buttonUrl: "/#about-us",
@@ -1113,6 +1113,13 @@ export const BlogInfo = [
     url: "/ocr_introduction",
     sortContent:
       "We produce tremendous amounts of data every second in the digital age, with unstructured text data accounting...",
+  },
+  {
+    img: BlogImg4,
+    title: "Enterprise Resource Planning Healthcare IT Solutions",
+    url: "/healthcare_it_solutions",
+    sortContent:
+      "In the fast-paced Healthcare IT Solutions and pharmaceutical businesses, it's important to manage operations well....",
   },
 ];
 

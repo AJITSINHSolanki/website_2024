@@ -467,6 +467,12 @@ a {
   pointer-events: none;
   display: block;
 }
+  
+/* .images_box{
+  border: 2px solid red;
+  height: 500px;
+  width: 600px;
+} */
 
 .home_banner_slider .slider_item .images_box img {
   height: 100%;
@@ -2612,15 +2618,34 @@ a {
 .blog_section .blog_list {
   margin-top: 50px;
 }
+.font_bold{
+  font-weight: 800;
+}
+.display{
+  
+}
+.ol_list{
+  display: flex;
+  border-bottom: 1px solid black;
+   padding-bottom: 5px; /* Add some padding at the bottom for spacing */
+  /* margin-bottom: 5px; */
+  width: 300px;
+}
 
 .blog_list_not_slider {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
   gap: 24px;
   width: 100%;
   margin: 0 auto;
+  
 }
+.blog_item-inner{
+  /* border: 2px solid; */
+
+}
+.item--holder
 
 .internet_of_things_blog .blog_list_not_slider,
 .natural_language_blog .blog_list_not_slider,

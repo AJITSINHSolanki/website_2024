@@ -49,6 +49,7 @@ import QuorteImg from "./quorte.png";
 import BlogImg1 from "./blog1.jpg";
 import BlogImg2 from "./blog2.jpg";
 import BlogImg3 from "./blog-3.jpg";
+import BlogImg4 from "./blog_image4.png";
 import ServiceDetails from "./service-details.jpg";
 import NewHome1 from "./new/1.jpeg";
 import NewHome2 from "./new/2.jpeg";
@@ -79,7 +80,7 @@ import ERPImage6 from "../../public/images/ERPImage6.jpeg";
 import Analytics from "../../public/images/Analytics.jpg";
 import Inventory_Sample from "../../public/images/Inventory_Sample.jpg";
 import Invoice_Sample from "../../public/images/Invoice_Sample.jpg";
-import Product_Main_Page from "../../public/images/Product_Main_Page.jpg"; 
+import Product_Main_Page from "../../public/images/Product_Main_Page.jpg";
 import Technology_Section from "../../public/images/Technology_Section.jpg";
 
 export {
@@ -155,6 +156,7 @@ export {
   Testimonial2,
   Testimonial3,
   BlogImg3,
+  BlogImg4,
   Certificate,
   MultipleBusiness,
   PharmaSector,
