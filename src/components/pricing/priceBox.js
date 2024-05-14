@@ -1,23 +1,26 @@
-import { useState } from 'react';
-import { PCloseImg, PRightImg } from '../../../public/images';
-import Image from 'next/image';
+import { useState } from "react";
+import { PCloseImg, PRightImg } from "../../../public/images";
+import Image from "next/image";
 import {
   EnterpriseBenifits,
   FreeBenefits,
   SmallBusinessBenifits,
-} from '@/utils/constant';
-import PageLoader from '../Loader/PageLoader';
+} from "../../utils/constant";
+import PageLoader from "../Loader/PageLoader";
 
 const PriceBox = () => {
   return (
     <>
       <div className="container">
         <div className="price_box_section">
-          <div className="price_box_inner" style={{ display: 'flex', gap: '20px', overflowX: 'auto', }}>
+          <div
+            className="price_box_inner"
+            style={{ display: "flex", gap: "20px", overflowX: "auto" }}
+          >
             <div className={`item_box_section  `}>
               <div>
                 <div className="item_box">
-                  <div className="item_inner_box" style={{ width: '305px' }}>
+                  <div className="item_inner_box" style={{ width: "305px" }}>
                     <p className="main_tt">Starter</p>
                     <div className="plan-card__pricing">
                       <p className="stat">Starts at</p>
@@ -37,7 +40,7 @@ const PriceBox = () => {
                         <li>3000 Maximum Invoice/Bill count</li>
                         <li>300 SMS, Email and WhatsApp Limit</li>
                       </ul>
-                      <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
+                      <ul style={{ listStyle: "none", paddingLeft: "15px" }}>
                         {FreeBenefits.length > 0 ? (
                           FreeBenefits.map((item, index) => (
                             <li
@@ -52,9 +55,9 @@ const PriceBox = () => {
                         ) : (
                           <div
                             className="cio-plan-card__details"
-                            style={{ padding: '15px' }}
+                            style={{ padding: "15px" }}
                           >
-                            {' '}
+                            {" "}
                             <PageLoader />
                           </div>
                         )}
@@ -67,12 +70,14 @@ const PriceBox = () => {
             <div className={`item_box_section  `}>
               <div>
                 <div className="item_box">
-                  <div className="item_inner_box" style={{ width: '305px' }}>
+                  <div className="item_inner_box" style={{ width: "305px" }}>
                     <p className="main_tt">Small Business</p>
                     <div className="plan-card__pricing">
                       <p className="stat">Starts at</p>
                       <p className="model__value">₹ 7999/ Year</p>
-                      <p className="model__below">Billed annually (Price does not include Tax [GST-18%]) </p>
+                      <p className="model__below">
+                        Billed annually (Price does not include Tax [GST-18%]){" "}
+                      </p>
                     </div>
                     <a
                       href="https://myerphome.com/auth/signup"
@@ -87,7 +92,7 @@ const PriceBox = () => {
                         <li>50000 Maximum Invoice/Bill count</li>
                         <li>2000 SMS, Email and WhatsApp Limit</li>
                       </ul>
-                      <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
+                      <ul style={{ listStyle: "none", paddingLeft: "15px" }}>
                         {SmallBusinessBenifits.length > 0 ? (
                           SmallBusinessBenifits.map((item, index) => (
                             <li
@@ -102,9 +107,9 @@ const PriceBox = () => {
                         ) : (
                           <div
                             className="cio-plan-card__details"
-                            style={{ padding: '15px' }}
+                            style={{ padding: "15px" }}
                           >
-                            {' '}
+                            {" "}
                             <PageLoader />
                           </div>
                         )}
@@ -117,12 +122,14 @@ const PriceBox = () => {
             <div className={`item_box_section `}>
               <div>
                 <div className="item_box">
-                  <div className="item_inner_box" style={{ width: '305px' }}>
+                  <div className="item_inner_box" style={{ width: "305px" }}>
                     <p className="main_tt">Enterprise</p>
                     <div className="plan-card__pricing">
                       <p className="stat">Starts at</p>
                       <p className="model__value">₹ 14999/ Year</p>
-                      <p className="model__below">Billed annually (Price does not include Tax [GST-18%]) </p>
+                      <p className="model__below">
+                        Billed annually (Price does not include Tax [GST-18%]){" "}
+                      </p>
                     </div>
                     <a
                       href="https://myerphome.com/auth/signup"
@@ -135,11 +142,9 @@ const PriceBox = () => {
                       <ul>
                         <li>300000 Inventory count</li>
                         <li>300000 Maximum Invoice/Bill count</li>
-                        <li>
-                          300000 SMS, Email and WhatsApp Limit
-                        </li>
+                        <li>300000 SMS, Email and WhatsApp Limit</li>
                       </ul>
-                      <ul style={{ listStyle: 'none', paddingLeft: '15px' }}>
+                      <ul style={{ listStyle: "none", paddingLeft: "15px" }}>
                         {EnterpriseBenifits.length > 0 ? (
                           EnterpriseBenifits.map((item, index) => (
                             <li
@@ -154,9 +159,9 @@ const PriceBox = () => {
                         ) : (
                           <div
                             className="cio-plan-card__details"
-                            style={{ padding: '15px' }}
+                            style={{ padding: "15px" }}
                           >
-                            {' '}
+                            {" "}
                             <PageLoader />
                           </div>
                         )}

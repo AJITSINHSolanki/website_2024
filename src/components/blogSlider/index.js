@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import Link from "next/link";
-import { BlogInfo, BlogInfoSlider } from "../../utils/constant";
+import { BlogInfo, BlogInfoSlider } from "@/utils/constant";
 
 const BlogSlider = () => {
   return (

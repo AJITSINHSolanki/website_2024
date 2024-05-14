@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { BlogImg3 } from "../../public/images";
-import Blog from "@/components/blog";
+import Blog from "../components/blog";
 import Link from "next/link";
 
 const OCRIntroduction = () => {

@@ -11,7 +11,7 @@ import {
   ERPCapabilities,
   ERPdescription,
   data,
-} from "@/utils/constant";
+} from "../utils/constant";
 
 const PageLoading = () => {
   return (

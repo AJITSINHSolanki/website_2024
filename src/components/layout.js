@@ -4,7 +4,8 @@ import Header from "./partial/header";
 import HeadTag from "./partial/headtag";
 import Head from "next/head";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 // export default function RootLayout({ children }) {
 //   return (

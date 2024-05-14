@@ -1,7 +1,7 @@
 // pages/about/index.js
 import { useEffect, useRef, useState } from "react";
-import Layout from "@/components/layout";
-import Pricing from "@/components/pricing";
+// import Layout from "@/components/layout";
+import Pricing from "../components/pricing";
 import Head from "next/head";
 
 const PricingPage = () => {

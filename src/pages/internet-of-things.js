@@ -1,7 +1,7 @@
-import Layout from "@/components/layout";
+// import Layout from "@/components/layout";
 import Head from "next/head";
 import { BlogImg2 } from "../../public/images";
-import Blog from "@/components/blog";
+import Blog from "../components/blog";
 
 const InternetOfThings = () => {
   return (

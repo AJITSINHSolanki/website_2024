@@ -1,7 +1,7 @@
 // import Layout from "@/components/layout";
 import Head from "next/head";
 import { ServiceDetails } from "../../public/images";
-import ServicesSlider from "@/components/servicesSlider";
+import ServicesSlider from "../components/servicesSlider";
 
 const LearningApplications = () => {
   return (

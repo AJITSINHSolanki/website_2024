@@ -12,6 +12,7 @@
     "@emotion/cache": "^11.11.0",
     "@mui/material-nextjs": "^5.15.11",
     "@next/third-parties": "^14.0.5-canary.38",
+    "@react-google-maps/api": "^2.19.3",
     "bootstrap": "^5.3.3",
     "next": "^14.2.2",
     "nextjs-google-analytics": "^2.3.3",
@@ -19,10 +20,17 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-ga4": "^2.1.0",
+    "react-google-maps": "^9.4.5",
+    "react-google-recaptcha": "^3.1.0",
     "react-modal": "^3.16.1",
     "react-spinners": "^0.13.8",
     "reactstrap": "^9.2.2",
     "sharp": "^0.33.3",
     "swiper": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.12",
+    "@types/react": "18.3.2",
+    "typescript": "5.4.5"
   }
 }

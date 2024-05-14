@@ -1,7 +1,11 @@
-import { ComparePlansInfo, PricingInfo, UserLimits } from '@/utils/constant';
-import { PCloseImg, PRightImg } from '../../../public/images';
-import Image from 'next/image';
-import PageLoader from '../Loader/PageLoader';
+import {
+  ComparePlansInfo,
+  PricingInfo,
+  UserLimits,
+} from "../../utils/constant";
+import { PCloseImg, PRightImg } from "../../../public/images";
+import Image from "next/image";
+import PageLoader from "../Loader/PageLoader";
 
 const ComparePlans = () => {
   return (
@@ -18,8 +22,8 @@ const ComparePlans = () => {
                   </div>
                 ))
               ) : (
-                <div className="feature_text" style={{ marginRight: '150px' }}>
-                  {' '}
+                <div className="feature_text" style={{ marginRight: "150px" }}>
+                  {" "}
                   <PageLoader />
                 </div>
               )}
@@ -38,7 +42,7 @@ const ComparePlans = () => {
               {UserLimits.length > 0 ? (
                 UserLimits.map((item, index) => (
                   <div key={index} className="feature_text">
-                    <ul style={{ padding: '5px', textAlign: 'left' }}>
+                    <ul style={{ padding: "5px", textAlign: "left" }}>
                       <li>Count : </li>
                       <li>{item.Inventory}</li>
                       <li>{item.Transaction}</li>
@@ -47,16 +51,15 @@ const ComparePlans = () => {
                   </div>
                 ))
               ) : (
-                <div className="feature_text" style={{ marginRight: '150px' }}>
-                  {' '}
+                <div className="feature_text" style={{ marginRight: "150px" }}>
+                  {" "}
                   <PageLoader />
                 </div>
               )}
             </div>
           </div>
 
-          { 
-          ComparePlansInfo.length > 0 ? (
+          {ComparePlansInfo.length > 0 ? (
             ComparePlansInfo?.map((item, key) => (
               <div key={key} className="feature-grid__label_item">
                 <div className="feature-grid__label">{item.title}</div>
@@ -85,9 +88,11 @@ const ComparePlans = () => {
                 </div>
               </div>
             ))
-          ): ( <div className="feature_text" style={{ marginRight: '150px' }}>
-          <PageLoader />
-        </div>)}
+          ) : (
+            <div className="feature_text" style={{ marginRight: "150px" }}>
+              <PageLoader />
+            </div>
+          )}
         </div>
       </div>
     </div>
