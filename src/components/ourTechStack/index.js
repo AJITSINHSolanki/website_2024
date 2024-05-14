@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import { OurTechStackItem } from "@/utils/constant";
+import { OurTechStackItem } from "../../utils/constant";
 import Image from "next/image";
 import { BeatLoader } from "react-spinners";
 
@@ -48,8 +48,8 @@ const OurTechStack = () => {
     <div
       ref={myRef}
       id="our-tech-stack"
-      style={{backgroundColor:'#dfecf8'}}
-      className={`our_techstack_section  fade-in ${isVisible ? "active" : ""}` }
+      style={{ backgroundColor: "#dfecf8" }}
+      className={`our_techstack_section  fade-in ${isVisible ? "active" : ""}`}
     >
       <div style={{ paddingTop: "0px", minHeight: "0px" }}></div>
       <div className="container">

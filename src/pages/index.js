@@ -1,17 +1,16 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Layout from "@/components/layout";
-import HomeBanner from "@/components/homeBanner";
-import AboutUs from "@/components/aboutUs";
-import OurTechStack from "@/components/ourTechStack";
-import Team from "@/components/team";
-import Technology from "@/components/technology";
-import Services from "@/components/services";
-import ContactUs from "@/components/contactUs";
-import Testimonials from "@/components/testimonials";
-import Blog from "@/components/blog";
-import BlogSlider from "@/components/blogSlider";
-import Features from "@/components/features";
+import HomeBanner from "../components/homeBanner";
+import AboutUs from "../components/aboutUs";
+import OurTechStack from "../components/ourTechStack";
+import Team from "../components/team";
+import Technology from "../components/technology";
+import Services from "../components/services";
+import ContactUs from "../components/contactUs";
+import Testimonials from "../components/testimonials";
+import Blog from "../components/blog";
+// import BlogSlider from "@/components/blogSlider";
+import Features from "../components/features";
 
 const inter = Inter({ subsets: ["latin"] });
 

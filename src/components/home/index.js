@@ -1,16 +1,16 @@
-import { useRef, useEffect, useState } from 'react';
-import { AboutImage, ProfileImg } from '../../../public/images';
-import Image from 'next/image';
-import Link from 'next/link';
-import { GithubIcon, LinkedinBoxIcon } from '../icon';
-import { HomePara } from '@/utils/constant';
-import PageLoader from '../Loader/PageLoader';
-import { BeatLoader } from 'react-spinners';
+import { useRef, useEffect, useState } from "react";
+import { AboutImage, ProfileImg } from "../../../public/images";
+import Image from "next/image";
+import Link from "next/link";
+import { GithubIcon, LinkedinBoxIcon } from "../icon";
+import { HomePara } from "../../utils/constant";
+import PageLoader from "../Loader/PageLoader";
+import { BeatLoader } from "react-spinners";
 
 const PageLoading = () => {
   return (
     <>
-      <div style={{ textAlign: 'center', padding: '30px' }}>
+      <div style={{ textAlign: "center", padding: "30px" }}>
         <BeatLoader
           color="#0162C8"
           cssOverride={{}}
@@ -39,21 +39,25 @@ const HomeMain = () => {
       }
     };
 
-    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener("scroll", checkVisibility);
     checkVisibility(); // Check initial visibility
 
     return () => {
-      window.removeEventListener('scroll', checkVisibility);
+      window.removeEventListener("scroll", checkVisibility);
     };
   }, []);
 
   return (
-    <div id="home" ref={myRef}  style={{backgroundColor:'#dfecf8', marginTop:'15px'}}>
+    <div
+      id="home"
+      ref={myRef}
+      style={{ backgroundColor: "#dfecf8", marginTop: "15px" }}
+    >
       <div className=" home_content">
         <p className="main_title">
           We Manage Your Health Data <span>Digitally</span>
         </p>
-      </div>{' '}
+      </div>{" "}
       <div className="container">
         <div className="home_text">
           {HomePara.length > 0 ? (

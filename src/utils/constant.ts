@@ -12,7 +12,7 @@ import {
   CustomIcon,
   ApplicationsIcon,
   LearningIcon,
-} from "@/components/icon";
+} from "../components/icon";
 import {
   SliderImage,
   SliderImage1,
@@ -87,7 +87,7 @@ import {
   Invoice_Sample,
 } from "../../public/images";
 
-import LinkedinIcon from "@/components/icon/linkedinIcon";
+import LinkedinIcon from "../components/icon/linkedinIcon";
 
 export const OurTechStackItem = [
   {

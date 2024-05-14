@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { HomeBannerCo } from "@/utils/constant";
+import { HomeBannerCo } from "../../utils/constant";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Navigation } from "swiper/modules";

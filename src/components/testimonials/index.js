@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { TestimonialsInfo } from "@/utils/constant";
+// import { TestimonialsInfo } from "@/utils/constant";
 import { StarIcon } from "../icon";
 import { QuorteImg } from "../../../public/images";
 import Image from "next/image";

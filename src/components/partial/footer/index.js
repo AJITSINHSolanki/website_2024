@@ -1,9 +1,9 @@
 import Link from "next/link";
 // import Logo from "../logo";
-import { ContactUsinfo, HeaderMenu, SocialIcon } from "@/utils/constant";
+import { ContactUsinfo, HeaderMenu, SocialIcon } from "../../../utils/constant";
 import { Certificate } from "../../../../public/images";
 import { useState } from "react";
-import { CloseIcon } from "@/components/icon";
+import { CloseIcon } from "../../../components/icon";
 
 const Footer = () => {
   let currentYear = new Date().getFullYear();
@@ -46,10 +46,10 @@ const Footer = () => {
             <div className="footer_box-col-4">
               <div className="footer-widget-info">
                 <p>
-                  Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for ERP software for
-                  healthcare industry, ERP software for pharmaceutical company,
-                  cloud based ERP software for pharmaceutical company, ERP
-                  software for hospitals.
+                  Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for
+                  ERP software for healthcare industry, ERP software for
+                  pharmaceutical company, cloud based ERP software for
+                  pharmaceutical company, ERP software for hospitals.
                 </p>
                 <ul className="social_icon">
                   {SocialIcon?.map((item, key) => (
@@ -103,10 +103,12 @@ const Footer = () => {
         <button className="my_algo_soft" onClick={openPopup}>
           APS THREEAI LLP.
         </button>{" "}
-        All Rights Reserved. Powered By MyAlgoSoft <br/> Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for
-pharmaceutical company, ERP software for hospitals, ERP software for invoice management, ERP
-software for Billing and invoicing, ERP software for drug researcher company, ERP software
-development services
+        All Rights Reserved. Powered By MyAlgoSoft <br /> Call APS THREEAI LLP
+        (My Algosoft) at (+91) 74340 00130 for ERP software for healthcare
+        industry, ERP software for pharmaceutical company, ERP software for
+        hospitals, ERP software for invoice management, ERP software for Billing
+        and invoicing, ERP software for drug researcher company, ERP software
+        development services
       </div>
 
       <div className={`popup_model ${isPopupOpen ? "open" : ""}`}>

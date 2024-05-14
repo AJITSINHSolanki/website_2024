@@ -1,10 +1,10 @@
-import { BeatLoader } from 'react-spinners';
-const { AboutConter, AboutContent } = require('@/utils/constant');
+import { BeatLoader } from "react-spinners";
+const { AboutConter, AboutContent } = require("../../utils/constant");
 
 const PageLoading = () => {
   return (
     <>
-      <div style={{ textAlign: 'center', padding: '30px' }}>
+      <div style={{ textAlign: "center", padding: "30px" }}>
         <BeatLoader
           color="#0162C8"
           cssOverride={{}}
@@ -33,17 +33,18 @@ const Counter = () => {
         )}
       </div>
       <div className="about_content_box">
-        {
-            AboutContent.length > 0 ? (AboutContent?.map((item, key) => (
-                <div key={key} className="about_content_item">
-                  <div className="about_content_item_box">
-                    <p className="title_box">{item.title}</p>
-                    <p className="text_sub">{item.subText}</p>
-                  </div>
-                </div>
-              ))) : ( <PageLoading />)
-        }
-        
+        {AboutContent.length > 0 ? (
+          AboutContent?.map((item, key) => (
+            <div key={key} className="about_content_item">
+              <div className="about_content_item_box">
+                <p className="title_box">{item.title}</p>
+                <p className="text_sub">{item.subText}</p>
+              </div>
+            </div>
+          ))
+        ) : (
+          <PageLoading />
+        )}
       </div>
     </div>
   );

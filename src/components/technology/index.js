@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { TechnologyCon } from "@/utils/constant";
+// import { TechnologyCon } from "@/utils/constant";
 import Image from "next/image";
 import { BeatLoader } from "react-spinners";
 

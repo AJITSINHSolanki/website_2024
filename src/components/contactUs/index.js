@@ -1,16 +1,16 @@
-import { useState } from "react";
+import React, { createRef, useRef, useState } from "react";
 import { BeatLoader } from "react-spinners";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const PageLoading = () => {
   return (
     <>
-<div style={{ textAlign: 'center', marginRight:'-60px'}}>
+      <div style={{ textAlign: "center", marginRight: "-60px" }}>
         <BeatLoader
           color="#0162C8"
           cssOverride={{}}
           size={30}
           speedMultiplier={1}
-          
         />
       </div>
     </>
@@ -19,6 +19,8 @@ const PageLoading = () => {
 
 const ContactUs = () => {
   const [mapLoaded, setMapLoaded] = useState(false);
+  const [captchValue, setCaptchaValue] = useState(null);
+  const recaptchaRef = useRef(null);
 
   const handleMapLoad = () => {
     setMapLoaded(true);
@@ -38,13 +40,10 @@ const ContactUs = () => {
     query: "",
   });
 
-  const [successMessage, setSuccessMessage] = useState('')
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    ``
-    // const sanitizedValue = value.replace(/[^A-Za-z\s.,!?'"()-]/g, '');
-
     setFormData({
       ...formData,
       [name]: value,
@@ -75,39 +74,54 @@ const ContactUs = () => {
 
     return Object.keys(newErrors).length === 0;
   };
+
+  const handleCaptchaonChange = (value) => {
+    setCaptchaValue(value);
+  };
+
   const handleSubmit = async (e) => {
-    e.preventDefault(); 
-    if (validateForm()) {
-      console.log("Form data:", formData);
-      return await fetch("/api/sendMail", {
-        body: JSON.stringify(formData),
-        headers: { "Content-Type": "application/json" },
+    e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/register", {
         method: "POST",
-      })
-        .then((response) => response.json())
-        .then((success) => {
-          console.log(success, "sucsdsd");
-          setFormData({
-            name: "",
-            email: "",
-            number: "",
-            query: "",
-          })
-          setSuccessMessage('Thank you for inquiry')
-          if (success.error == "") {
-          }
-        })
-        .catch((error) => {
-          console.log(error, "erororo");
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          number: formData.number,
+          query: formData.query,
+          captcha: captchValue,
+        }),
+      });
+      if (response.ok) {
+        setSuccessMessage("Your message has been sent successfully.");
+        setFormData({
+          name: "",
+          email: "",
+          number: "",
+          query: "",
         });
-    } else {
+      } else {
+        const data = await response.json();
+        alert(data.message);
+      }
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      alert("Something went wrong. Please try again later.");
     }
   };
 
   return (
     <div className="container">
-        <div id="contact" className="contact_section">
-        <div className="title_contact"  style={{ paddingTop: '80px' }}>
+      <div id="contact" className="contact_section">
+        <div className="title_contact" style={{ paddingTop: "80px" }}>
           <p className="sub_title">Stay Connected</p>
           <p className="main_title">
             <span>Contact Us</span>
@@ -116,20 +130,27 @@ const ContactUs = () => {
 
         <div className="contact_box">
           {!mapLoaded && (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-          <PageLoading  />
-        </div>
-      )}
-      <div className="map_box">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.0682003862453!2d72.5426400243274!3d23.094599117517316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83182ca2717f%3A0xf8eb0fb8aa61b3c1!2sSHUKAN%20PLATINUM%2C%20Gota%2C%20Ahmedabad%2C%20Gujarat%20382481!5e0!3m2!1sen!2sin!4v1699288887709!5m2!1sen!2sin"
-          border="0"
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          onLoad={handleMapLoad} // Call handleMapLoad when the map finishes loading
-        ></iframe>
-      </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100vh",
+              }}
+            >
+              <PageLoading />
+            </div>
+          )}
+          <div className="map_box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.0682003862453!2d72.5426400243274!3d23.094599117517316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83182ca2717f%3A0xf8eb0fb8aa61b3c1!2sSHUKAN%20PLATINUM%2C%20Gota%2C%20Ahmedabad%2C%20Gujarat%20382481!5e0!3m2!1sen!2sin!4v1699288887709!5m2!1sen!2sin"
+              border="0"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              onLoad={handleMapLoad}
+            ></iframe>
+          </div>
           <form className="contact_form" onSubmit={handleSubmit}>
             <div className="form_group">
               <label htmlFor="name" className="text-hide">
@@ -189,12 +210,21 @@ const ContactUs = () => {
               {errors.query && <span className="error">{errors.query}</span>}
             </div>
 
-            {successMessage &&
+            {successMessage && (
               <div className="success_message_box">
                 <div className="icon">
-                  <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <g clip-path="url(#clip0_253_16)">
-                      <path d="M13.7066 3.29297C14.0973 3.68359 14.0973 4.31797 13.7066 4.70859L5.70664 12.7086C5.31602 13.0992 4.68164 13.0992 4.29102 12.7086L0.291016 8.70859C-0.0996094 8.31797 -0.0996094 7.68359 0.291016 7.29297C0.681641 6.90234 1.31602 6.90234 1.70664 7.29297L5.00039 10.5836L12.2941 3.29297C12.6848 2.90234 13.3191 2.90234 13.7098 3.29297H13.7066Z" fill="white" />
+                      <path
+                        d="M13.7066 3.29297C14.0973 3.68359 14.0973 4.31797 13.7066 4.70859L5.70664 12.7086C5.31602 13.0992 4.68164 13.0992 4.29102 12.7086L0.291016 8.70859C-0.0996094 8.31797 -0.0996094 7.68359 0.291016 7.29297C0.681641 6.90234 1.31602 6.90234 1.70664 7.29297L5.00039 10.5836L12.2941 3.29297C12.6848 2.90234 13.3191 2.90234 13.7098 3.29297H13.7066Z"
+                        fill="white"
+                      />
                     </g>
                     <defs>
                       <clipPath id="clip0_253_16">
@@ -208,9 +238,15 @@ const ContactUs = () => {
                   <p>Success</p>
                   {successMessage}
                 </div>
-
               </div>
-            }
+            )}
+
+            <ReCAPTCHA
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+              ref={recaptchaRef}
+              onChange={handleCaptchaonChange}
+              // size="invisible"
+            />
             <button type="submit" className="button_p">
               <span>Submit</span>
             </button>

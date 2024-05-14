@@ -1,4 +1,3 @@
-import Layout from "@/components/layout";
 import Head from "next/head";
 import { BlogImg3 } from "../../public/images";
 import Blog from "@/components/blog";

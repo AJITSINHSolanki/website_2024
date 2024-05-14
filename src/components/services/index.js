@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import { ServicesInfo } from "@/utils/constant";
+import { ServicesInfo } from "../../utils/constant";
 import Image from "next/image";
 import Link from "next/link";
 import { RightArrowIcon } from "../icon";
