@@ -1,170 +1,109 @@
-import SliderImage from "./1.jpg";
-import SliderImage1 from "./2.jpg";
-import SliderImage2 from "./3.jpg";
-import SliderImage3 from "./4.jpg";
-import SliderImage4 from "./5.jpg";
-import AboutImage from "./working_session.webp";
-import ProfileImg from "./profile.jpeg";
-import AIImg from "./ourstack/ai.webp";
-import ComputerVision from "./ourstack/computer-vision.webp";
-import CustomSoftwareDev from "./ourstack/custom-software-dev.webp";
-// import DataScience from "./ourstack/data-science.webp";
-import MicrosoftAzure from "../images/ourstack/microsoft-azure-cloud.webp";
-import AzureSQL from "../images/ourstack/Azure SQL.jpg";
-import GCPCloud from "../images/ourstack/GCP - Cloud.png";
-import Logic from "../images/ourstack/Logic App.png";
-import MachineLearningAlgo from "../images/ourstack/Machine Learning - Supervised algorithm.jpg";
-import microsoft from "../images/ourstack/Azure Function.webp";
-import NetCoreImage from "../images/ourstack/NET Core.png";
-import NetFramework from "../images/ourstack/NET Framework.png";
-import OCRPaythone from "../images/ourstack/OCR - Python.jpeg";
-import Pythone from "../images/ourstack/Python Flask.webp";
-import DeepLearning from "./ourstack/deep-learning.webp";
-import ERPImg from "./ourstack/erp.png";
-import kubernetes from "./ourstack/kubernetes.png";
-import MLImg from "./ourstack/ml.webp";
-import NeuralNetwork from "./ourstack/neural-network.webp";
-import NLPImg from "./ourstack/nlp.webp";
-import NovelAlgo from "./ourstack/novel-algo.png";
-import ProfilePicImg from "./profil-pic.jpg";
-import ProfilePicImgNew from "./profil-pic-new.jpg";
-import AngularImg from "./technology/angular.png";
-import AzureImg from "./technology/azure.png";
-import CloudImg from "./technology/cloud.png";
-import FlaskImg from "./technology/flask.png";
-import PaythonImg from "./technology/python.png";
-import ReactImg from "./technology/react.png";
-import RedisImg from "./technology/redis.png";
-import MicrosftDotnetImg from "./technology/microsftdotnet.png";
-import FlutterImg from "./technology/flutter.png";
-import AzureAndGCP from "./azureandgcp.png";
-import NetCore from "./netcore.png";
-import Postgres from "./postgres.png";
-import MultipleBusiness from "./multiple-business.jpeg";
-import HospitalSector from "./hospital-sector.jpg";
-import PharmaSector from "./pharma-sector.jpg";
-import PCloseImg from "./close.svg";
-import PRightImg from "./right.svg";
-import QuorteImg from "./quorte.png";
-import BlogImg1 from "./blog1.jpg";
-import BlogImg2 from "./blog2.jpg";
-import BlogImg3 from "./blog-3.jpg";
-import BlogImg4 from "./blog_image4.png";
-import ServiceDetails from "./service-details.jpg";
-import NewHome1 from "./new/1.jpeg";
-import NewHome2 from "./new/2.jpeg";
-import NewHome3 from "./new/3.jpeg";
-import JavaScript from "./technology/js.png";
-import NewHome4 from "./new/4.jpeg";
-import Linkedin from "./linkedin.png";
-import Github from "./github.png";
-import Testimonial1 from "./testimonial-1.jpg";
-import Testimonial2 from "./testimonial-2.jpg";
-import Testimonial3 from "./testimonial-3.jpg";
-import Certificate from "./certificate.jpg";
-import ERPMain from "./newImages/ERP_Main_Page.jpg";
-import ERPHomeMain from "./newImages/ERP_Home_Page.jpg";
-import HospitalClientTarget from "./newImages/Hospital_client_Target_Audience.jpg";
-import PharmacyClientTarget from "./newImages/Pharmacy_client_Target_Audience.jpg";
-import Inventory from "./newImages/Inventory.jpg";
-import Services14 from "../images/service-15.png";
-import Services20 from "../images/service-20.png";
-import Services19 from "../images/service-19.jpg";
-import Services25 from "../images/Services25.jpg";
-import ERPImage1 from "../../public/images/ERPImage1.jpeg";
-import ERPImage2 from "../../public/images/ERPImage2.jpeg";
-import ERPImage3 from "../../public/images/ERPImage3.jpeg";
-import ERPImage4 from "../../public/images/ERPImage4.jpeg";
-import ERPImage5 from "../../public/images/ERPImage5.jpeg";
-import ERPImage6 from "../../public/images/ERPImage6.jpeg";
-import Analytics from "../../public/images/Analytics.jpg";
-import Inventory_Sample from "../../public/images/Inventory_Sample.jpg";
-import Invoice_Sample from "../../public/images/Invoice_Sample.jpg";
-import Product_Main_Page from "../../public/images/Product_Main_Page.jpg";
-import Technology_Section from "../../public/images/Technology_Section.jpg";
+import DASHBOARD_BANNER from './homepage/dashboard_banner.webp';
+import CONTACT_US_BANNER from './homepage/contact_us_banner.webp';
+import ANALYTICS_AND_REPORTING from './homepage/analytics_and_reporting.webp';
+import INVENTORY_MANAGEMENT from './homepage/inventory_management.webp';
+import TAX_AND_BILLING_SYSTEM from './homepage/tax_and_billing_system.webp';
+import RED_PEN_CRICLE from './red_pen_circle.webp';
+import PINK_PEN_CRICLE from './pink_pen_circle.webp';
+import PHARMACY from './healthcare_vectors/pharmacy.webp';
+import DOCTORS from './healthcare_vectors/doctors.webp';
+import MEDICAL_SUPPLIES from './healthcare_vectors/medical_supplies.webp';
+import PATIENTS from './healthcare_vectors/patients.webp';
+import STAFF from './healthcare_vectors/staff.webp';
+import ACCOUNTS from './healthcare_vectors/accounts.webp';
+import ANALYTICS_AND_REPORTING_SERVICE from './services/analytics_and_reporting.webp';
+import CONTRACT_BASED_OUTSOURCING from './services/contract_based_outsourcing.webp';
+import PRODUCT_RESEARCH from './services/product_research.webp';
+import NodeLogo from './techs/node_logo.png';
+import PythonLogo from './techs/python_logo.png';
+import GoLang from './techs/go_lang_logo.png';
+import FastAPI from './techs/fast_api_logo.png';
+import NextJS from './techs/nextJS_logo.png';
+import ReactLogo from './techs/react_logo.png';
+import Figma from './techs/figma_logo.png';
+import Framer from './techs/framer_logo.png';
+import AndroidLogo from './techs/android_logo.png';
+import IOSLogo from './techs/ios_logo.png';
+import OpenAI from './techs/open_ai_logo.webp';
+import MongoDB from './techs/mongoDB_logo.png';
+import PostgreSQL from './techs/postgreSQL_logo.png';
+import Shopify from './techs/shopify_logo.webp';
+import FEATURE_1 from './features/feature_1.webp';
+import FEATURE_2 from './features/feature_2.webp';
+import FEATURE_3 from './features/feature_3.webp';
+import MULTI_BUSINESS from './features/multi_business.webp';
+import FEATURE_MEDICAL_SUPPLIES from './features/medical_supplies.webp';
+import HOSPITALS from './features/hospitals.webp';
+import COST_EFFECTIVE from './features/cost_effective.webp';
+import DASHBOARD from './features/dashboard.webp';
+import MOBILE_APP from './features/mobile_app.webp';
+import SUPPORT from './features/support.webp';
+import AZURE from './tech_stack/azure.webp';
+import AZURE_FUNCTION from './tech_stack/azure_function.webp';
+import AZURE_SQL from './tech_stack/azure_sql.webp';
+import DOT_NET_CORE from './tech_stack/dot_net_core.webp';
+import DOT_NET_FRAMEWORK from './tech_stack/dot_net_framework.webp';
+import GCP_CLOUD from './tech_stack/gcp_cloud.webp';
+import LOGIC_APP from './tech_stack/logic_app.webp';
+import MACHINE_LEARNING from './tech_stack/machine_learning.webp';
+import OCR_PYTHON from './tech_stack/ocr_python.webp';
+import PYTHON_FLASK from './tech_stack/python_flask.webp';
+import ABOUT_BANNER from './about_banner.webp';
+import Blog_1 from './homepage/blog1.webp';
+import Blog_2 from './homepage/blog2.webp';
 
 export {
-  Analytics,
-  Product_Main_Page,
-  Inventory_Sample,
-  Invoice_Sample,
-  Technology_Section,
-  ERPMain,
-  Inventory,
-  HospitalClientTarget,
-  PharmacyClientTarget,
-  ERPHomeMain,
-  SliderImage,
-  SliderImage1,
-  SliderImage2,
-  SliderImage3,
-  SliderImage4,
-  AboutImage,
-  ProfileImg,
-  AIImg,
-  ComputerVision,
-  CustomSoftwareDev,
-  MicrosoftAzure,
-  AzureSQL,
-  GCPCloud,
-  Logic,
-  MachineLearningAlgo,
-  microsoft,
-  NetCoreImage,
-  NetFramework,
-  OCRPaythone,
-  Pythone,
-  DeepLearning,
-  ERPImg,
-  kubernetes,
-  MLImg,
-  NeuralNetwork,
-  NLPImg,
-  NovelAlgo,
-  ProfilePicImg,
-  ProfilePicImgNew,
-  AngularImg,
-  AzureImg,
-  CloudImg,
-  FlaskImg,
-  PaythonImg,
-  ReactImg,
-  AzureAndGCP,
-  RedisImg,
-  MicrosftDotnetImg,
-  FlutterImg,
-  Services14,
-  Services20,
-  Services19,
-  Services25,
-  PCloseImg,
-  PRightImg,
-  QuorteImg,
-  BlogImg1,
-  BlogImg2,
-  NetCore,
-  Postgres,
-  ServiceDetails,
-  NewHome1,
-  NewHome2,
-  NewHome3,
-  JavaScript,
-  NewHome4,
-  Linkedin,
-  Github,
-  Testimonial1,
-  Testimonial2,
-  Testimonial3,
-  BlogImg3,
-  BlogImg4,
-  Certificate,
-  MultipleBusiness,
-  PharmaSector,
-  HospitalSector,
-  ERPImage1,
-  ERPImage2,
-  ERPImage3,
-  ERPImage4,
-  ERPImage5,
-  ERPImage6,
-};
+    DASHBOARD_BANNER,
+    CONTACT_US_BANNER,
+    RED_PEN_CRICLE,
+    PINK_PEN_CRICLE,
+    PHARMACY,
+    DOCTORS,
+    MEDICAL_SUPPLIES,
+    PATIENTS,
+    STAFF,
+    ACCOUNTS,
+    ANALYTICS_AND_REPORTING_SERVICE,
+    CONTRACT_BASED_OUTSOURCING,
+    PRODUCT_RESEARCH,
+    NodeLogo,
+    PythonLogo,
+    GoLang,
+    FastAPI,
+    NextJS,
+    ReactLogo,
+    Figma,
+    Framer,
+    AndroidLogo,
+    IOSLogo,
+    OpenAI,
+    MongoDB,
+    PostgreSQL,
+    Shopify,
+    ANALYTICS_AND_REPORTING,
+    INVENTORY_MANAGEMENT,
+    TAX_AND_BILLING_SYSTEM,
+    FEATURE_1,
+    FEATURE_2,
+    FEATURE_3,
+    MULTI_BUSINESS,
+    FEATURE_MEDICAL_SUPPLIES,
+    HOSPITALS,
+    COST_EFFECTIVE,
+    DASHBOARD,
+    MOBILE_APP,
+    SUPPORT,
+    AZURE,
+    AZURE_FUNCTION,
+    AZURE_SQL,
+    DOT_NET_CORE,
+    DOT_NET_FRAMEWORK,
+    GCP_CLOUD,
+    LOGIC_APP,
+    MACHINE_LEARNING,
+    OCR_PYTHON,
+    PYTHON_FLASK,
+    ABOUT_BANNER,
+    Blog_1,
+    Blog_2
+}

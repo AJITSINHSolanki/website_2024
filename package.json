@@ -1,5 +1,5 @@
 {
-  "name": "my-algosoft",
+  "name": "aps_three_ai",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,28 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/cache": "^11.11.0",
-    "@mui/material-nextjs": "^5.15.11",
-    "@next/third-parties": "^14.0.5-canary.38",
-    "@react-google-maps/api": "^2.19.3",
-    "bootstrap": "^5.3.3",
-    "next": "^14.2.2",
-    "nextjs-google-analytics": "^2.3.3",
-    "nodemailer": "^6.9.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-ga4": "^2.1.0",
-    "react-google-maps": "^9.4.5",
-    "react-google-recaptcha": "^3.1.0",
-    "react-modal": "^3.16.1",
-    "react-spinners": "^0.13.8",
-    "reactstrap": "^9.2.2",
-    "sharp": "^0.33.3",
-    "swiper": "^11.0.3"
+    "@material-tailwind/react": "^2.1.9",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-slick": "^0.30.2",
+    "sharp": "^0.33.4",
+    "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
-    "@types/node": "20.12.12",
-    "@types/react": "18.3.2",
-    "typescript": "5.4.5"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

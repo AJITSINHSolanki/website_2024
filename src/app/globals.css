@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white
+}
+
+.highlighted-word {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 0.1em 0.1em;
+  white-space: nowrap;
+}
+
+.highlighted-word::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 1em);
+  height: calc(100% + 0.5em);
+  /* background: url('/images/pink_pen_circle.webp') no-repeat center; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+}
+
+.contact-us-banner {
+  background-image: url('/images/homepage/contact_us_banner.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-list {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.slick-track {
+  height: 100% !important;
+}
+
+.slick-slide>div {
+  height: 100% !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #272854 !important;
+}
+
+.slick-track>div {
+  margin-bottom: 1px !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
