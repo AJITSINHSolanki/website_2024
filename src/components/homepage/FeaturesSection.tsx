@@ -1,3 +1,4 @@
+import useInViewHook from "@/hooks/useInView";
 import {
     Timeline,
     TimelineBody,
@@ -15,6 +16,20 @@ import {
 } from "../../../public/images/index";
 
 const FeaturesSection: React.FC = () => {
+    const inventoryManagementRef = useInViewHook();
+    const analyticsAndReportingRef = useInViewHook();
+    const taxAndBillingSystemRef = useInViewHook();
+
+    const leftVariants = {
+        hidden: { opacity: 0, x: -100 },
+        visible: { opacity: 1, x: 0 },
+    };
+
+    const rightVariants = {
+        hidden: { opacity: 0, x: 100 },
+        visible: { opacity: 1, x: 0 },
+    };
+
     return (
         <div className="w-full mt-10 flex flex-col gap-1 sm:gap-8">
             {/* Inventory Management */}
@@ -173,9 +188,7 @@ const FeaturesSection: React.FC = () => {
                             <TimelineConnector />
                             <TimelineHeader className="h-3">
                                 <TimelineIcon />
-                                <p
-                                    className="text-lg sm:text-2xl"
-                                >
+                                <p className="text-lg sm:text-2xl">
                                     Tax Report
                                 </p>
                             </TimelineHeader>

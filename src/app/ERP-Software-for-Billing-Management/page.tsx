@@ -22,15 +22,11 @@ export const metadata: Metadata = {
     description:
         "Call My Algosoft at (+91) 74340 00130 for healthcare software solutions, Healthcare IT Solutions, Healthcare software solutions in Gujarat, Healthcare software solutions in Ahmedabad, Healthcare erp software provider in Ahmedabad",
     keywords: [
-        "healthcare software solutions",
-        "Healthcare IT Solutions",
-        "Healthcare software solutions in Gujarat",
-        "Healthcare software solutions in Ahmedabad",
-        "Healthcare erp software provider in Ahmedabad",
+        "ERP software for Billing and invoicing",
     ],
 };
 
-const Features = () => {
+const Page = () => {
     const CAPABATILITIES = [
         {
             name: "Multi-Business",
@@ -284,4 +280,4 @@ const Features = () => {
     );
 };
 
-export default Features;
+export default Page;

@@ -44,10 +44,12 @@ const BlogSection = () => {
         {
             image: Blog_1,
             title: "Contract based Outsourcing",
+            href: "/blogs/1",
         },
         {
             image: Blog_2,
             title: "Software is the backbone of New age Healthcare",
+            href: "/blogs/ERP-software-for-the-healthcare-industry",
         }    ];
 
     return (
@@ -55,7 +57,7 @@ const BlogSection = () => {
             <Slider className="w-full p-4" {...settings}>
                 {blogPosts.map((post, index) => (
                     <Link
-                        href="/blog/1"
+                        href={post.href}
                         key={index}
                         className="w-full sm:w-[calc(50%_-_0.5rem)] sm:px-5"
                     >

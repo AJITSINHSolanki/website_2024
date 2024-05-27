@@ -40,7 +40,7 @@ export const Navbar = () => {
         {
             name: "Contact Us",
             path: "/#contact-us",
-        }
+        },
     ];
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -49,8 +49,8 @@ export const Navbar = () => {
     };
 
     return (
-        <nav className="py-4 px-8 flex items-center justify-between bg-transparent font-bold">
-            <Link href="/" className="w-40 flex items-center gap-2">
+        <nav className="sticky top-0 z-10 bg-white shadow-sm py-4 px-4 psm:x-8 flex items-center justify-between bg-transparent font-bold">
+            <Link href="/" className="w-80 flex items-center gap-2">
                 <Image
                     src="/images/apsthreeai.svg"
                     alt="APS THREEAI"
@@ -77,12 +77,12 @@ export const Navbar = () => {
                         </Link>
                     </li>
                 ))}
-                <button
-                    type="button"
+                <a
+                    href="https://myerphome.com/auth/login" target="_blank"
                     className="px-4 py-1 rounded-lg shadow-lg text-white text-lg bg-black"
                 >
                     Login
-                </button>
+                </a>
             </ul>
 
             <div className="sm:hidden">
@@ -94,17 +94,15 @@ export const Navbar = () => {
 
             <div
                 className={twMerge(
-                    "fixed top-0 left-0 overflow-hidden duration-300 bg-black h-screen text-white flex justify-center items-center text-5xl tracking-[1px] md:hidden z-50",
+                    "bg-center bg-cover bg-no-repeat fixed top-0 left-0 overflow-hidden duration-300 h-screen text-white flex justify-center items-center text-5xl tracking-[1px] md:hidden z-50",
                     isOpen ? "w-full" : "w-0"
                 )}
+                style={{backgroundImage: 'url("/images/menu_bg.webp")'}}
             >
-                <ul className="text-4xl space-y-8">
+                <ul className="text-3xl space-y-8">
                     {routes.map((route) => (
                         <li key={route.name}>
-                            <Link
-                                href={route.path}
-                                onClick={toggleSidebar}
-                            >
+                            <Link href={route.path} onClick={toggleSidebar}>
                                 {route.name}
                             </Link>
                         </li>

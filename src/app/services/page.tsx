@@ -8,6 +8,22 @@ import {
     PRODUCT_RESEARCH,
 } from "../../../public/images";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "ERP Software Development Services for Hospitals, Invoice Management, Billing and Invoicing, Drug Research Company",
+    description:
+        "Call My Algosoft at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for pharmaceutical company, ERP software for hospitals, ERP software for invoice management, ERP software for Billing and invoicing, ERP software for drug researcher company, ERP software development services",
+    keywords: [
+        "ERP software for healthcare industry",
+        "ERP software for pharmaceutical company",
+        "ERP software for hospitals",
+        "ERP software for invoice management",
+        "ERP software for Billing and invoicing",
+        "ERP software for drug researcher company",
+        "ERP software development services",
+    ],
+};
 
 const Home: React.FC = () => {
     const SERVICES = [
@@ -35,13 +51,13 @@ const Home: React.FC = () => {
         <div className="w-full px-4 sm:px-side min-h-screen py-8">
             <h1
                 className={twMerge(
-                    "text-3xl sm:text-5xl font-semibold text-center uppercase",
+                    "[word-spacing:0.5rem] tracking-wider text-3xl sm:text-5xl font-semibold text-center uppercase",
                     passion_one.className
                 )}
             >
                 <WordHighlight
                     word="innovation"
-                    customStyle="after:h-[calc(100%_+_1.5em)]"
+                    customStyle="after:h-[calc(100%_+_1.5em)] mr-[0.5rem]"
                 />
                 meets expertise <br /> in our range of services
             </h1>

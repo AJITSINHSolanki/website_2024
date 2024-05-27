@@ -1,8 +1,23 @@
 import WordHighlight from "@/components/WordHighlight";
 import { passion_one, pt_sans } from "@/utils/fonts";
+import { Metadata } from "next";
 import React from "react";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { twMerge } from "tailwind-merge";
+
+export const metadata: Metadata = {
+    title: "Medical store ERP Software, Hospital, Pharmaceutical ERP Software Provider in Ahmedabad",
+    description:
+        "Call My Algosoft at (+91) 74340 00130 for IT consultancy to specific healthcare software, Enterprise Resource Planning Software Solutions. Find Best trusted  ERP cloud software for medical store, Pharmaceutical erp software provider in Ahmedabad, Hospital erp software provider in ahmedabad, Medical store ERP software provider in ahmedabad.",
+    keywords: [
+        "IT consultancy to specific healthcare software",
+        "Enterprise Resource Planning Software Solutions",
+        "ERP cloud software for medical store",
+        "Pharmaceutical erp software provider in Ahmedabad",
+        "Hospital erp software provider in Ahmedabad",
+        "Medical store ERP software provider in Ahmedabad",
+    ],
+};
 
 const Pricing: React.FC = () => {
     const PRICING_PLANS = [
@@ -128,7 +143,12 @@ const Pricing: React.FC = () => {
                 Free.
             </p>
 
-            <div className={twMerge("mt-14 overflow-x-auto border-2 border-black rounded-2xl", pt_sans.className)}>
+            <div
+                className={twMerge(
+                    "mt-14 overflow-x-auto border-2 border-black rounded-2xl",
+                    pt_sans.className
+                )}
+            >
                 <table className="min-w-full border-collapse">
                     <thead>
                         <tr>
@@ -149,7 +169,7 @@ const Pricing: React.FC = () => {
                                         passion_one.className
                                     )}
                                 >
-                                    Rs 0/month
+                                    Rs 0/year
                                 </span>
                             </th>
                             <th className="px-4 py-2 border-r border-black">
@@ -161,7 +181,7 @@ const Pricing: React.FC = () => {
                                         passion_one.className
                                     )}
                                 >
-                                    Rs 9439/month
+                                    Rs 9439/year
                                 </span>
                             </th>
                             <th className="px-4 py-2">
@@ -173,7 +193,7 @@ const Pricing: React.FC = () => {
                                         passion_one.className
                                     )}
                                 >
-                                    Rs 17699/month
+                                    Rs 17699/year
                                 </span>
                             </th>
                         </tr>

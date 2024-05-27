@@ -1,18 +1,25 @@
 "use client";
 import { jockey_one, passion_one } from "@/utils/fonts";
-import { whatsAppShare } from "@/utils/helper";
+import { getFooterText, whatsAppShare } from "@/utils/helper";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { AiOutlineFacebook } from "react-icons/ai";
-import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
-import { SlSocialYoutube } from "react-icons/sl";
-import { TbBrandLinkedin, TbBrandTelegram } from "react-icons/tb";
+import { TbBrandLinkedin } from "react-icons/tb";
 import { twMerge } from "tailwind-merge";
 
 const Footer = () => {
+    const pathname = usePathname();
+    const [footerText, setFooterText] = useState<string>("");
+
     const whatsAppHandler = () => {
         whatsAppShare("Hey");
     };
+
+    useEffect(() => {
+        setFooterText(getFooterText(pathname));
+    }, [pathname]);
 
     return (
         <div className="bg-primary w-full py-6 px-side flex flex-col items-center bg-black text-white">
@@ -37,10 +44,7 @@ const Footer = () => {
                     className="cursor-pointer"
                     onClick={whatsAppHandler}
                 />
-                <a
-                    href="https://www.instagram.com/apsthreeai/"
-                    target="_blank"
-                >
+                <a href="https://www.instagram.com/apsthreeai/" target="_blank">
                     <FaInstagram />
                 </a>
                 <a
@@ -65,12 +69,7 @@ const Footer = () => {
                 | Powered By MyAlgoSoft
             </p>
             <p className="mt-4 text-sm text-gray-500 font-alata text-center">
-                Call APS THREEAI LLP (My Algosoft) at (+91) 74340 00130 for ERP
-                software for healthcare industry, ERP software for
-                pharmaceutical company, ERP software for hospitals, ERP software
-                for invoice management, ERP software for Billing and invoicing,
-                ERP software for drug researcher company, ERP software
-                development services
+                {footerText}
             </p>
         </div>
     );
