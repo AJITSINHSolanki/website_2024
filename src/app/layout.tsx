@@ -1,8 +1,10 @@
 import Footer from "@/components/footer/Footer";
 import { Navbar } from "@/components/navbar/Navbar";
+import { pt_sans } from "@/utils/fonts";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import "./globals.css";
-import { pt_sans } from "@/utils/fonts";
+import GA4_Initiator from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
     title: {
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
         "cloud based ERP software for pharmaceutical company",
         "ERP software for hospitals",
     ],
-    metadataBase: new URL('https://apsthreeai.ai/')
+    metadataBase: new URL("https://apsthreeai.ai/"),
 };
 
 export default function RootLayout({
@@ -31,7 +33,9 @@ export default function RootLayout({
                 <Navbar />
                 <main className="w-full min-h-screen">{children}</main>
                 <Footer />
+                <GA4_Initiator />
             </body>
+            <GoogleAnalytics gaId="G-0B4NF5CK1E" />
         </html>
     );
 }

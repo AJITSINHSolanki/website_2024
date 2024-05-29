@@ -6,6 +6,13 @@ const pass = process.env.PASSWORD;
 
 const POST = async (request: any) => {
     try {
+        if (!user || !pass) {
+            console.error(
+                "Email or password environment variables are missing"
+            );
+            return new NextResponse("Configuration error", { status: 500 });
+        }
+
         const { name, email, number, message } = await request.json();
 
         const emailBody = `<table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -92,7 +99,7 @@ const POST = async (request: any) => {
             from: user,
             to: "admin@apsthreeai.ai",
             subject: "Contact Us",
-            text: "Name : " + name + " Email: " + email,
+            text: `Name : ${name} Email: ${email}`,
             html: emailBody,
         };
 
@@ -102,8 +109,11 @@ const POST = async (request: any) => {
             { message: "Message sent successfully" },
             { status: 200 }
         );
-    } catch (error) {
-        return new NextResponse("Failed to send message.", { status: 500 });
+    } catch (error: any) {
+        console.error("Error sending email:", error);
+        return new NextResponse(`Failed to send message: ${error.message}`, {
+            status: 500,
+        });
     }
 };
 
