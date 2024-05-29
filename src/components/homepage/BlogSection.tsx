@@ -43,7 +43,7 @@ const BlogSection = () => {
     const blogPosts = [
         {
             image: Blog_1,
-            title: "Contract based Outsourcing",
+            title: "How ERP Software Changed the Healthcare Industries",
             href: "/blogs/1",
         },
         {

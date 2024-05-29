@@ -51,6 +51,7 @@ import PYTHON_FLASK from './tech_stack/python_flask.webp';
 import ABOUT_BANNER from './about_banner.webp';
 import Blog_1 from './homepage/blog1.webp';
 import Blog_2 from './homepage/blog2.webp';
+import BLOG_1_BANNER from './blogs/blog1.webp';
 
 export {
     DASHBOARD_BANNER,
@@ -105,5 +106,6 @@ export {
     PYTHON_FLASK,
     ABOUT_BANNER,
     Blog_1,
-    Blog_2
+    Blog_2,
+    BLOG_1_BANNER
 }

@@ -25,103 +25,103 @@ const Pricing: React.FC = () => {
             feature: "Inventory Count",
             freeTier: "3000",
             smallBusiness: "100000",
-            enterprice: "300000",
+            enterprise: "300000",
         },
         {
             feature: "Maximum Invoice / Bill Count",
             freeTier: "3000",
             smallBusiness: "50000",
-            enterprice: "300000",
+            enterprise: "300000",
         },
         {
             feature: "SMS, Email, WhatsApp Count",
             freeTier: "300",
             smallBusiness: "2000",
-            enterprice: "300000",
+            enterprise: "300000",
         },
         {
             feature: "Inventory Management",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Customizable Template",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Historical Analytics",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Bill Template and Recent Product List",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Cloud Web and Mobile App (Android and iOS)",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Advanced Permissions",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Payment Reports and Payment Status",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Analytics",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Unlimited Storage for Product Images",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Re-Order and Demand Prediction",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "99.9% Uptime SLA",
             freeTier: true,
             smallBusiness: true,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Premium Support (Standard Hours)",
             freeTier: false,
             smallBusiness: false,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Core EMR/EHR Functionality",
             freeTier: false,
             smallBusiness: false,
-            enterprice: true,
+            enterprise: true,
         },
         {
             feature: "Patient Scheduling & Billing",
             freeTier: false,
             smallBusiness: false,
-            enterprice: true,
+            enterprise: true,
         },
     ];
 
@@ -209,7 +209,7 @@ const Pricing: React.FC = () => {
                                 </td>
                                 <td className="px-4 py-2 border-r border-black text-xl">
                                     <div className="flex items-center justify-center">
-                                        {row.freeTier ? (
+                                        {row.freeTier ? (typeof row.freeTier==="string") ? row.freeTier:( 
                                             <IoMdCheckmarkCircleOutline />
                                         ) : (
                                             "-"
@@ -218,7 +218,7 @@ const Pricing: React.FC = () => {
                                 </td>
                                 <td className="px-4 py-2 border-r border-black text-xl">
                                     <div className="flex items-center justify-center">
-                                        {row.smallBusiness ? (
+                                        {row.smallBusiness ? (typeof row.smallBusiness==="string") ? row.smallBusiness:(
                                             <IoMdCheckmarkCircleOutline />
                                         ) : (
                                             "-"
@@ -227,7 +227,7 @@ const Pricing: React.FC = () => {
                                 </td>
                                 <td className="px-4 py-2 text-xl">
                                     <div className="flex items-center justify-center">
-                                        {row.enterprice ? (
+                                        {row.enterprise ? (typeof row.enterprise==="string") ? row.enterprise:(
                                             <IoMdCheckmarkCircleOutline />
                                         ) : (
                                             "-"
