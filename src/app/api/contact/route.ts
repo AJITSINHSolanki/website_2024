@@ -7,10 +7,10 @@ const pass = process.env.PASSWORD;
 const POST = async (request: any) => {
     try {
         if (!user || !pass) {
-            console.error(
-                "Email or password environment variables are missing"
+            return NextResponse.json(
+                { message: "Configuration error" },
+                { status: 500 }
             );
-            return new NextResponse("Configuration error", { status: 500 });
         }
 
         const { name, email, number, message } = await request.json();
@@ -110,10 +110,12 @@ const POST = async (request: any) => {
             { status: 200 }
         );
     } catch (error: any) {
-        console.error("Error sending email:", error);
-        return new NextResponse(`Failed to send message: ${error.message}`, {
-            status: 500,
-        });
+        return NextResponse.json(
+            { message: `Failed to send message: ${error}` },
+            {
+                status: 500,
+            }
+        );
     }
 };
 
