@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const user = process.env.EMAIL;
-const pass = process.env.PASSWORD;
+const user = 'admin@apsthreeai.ai';
+const pass = 'Apsthreeeai@123';
 
 const POST = async (request: any) => {
     try {
