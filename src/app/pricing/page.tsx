@@ -161,7 +161,7 @@ const Pricing: React.FC = () => {
                                 Features
                             </th>
                             <th className="px-4 py-2 border-r border-black">
-                                Free Tier
+                                Free Trial (1 Month)
                                 <br />
                                 <span
                                     className={twMerge(
@@ -169,7 +169,7 @@ const Pricing: React.FC = () => {
                                         passion_one.className
                                     )}
                                 >
-                                    Rs 0/year
+                                    Rs 0/month
                                 </span>
                             </th>
                             <th className="px-4 py-2 border-r border-black">
@@ -209,7 +209,9 @@ const Pricing: React.FC = () => {
                                 </td>
                                 <td className="px-4 py-2 border-r border-black text-xl">
                                     <div className="flex items-center justify-center">
-                                        {row.freeTier ? (
+                                        {typeof row.freeTier === "string" ? (
+                                            row.freeTier
+                                        ) : row.freeTier ? (
                                             <IoMdCheckmarkCircleOutline />
                                         ) : (
                                             "-"
@@ -218,7 +220,10 @@ const Pricing: React.FC = () => {
                                 </td>
                                 <td className="px-4 py-2 border-r border-black text-xl">
                                     <div className="flex items-center justify-center">
-                                        {row.smallBusiness ? (
+                                        {typeof row.smallBusiness ===
+                                        "string" ? (
+                                            row.smallBusiness
+                                        ) : row.smallBusiness ? (
                                             <IoMdCheckmarkCircleOutline />
                                         ) : (
                                             "-"
@@ -227,7 +232,9 @@ const Pricing: React.FC = () => {
                                 </td>
                                 <td className="px-4 py-2 text-xl">
                                     <div className="flex items-center justify-center">
-                                        {row.enterprice ? (
+                                        {typeof row.enterprice === "string" ? (
+                                            row.enterprice
+                                        ) : row.enterprice ? (
                                             <IoMdCheckmarkCircleOutline />
                                         ) : (
                                             "-"

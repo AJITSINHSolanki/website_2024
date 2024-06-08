@@ -1,3 +1,4 @@
+import { whatsAppShare } from "@/utils/helper";
 import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
 import React, { useState } from "react";
@@ -62,6 +63,10 @@ const ContactForm: React.FC = () => {
         }
     };
 
+    const openWhatsApp = () => {
+        whatsAppShare("Hi");
+    }
+
     return (
         <div className="w-full mt-14 sm:h-[500px] p-2 flex flex-col sm:flex-row items-start rounded-2xl backdrop-filter backdrop-blur-sm bg-opacity-10 bg-clip-padding bg-gray-500 shadow-lg">
             <div className="w-full sm:w-1/3 h-full contact-us-banner rounded-2xl">
@@ -71,14 +76,14 @@ const ContactForm: React.FC = () => {
                         Fill the form for trying our demo
                     </p>
                     <div className="mt-10 flex flex-col items-start gap-4">
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-4 cursor-pointer" onClick={openWhatsApp}>
                             <BiSolidPhoneCall className="w-5 h-5" />
                             <p>+91 74340 00130</p>
                         </div>
-                        <div className="flex items-center gap-4">
+                        <a href="mailto:admin@apsthreeai.ai" className="flex items-center gap-4 cursor-pointer">
                             <RiMailFill className="w-5 h-5" />
-                            <p>admin@apsthreeai.ai</p>
-                        </div>
+                            <span>admin@apsthreeai.ai</span>
+                        </a>
                         <div className="w-full flex items-center gap-4">
                             <HiLocationMarker className="w-5 h-5" />
                             <div className="w-4/5">
