@@ -1,0 +1,25 @@
+.main-image {
+  width: 80%;
+  display: flex;
+  position: relative;
+  border-radius: 6px;
+  height: 230px;
+}
+
+.screen1 {
+  width: 60%;
+  height: 155px;
+  border: 3px solid black;
+  border-radius: 7px;
+}
+
+.screen2 {
+  position: absolute;
+  width: 60%;
+  height: 155px;
+  /* height: 20%; */
+  top: 34%;
+  left: 30%;
+  border: 3px solid black;
+  border-radius: 7px;
+}
