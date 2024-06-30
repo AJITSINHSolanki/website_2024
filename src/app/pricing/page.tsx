@@ -23,106 +23,120 @@ const Pricing: React.FC = () => {
     const PRICING_PLANS = [
         {
             feature: "Inventory Count",
-            freeTier: "3000",
-            smallBusiness: "100000",
-            enterprice: "300000",
+            freeTier: "100",
+            economicalCustom: "500",
+            smallBusiness: "50000",
+            enterprice: "200000",
         },
         {
             feature: "Maximum Invoice / Bill Count",
-            freeTier: "3000",
+            freeTier: "100",
+            economicalCustom: "500",
             smallBusiness: "50000",
-            enterprice: "300000",
+            enterprice: "200000",
         },
         {
             feature: "SMS, Email, WhatsApp Count",
-            freeTier: "300",
-            smallBusiness: "2000",
-            enterprice: "300000",
+            freeTier: "100",
+            economicalCustom: "500",
+            smallBusiness: "50000",
+            enterprice: "200000",
         },
         {
             feature: "Inventory Management",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
         {
             feature: "Customizable Template",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
         {
             feature: "Historical Analytics",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
         {
             feature: "Bill Template and Recent Product List",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
         {
             feature: "Cloud Web and Mobile App (Android and iOS)",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
         {
             feature: "Advanced Permissions",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
         {
             feature: "Payment Reports and Payment Status",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
         {
             feature: "Analytics",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
         {
             feature: "Unlimited Storage for Product Images",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
         {
             feature: "Re-Order and Demand Prediction",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
         {
             feature: "99.9% Uptime SLA",
             freeTier: true,
+            economicalCustom: true,
             smallBusiness: true,
             enterprice: true,
         },
-        {
-            feature: "Premium Support (Standard Hours)",
-            freeTier: false,
-            smallBusiness: false,
-            enterprice: true,
-        },
-        {
-            feature: "Core EMR/EHR Functionality",
-            freeTier: false,
-            smallBusiness: false,
-            enterprice: true,
-        },
-        {
-            feature: "Patient Scheduling & Billing",
-            freeTier: false,
-            smallBusiness: false,
-            enterprice: true,
-        },
+        // {
+        //     feature: "Premium Support (Standard Hours)",
+        //     freeTier: false,
+        //     smallBusiness: false,
+        //     enterprice: true,
+        // },
+        // {
+        //     feature: "Core EMR/EHR Functionality",
+        //     freeTier: false,
+        //     smallBusiness: false,
+        //     enterprice: true,
+        // },
+        // {
+        //     feature: "Patient Scheduling & Billing",
+        //     freeTier: false,
+        //     smallBusiness: false,
+        //     enterprice: true,
+        // },
     ];
 
     return (
@@ -173,6 +187,18 @@ const Pricing: React.FC = () => {
                                 </span>
                             </th>
                             <th className="px-4 py-2 border-r border-black">
+                                Economical Custom Plan
+                                <br />
+                                <span
+                                    className={twMerge(
+                                        "text-xl",
+                                        passion_one.className
+                                    )}
+                                >
+                                    Rs 1000/5 years
+                                </span>
+                            </th>
+                            <th className="px-4 py-2 border-r border-black">
                                 Small Business
                                 <br />
                                 <span
@@ -212,6 +238,17 @@ const Pricing: React.FC = () => {
                                         {typeof row.freeTier === "string" ? (
                                             row.freeTier
                                         ) : row.freeTier ? (
+                                            <IoMdCheckmarkCircleOutline />
+                                        ) : (
+                                            "-"
+                                        )}
+                                    </div>
+                                </td>
+                                <td className="px-4 py-2 border-r border-black text-xl">
+                                    <div className="flex items-center justify-center">
+                                        {typeof row.economicalCustom === "string" ? (
+                                            row.economicalCustom
+                                        ) : row.economicalCustom ? (
                                             <IoMdCheckmarkCircleOutline />
                                         ) : (
                                             "-"
