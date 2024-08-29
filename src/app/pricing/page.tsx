@@ -8,7 +8,7 @@ import { twMerge } from "tailwind-merge";
 export const metadata: Metadata = {
     title: "Medical store ERP Software, Hospital, Pharmaceutical ERP Software Provider in Ahmedabad",
     description:
-        "Call My Algosoft at (+91) 74340 00130 for IT consultancy to specific healthcare software, Enterprise Resource Planning Software Solutions. Find Best trusted  ERP cloud software for medical store, Pharmaceutical erp software provider in Ahmedabad, Hospital erp software provider in ahmedabad, Medical store ERP software provider in ahmedabad.",
+        "Call APSTHREEAI at (+91) 635656 61125 for IT consultancy to specific healthcare software, Enterprise Resource Planning Software Solutions. Find Best trusted  ERP cloud software for medical store, Pharmaceutical erp software provider in Ahmedabad, Hospital erp software provider in ahmedabad, Medical store ERP software provider in ahmedabad.",
     keywords: [
         "IT consultancy to specific healthcare software",
         "Enterprise Resource Planning Software Solutions",

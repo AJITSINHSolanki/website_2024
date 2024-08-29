@@ -78,7 +78,7 @@ const ContactForm: React.FC = () => {
                     <div className="mt-10 flex flex-col items-start gap-4">
                         <div className="flex items-center gap-4 cursor-pointer" onClick={openWhatsApp}>
                             <BiSolidPhoneCall className="w-5 h-5" />
-                            <p>+91 74340 00130</p>
+                            <p>+91 63565 61125</p>
                         </div>
                         <a href="mailto:admin@apsthreeai.ai" className="flex items-center gap-4 cursor-pointer">
                             <RiMailFill className="w-5 h-5" />

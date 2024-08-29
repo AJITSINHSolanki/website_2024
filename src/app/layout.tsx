@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         default: "Apsthreeai.ai",
     },
     description:
-        "Call My Algosoft at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for pharmaceutical company, cloud based ERP software for pharmaceutical company, ERP software for hospitals.",
+        "Call APSTHREEAI at (+91) 635656 61125 for ERP software for healthcare industry, ERP software for pharmaceutical company, cloud based ERP software for pharmaceutical company, ERP software for hospitals.",
     keywords: [
         "ERP software for healthcare industry",
         "ERP software for pharmaceutical company",

@@ -1,6 +1,6 @@
 export const whatsAppShare = (
     messageTxt: string,
-    phoneNumber: string = "+91 7434000130"
+    phoneNumber: string = "+91 6356561125"
 ) => {
     if (isMobile()) {
         // Redirect to WhatsApp app
@@ -33,13 +33,13 @@ export const getFooterText = (pathname: string) => {
 
     switch (route) {
         case "":
-            return "Call My Algosoft at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for pharmaceutical company, cloud based ERP software for pharmaceutical company, ERP software for hospitals.";
+            return "Call APSTHREEAI at (+91) 635656 61125 for ERP software for healthcare industry, ERP software for pharmaceutical company, cloud based ERP software for pharmaceutical company, ERP software for hospitals.";
         case "services":
-            return "Call My Algosoft at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for pharmaceutical company, ERP software for hospitals, ERP software for invoice management, ERP software for Billing and invoicing, ERP software for drug researcher company, ERP software development services";
+            return "Call APSTHREEAI at (+91) 635656 61125 for ERP software for healthcare industry, ERP software for pharmaceutical company, ERP software for hospitals, ERP software for invoice management, ERP software for Billing and invoicing, ERP software for drug researcher company, ERP software development services";
         case "features":
-            return "Call My Algosoft at (+91) 74340 00130 for ERP software for healthcare industry, ERP software for pharmaceutical company, cloud based ERP software for pharmaceutical company, ERP software for hospitals.";
+            return "Call APSTHREEAI at (+91) 635656 61125 for ERP software for healthcare industry, ERP software for pharmaceutical company, cloud based ERP software for pharmaceutical company, ERP software for hospitals.";
         case "pricing":
-            return "Call My Algosoft at (+91) 74340 00130 for IT consultancy to specific healthcare software, Enterprise Resource Planning Software Solutions. Find Best trusted  ERP cloud software for medical store, Pharmaceutical erp software provider in Ahmedabad, Hospital erp software provider in ahmedabad, Medical store ERP software provider in ahmedabad.";
+            return "Call APSTHREEAI at (+91) 635656 61125 for IT consultancy to specific healthcare software, Enterprise Resource Planning Software Solutions. Find Best trusted  ERP cloud software for medical store, Pharmaceutical erp software provider in Ahmedabad, Hospital erp software provider in ahmedabad, Medical store ERP software provider in ahmedabad.";
         case "blogs":
             return "Blogs";
         default:
