@@ -67,6 +67,7 @@ const ContactForm: React.FC = () => {
         whatsAppShare("Hi");
     }
 
+    
     return (
         <div className="w-full mt-14 sm:h-[500px] p-2 flex flex-col sm:flex-row items-start rounded-2xl backdrop-filter backdrop-blur-sm bg-opacity-10 bg-clip-padding bg-gray-500 shadow-lg">
             <div className="w-full sm:w-1/3 h-full contact-us-banner rounded-2xl">
@@ -78,7 +79,9 @@ const ContactForm: React.FC = () => {
                     <div className="mt-10 flex flex-col items-start gap-4">
                         <div className="flex items-center gap-4 cursor-pointer" onClick={openWhatsApp}>
                             <BiSolidPhoneCall className="w-5 h-5" />
-                            <p>+91 63565 61125</p>
+                            {<p>
+                                <a href="tel:+916356561125">Call Us - +916356561125</a>
+                            </p>}                            
                         </div>
                         <a href="mailto:admin@apsthreeai.ai" className="flex items-center gap-4 cursor-pointer">
                             <RiMailFill className="w-5 h-5" />
