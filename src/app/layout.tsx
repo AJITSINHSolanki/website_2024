@@ -5,6 +5,10 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import "./globals.css";
 import GA4_Initiator from "@/components/GoogleAnalytics";
+import Script from 'next/script';
+import { GoogleTagManager } from '@next/third-parties/google'
+
+
 
 export const metadata: Metadata = {
     title: {
@@ -29,6 +33,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <GoogleTagManager gtmId="GTM-5TRB94C5" />
             <body className={pt_sans.className}>
                 <Navbar />
                 <main className="w-full min-h-screen">{children}</main>
